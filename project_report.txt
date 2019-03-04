@@ -10,10 +10,10 @@ UofT E-mail Address: jaden.wang@mail.utoronto.ca
 
 Team Member B
 -------------
-First Name:
-Last Name:
-Student Number:
-UofT E-mail Address:
+First Name: Yiming
+Last Name: Zhong
+Student Number: 1004500694
+UofT E-mail Address: ym.zhong@mail.utoronto.ca
 
 Team Member C (Optional)
 -------------
