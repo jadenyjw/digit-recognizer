@@ -33,24 +33,48 @@ UofT E-mail Address: Eric.Tan@mail.utoronto.ca
 Project Plan
 --------
 
-Project Title:
-
+Project Title: Digit Recognizer
 
 Provide a one paragraph description of your project:
 
+Digit Recognizer will have a neural network implemented using Verilog, with the task of recognizing sketched digits sent through
+the USB Blaster Cable from the computer. Depending on the digit drawn, the FPGA board will output a specific digit onto the 
+HEX Display. 
+
+Tasks to implement:
+
+- Train a neural network for the MNIST data.
+	- Design a simple enough architecture so that the board can support it.
+	- Could possibly use a pretrained network.
+	
+- Figure out a way to convert the weights of the network into Verilog code.
+	
+- Figure out how to implement data transfer from the computer to the board.
+	- Define a common protocol between the board and the computer.
+	- Readings: JTAG UART
 
 What is your plan for the first week?
 
+Task Distribution:
+
+Figure out a common protocol between the board and the computer.
+Subteam A: Figure out how to implement JTAG UART with the board. Implement a few demo cases. 
+Subteam B: Figure out how to generate Verilog code to represent the network.
 
 What is your plan for the second week?
 
+Both teams will try to combine the results of the previous week's together.
 
 What is your plan for the third week?
 
+Run testing if done, otherwise, attempt to complete previous week's material.
 
 What is your backup plan if things don’t work out as planned?
 
+Depending on what went wrong:
 
+If the FPGA part went wrong: No clue what to do.
+If the Data Transfer part went wrong: Hardcode image "values" and test on that.
 
 Weekly Reports
 --------------
@@ -71,6 +95,7 @@ References
 
 Make sure to document what you added on top of the existing work, especially if you work with a previous project. What is it that YOU added?>
 
+https://github.com/ZFTurbo/Verilog-Generator-of-Neural-Net-Digit-Detector-for-FPGA
 
 
 Repo & Video
