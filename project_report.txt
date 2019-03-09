@@ -17,8 +17,8 @@ UofT E-mail Address: ym.zhong@mail.utoronto.ca
 
 Team Member C (Optional)
 -------------
-First Name:
-Last Name:
+First Name: Julian
+Last Name: He
 Student Number:
 UofT E-mail Address:
 
@@ -33,53 +33,37 @@ UofT E-mail Address: Eric.Tan@mail.utoronto.ca
 Project Plan
 --------
 
-Project Title: Digit Recognizer
+Project Title: Audio Visualizer
 
 Provide a one paragraph description of your project:
 
-Digit Recognizer will have a neural network implemented using Verilog, with the task of recognizing sketched digits sent through
-the USB Blaster Cable from the computer. Depending on the digit drawn, the FPGA board will output a specific digit onto the 
-HEX Display. 
+The waveform visualizer will capture audio input from a microphone and display the waveform on the monitor.
 
 Tasks to implement:
 
-- Train a neural network for the MNIST data.
-	- Design a simple enough architecture so that the board can support it.
-	- Could possibly use a pretrained network.
-	
-- Figure out a way to convert the weights of the network into Verilog code.
-	
-- Figure out how to implement data transfer from the computer to the board.
-	- Define a common protocol between the board and the computer.
-	- Readings: JTAG UART
+- Design a system to record audio from the microphone.
+- Based on the audio recorded, output it to VGA.
 
 What is your plan for the first week?
 
-Task Distribution:
-
-Figure out a common protocol between the board and the computer.
-Subteam A: Figure out how to implement JTAG UART with the board. Implement a few demo cases. 
-Subteam B: Figure out how to generate Verilog code to represent the network.
+Implement a system to capture the audio input, and perhaps save it in temporary memory.
 
 What is your plan for the second week?
 
-Both teams will try to combine the results of the previous week's together.
+If we couldn't complete the previous week's plan, continue that.
+Otherwise, implement a system to output audio from memory to the VGA.
 
 What is your plan for the third week?
 
-Run testing if done, otherwise, attempt to complete previous week's material.
+Complete any unfinished tasks, then perform testing.
 
 What is your backup plan if things don’t work out as planned?
 
-Depending on what went wrong:
-
-If the FPGA part went wrong: No clue what to do.
-If the Data Transfer part went wrong: Hardcode image "values" and test on that.
+If VGA does not work, we could output it to the LEDs instead. 
 
 Weekly Reports
 --------------
 <In this space, provide a report each week of what worked and what didn't, and what (if any) changes were made to your proposal)>
-
 
 [This is an example of a report where things didn't go so well.]
 Week 1:
@@ -88,18 +72,17 @@ Week 1:
 	Had trouble getting the FSM to work (kept getting stuck in state 101, took longer to debug than expected), so we may not be able to add the high score feature. We have updated that in the project description as an optional feature.
 
 
-
 References
 ----------
 <In this space clearly indicate all external sources used in this project. If you used anyone else's code (from previous B58 projects or other sources) clearly indicate what you used and where you found it. Usage of any material not credited in this space will be considered plagiarism. It is absolutely OK and expected to update this section as you progress in the projected.
 
 Make sure to document what you added on top of the existing work, especially if you work with a previous project. What is it that YOU added?>
 
-https://github.com/ZFTurbo/Verilog-Generator-of-Neural-Net-Digit-Detector-for-FPGA
-
+ftp://ftp.intel.com/Pub/fpgaup/pub/Intel_Material/Laboratory_Exercises/Digital_Logic/Verilog/lab12.pdf
+http://www.eecg.toronto.edu/~jayar/ece241_08F/AudioVideoCores/vr/vr.html#id454932
 
 Repo & Video
 ------------
-Repository: https://github.com/jadenyjw/digit-recognizer
+Repository: https://github.com/jadenyjw/waveform-visualizer
 Video: 
 <At the end of the project, provide links to your code repository and presentation video (and passwords if not public>
