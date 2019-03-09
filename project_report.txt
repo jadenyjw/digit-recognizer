@@ -56,6 +56,8 @@ Otherwise, implement a system to output audio from memory to the VGA.
 What is your plan for the third week?
 
 Complete any unfinished tasks, then perform testing.
+If time allows, add a feature where we could load memory and apply transformations on it,
+later to be outputted on the speaker.
 
 What is your backup plan if things don’t work out as planned?
 
