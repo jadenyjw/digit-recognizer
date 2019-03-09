@@ -1,2 +1,2 @@
-# Digit Recognizer
-An MNIST digit recognizer on an FPGA.
+# Waveform Visualizer
+FPGA audio waveform visualizer.
