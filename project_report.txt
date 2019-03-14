@@ -19,8 +19,8 @@ Team Member C (Optional)
 -------------
 First Name: Julian
 Last Name: He
-Student Number:
-UofT E-mail Address:
+Student Number: 1004244070
+UofT E-mail Address: julian.he@mail.utoronto.ca
 
 Team Member D (Optional)
 -------------
