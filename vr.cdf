@@ -1,10 +1,10 @@
-/* Quartus II Version 7.2 Build 203 02/05/2008 Service Pack 2 SJ Full Version */
+/* Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition */
 JedecChain;
 	FileRevision(JESD32A);
 	DefaultMfr(6E);
 
-	P ActionCode(Cfg)
-		Device PartName(EP2C35F672) Path("C:/downloads/vr/") File("vr.sof") MfrSpec(OpMask(1));
+	P ActionCode(Ign)
+		Device PartName(EP4CE115F29) MfrSpec(OpMask(0));
 
 ChainEnd;
 

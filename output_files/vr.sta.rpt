@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for vr
-Thu Mar 14 18:42:53 2019
+Thu Mar 14 18:56:49 2019
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -2645,7 +2645,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Thu Mar 14 18:42:50 2019
+    Info: Processing started: Thu Mar 14 18:56:46 2019
 Info: Command: quartus_sta vr -c vr
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
@@ -2745,9 +2745,9 @@ Info (332114): Report Metastability: Found 1 synchronizer chains.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 1176 megabytes
-    Info: Processing ended: Thu Mar 14 18:42:53 2019
+    Info: Peak virtual memory: 1180 megabytes
+    Info: Processing ended: Thu Mar 14 18:56:49 2019
     Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
 
 

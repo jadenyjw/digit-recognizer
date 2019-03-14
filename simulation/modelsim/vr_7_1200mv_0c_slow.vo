@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition"
 
-// DATE "03/14/2019 18:39:25"
+// DATE "03/14/2019 18:56:51"
 
 // 
 // Device: Altera EP4CE115F29C7 Package FBGA780
@@ -67,7 +67,7 @@ module vr (
 	VGA_R,
 	VGA_G,
 	VGA_B);
-inout 	[15:0] DRAM_DQ;
+output 	[15:0] DRAM_DQ;
 output 	[11:0] DRAM_ADDR;
 output 	DRAM_LDQM;
 output 	DRAM_UDQM;
@@ -88,13 +88,13 @@ output 	[6:0] HEX2;
 output 	[6:0] HEX3;
 output 	[8:0] LEDG;
 output 	[17:0] LEDR;
-inout 	AUD_ADCLRCK;
+output 	AUD_ADCLRCK;
 input 	AUD_ADCDAT;
-inout 	AUD_DACLRCK;
+output 	AUD_DACLRCK;
 output 	AUD_DACDAT;
-inout 	AUD_BCLK;
+output 	AUD_BCLK;
 output 	AUD_XCK;
-inout 	I2C_SDAT;
+output 	I2C_SDAT;
 output 	I2C_SCLK;
 output 	VGA_CLK;
 output 	VGA_HS;

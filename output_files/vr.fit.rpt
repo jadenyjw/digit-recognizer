@@ -1,5 +1,5 @@
 Fitter report for vr
-Thu Mar 14 18:42:44 2019
+Thu Mar 14 18:56:40 2019
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -72,7 +72,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Thu Mar 14 18:42:44 2019       ;
+; Fitter Status                      ; Successful - Thu Mar 14 18:56:39 2019       ;
 ; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                      ; vr                                          ;
 ; Top-level Entity Name              ; vr                                          ;
@@ -4058,8 +4058,8 @@ Warning (169064): Following 3 pins have no output enable or a GND or VCC output 
     Info (169065): Pin AUD_BCLK has a permanently disabled output enable File: /cmshome/wangy841/waveform-visualizer/vr.v Line: 30
 Info (144001): Generated suppressed messages file /cmshome/wangy841/waveform-visualizer/output_files/vr.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 391 warnings
-    Info: Peak virtual memory: 1587 megabytes
-    Info: Processing ended: Thu Mar 14 18:42:44 2019
+    Info: Peak virtual memory: 1591 megabytes
+    Info: Processing ended: Thu Mar 14 18:56:40 2019
     Info: Elapsed time: 00:00:16
     Info: Total CPU time (on all processors): 00:00:17
 
