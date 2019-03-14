@@ -21,7 +21,7 @@ output	[6:0]	HEX1,					//	Seven Segment Digit 1
 output	[6:0]	HEX2,					//	Seven Segment Digit 2
 output	[6:0]	HEX3,					//	Seven Segment Digit 3
 output	[8:0]	LEDG,					//	LED Green[8:0]
-output	reg [17:0]	LEDR,					//	LED Red[17:0]
+output   [17:0]	LEDR,					//	LED Red[17:0]
 
 inout			AUD_ADCLRCK,			//	Audio CODEC ADC LR Clock
 input			AUD_ADCDAT,				//	Audio CODEC ADC Data
@@ -95,7 +95,7 @@ assign LEDR[15:0] = display_data_scaled[15] ? 0 : display_data_scaled;
 assign LEDG[8] = pause ? blink_cnt[25] : 0;
 
 reg [25:0] blink_cnt;
-always @(posedge CLOCK_50) blink_cnt++;
+always @(posedge CLOCK_50) blink_cnt = blink_cnt + 1;
 
 
 // Hook up the modules
@@ -107,11 +107,31 @@ sdram ram(	.zs_addr(DRAM_ADDR), .zs_ba({DRAM_BA_1,DRAM_BA_0}), .zs_cas_n(DRAM_CA
 			.clk(CLOCK_50), .az_addr(ram_addr), .az_be_n(2'b00), .az_cs(1), .az_data(ram_data_in), .az_rd_n(!ram_read), .az_wr_n(!ram_write),
 			.reset_n(!reset), .za_data(ram_data_out), .za_valid(ram_valid), .za_waitrequest(ram_waitrq));
 
-Audio_Controller Audio_Controller (	.clk(CLOCK_50), .reset(reset), .clear_audio_in_memory(), .read_audio_in(read_audio_in), .clear_audio_out_memory(),
-									.left_channel_audio_out({audio_out, 16'b0}), .right_channel_audio_out({audio_out, 16'b0}), .write_audio_out(write_audio_out),
-									.AUD_ADCDAT(AUD_ADCDAT), .AUD_BCLK(AUD_BCLK), .AUD_ADCLRCK(AUD_ADCLRCK), .AUD_DACLRCK(AUD_DACLRCK), .I2C_SDAT(I2C_SDAT),
-									.audio_in_available(audio_in_available), .left_channel_audio_in({audio_in, 16'bx}), .right_channel_audio_in(),
-									.audio_out_allowed(audio_out_allowed), .AUD_XCK(), .AUD_DACDAT(AUD_DACDAT), .I2C_SCLK(I2C_SCLK));
+Audio_Controller Audio_Controller (	
+									.clk(CLOCK_50), 
+									.reset(reset), 
+									.clear_audio_in_memory(), 
+									.read_audio_in(read_audio_in), 
+									.clear_audio_out_memory(),
+									.left_channel_audio_out({audio_out, 16'b0}), 
+									.right_channel_audio_out({audio_out, 16'b0}), 
+									.write_audio_out(write_audio_out),
+									.AUD_ADCDAT(AUD_ADCDAT), 
+									.AUD_BCLK(AUD_BCLK), 
+									.AUD_ADCLRCK(AUD_ADCLRCK), 
+									.AUD_DACLRCK(AUD_DACLRCK), 
+									.I2C_SDAT(I2C_SDAT),
+									.audio_in_available(audio_in_available),
+								    // {audio_in, 16'bx}	
+									.left_channel_audio_in({audio_in}), 
+									.right_channel_audio_in(),
+									.audio_out_allowed(audio_out_allowed), 
+									.AUD_XCK(), 
+									.AUD_DACDAT(AUD_DACDAT), 
+									.I2C_SCLK(I2C_SCLK)
+);
+
+
 defparam
 	Audio_Controller.USE_MIC_INPUT = 1; // 0 - for line in or 1 - for microphone in
 

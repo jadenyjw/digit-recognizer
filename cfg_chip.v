@@ -1,4 +1,4 @@
-module cfg_chip(input clock50, start, output i2c_c, done, inout i2c_d);
+module cfg_chip(input clock50, start, output i2c_c, done, inout reg i2c_d);
 
 	// Shift register holding all the config data
 	reg [0:15] data [0:mcount-1];

@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Failed - Thu Mar 14 18:17:00 2019
+Analysis & Synthesis Status : Successful - Thu Mar 14 18:42:27 2019
 Quartus Prime Version : 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 Revision Name : vr
 Top-level Entity Name : vr
 Family : Cyclone IV E
-Total logic elements : N/A until Partition Merge
-    Total combinational functions : N/A until Partition Merge
-    Dedicated logic registers : N/A until Partition Merge
-Total registers : N/A until Partition Merge
-Total pins : N/A until Partition Merge
-Total virtual pins : N/A until Partition Merge
-Total memory bits : N/A until Partition Merge
-Embedded Multiplier 9-bit elements : N/A until Partition Merge
-Total PLLs : N/A until Partition Merge
+Total logic elements : 1,243
+    Total combinational functions : 1,134
+    Dedicated logic registers : 620
+Total registers : 620
+Total pins : 159
+Total virtual pins : 0
+Total memory bits : 87,040
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1

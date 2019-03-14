@@ -1,6 +1,6 @@
 module playrec(
-	input			CLOCK_50, reset,
-	output	[21:0]	ram_addr,
+	input	CLOCK_50, reset,
+	output reg	[21:0]	ram_addr,
 	output	[15:0]	ram_data_in,
 	output			ram_read, ram_write,
 	input	[15:0]	ram_data_out,
@@ -56,7 +56,8 @@ always @(posedge CLOCK_50)
 
 // Ram address counter
 always @(posedge CLOCK_50)
-	if(reset) ram_addr <= 0;
+	if(reset) 
+		ram_addr <= 0;
 	else
 		case(streg)
 			st_start: ram_addr <= 0;

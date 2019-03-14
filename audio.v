@@ -3,7 +3,7 @@ module audio(
 input CLOCK_50, reset,
 input [15:0] aout,
 output reg [15:0] ain,
-output reg aout_avail, ain_new,
+output aout_avail, ain_new,
 
 input			AUD_ADCLRCK,			//	Audio CODEC ADC LR Clock
 input			AUD_ADCDAT,				//	Audio CODEC ADC Data
@@ -73,7 +73,7 @@ always @(posedge CLOCK_50)
 
 reg [1:0] xck;
 
-always @(posedge CLOCK_50) xck++;
+always @(posedge CLOCK_50) xck = xck + 1;
 
 assign AUD_XCK = xck[1];
 
