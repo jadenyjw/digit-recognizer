@@ -43,6 +43,7 @@ Tasks to implement:
 
 - Design a system to record audio from the microphone.
 - Based on the audio recorded, output it to VGA.
+- When stored in RAM, apply transformations to the audio.
 
 What is your plan for the first week?
 
@@ -69,10 +70,13 @@ Weekly Reports
 
 [This is an example of a report where things didn't go so well.]
 Week 1:
-	We added and tested the sensors and the main FSM.
-	The distance sensor we had intended to use didn't work as expected (wasn't precise enough at further distances, only seems to work accurately within 5-10cm), so instead we've decided to change the project to use a light sensor instead.
-	Had trouble getting the FSM to work (kept getting stuck in state 101, took longer to debug than expected), so we may not be able to add the high score feature. We have updated that in the project description as an optional feature.
-
+	We got audio detection from the microphone using the Audio Controller to work. VGA output also works.
+	What didn't work was playing back the audio. The problem could potentially be at one or more of these 3 points:
+	- Storing the audio into memory.
+	- Reading the audio from memory.
+	- Processing the output audio into the speaker.
+	
+	No changes are applied to the proposal.
 
 References
 ----------
