@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition"
 
-// DATE "03/21/2019 19:31:17"
+// DATE "03/21/2019 19:38:34"
 
 // 
 // Device: Altera EP4CE115F29C7 Package FBGA780
@@ -46,10 +46,10 @@ input 	CLOCK_50;
 input 	CLOCK_27;
 input 	[3:0] KEY;
 input 	AUD_ADCDAT;
-inout 	AUD_BCLK;
-inout 	AUD_ADCLRCK;
-inout 	AUD_DACLRCK;
-inout 	I2C_SDAT;
+output 	AUD_BCLK;
+output 	AUD_ADCLRCK;
+output 	AUD_DACLRCK;
+output 	I2C_SDAT;
 output 	AUD_XCK;
 output 	AUD_DACDAT;
 output 	I2C_SCLK;
