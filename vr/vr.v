@@ -65,10 +65,19 @@ wire [3:0] scale = SW[8:5];
 
 wire [15:0] display_data = play ? audio_out : audio_in;
 reg [15:0] display_data_scaled;
-		$dumpfile("~/test.vcd");
-    $dumpvars(0,stimulus);
 
-// And all we needed was a sign-extended shift...
+// test module 
+initial begin
+	$display("some ------> %f", audio_in);
+        $dumpfile("dump.vcd");
+        $dumpvars(0, vr);
+end
+
+	
+	
+	
+	
+	// And all we needed was a sign-extended shift...
 always @(*)
 	case(scale)
 		0: display_data_scaled = display_data;
@@ -90,7 +99,6 @@ always @(*)
 	endcase
 
 
-
 // Blinkenlights
 
 assign LEDR[15:0] = display_data_scaled[15] ? 0 : display_data_scaled;
@@ -106,7 +114,7 @@ SDRAM_PLL pll(.inclk0(CLOCK_50), .c0(DRAM_CLK), .c1(VGA_CLK), .c2(AUD_XCK));
 
 sdram ram(	.zs_addr(DRAM_ADDR), .zs_ba({DRAM_BA_1,DRAM_BA_0}), .zs_cas_n(DRAM_CAS_N), .zs_cke(DRAM_CKE), .zs_cs_n(DRAM_CS_N), .zs_dq(DRAM_DQ),
 			.zs_dqm({DRAM_UDQM,DRAM_LDQM}), .zs_ras_n(DRAM_RAS_N), .zs_we_n(DRAM_WE_N),
-			.clk(CLOCK_50), .az_addr(ram_addr), .az_be_n(2'b00), .az_cs(1'b1), .az_data(ram_data_in), .az_rd_n(!ram_read), .az_wr_n(!ram_write),
+			.clk(CLOCK_50), .az_addr(ram_addr), .az_be_n(2'b00), .az_cs(1'b1), .az_data(16'b1111_1111_1111_1111), .az_rd_n(!ram_read), .az_wr_n(!ram_write),
 			.reset_n(!reset), .za_data(ram_data_out), .za_valid(ram_valid), .za_waitrequest(ram_waitrq));
 
 Audio_Controller Audio_Controller (	.clk(CLOCK_50), .reset(reset), .clear_audio_in_memory(), .read_audio_in(read_audio_in), .clear_audio_out_memory(),
