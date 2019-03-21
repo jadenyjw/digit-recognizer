@@ -103,7 +103,7 @@ scfifo	Sync_FIFO (
 	.full			(fifo_is_full),
 	.usedw			(words_used),
 	
-	.q				({read_data, 16'bx})
+	.q				(read_data)
 
 	// Unused
 	// synopsys translate_off

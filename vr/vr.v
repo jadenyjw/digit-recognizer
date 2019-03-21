@@ -49,7 +49,7 @@ wire [21:0] ram_addr;
 wire [15:0] ram_data_in, ram_data_out;
 wire ram_valid, ram_waitrq, ram_read, ram_write;
 
-wire [15:0] audio_out, audio_in;
+wire [32:1] audio_out, audio_in;
 wire audio_out_allowed, audio_in_available, write_audio_out, read_audio_in;
 
 wire vga_color;
@@ -65,6 +65,8 @@ wire [3:0] scale = SW[8:5];
 
 wire [15:0] display_data = play ? audio_out : audio_in;
 reg [15:0] display_data_scaled;
+		$dumpfile("~/test.vcd");
+    $dumpvars(0,stimulus);
 
 // And all we needed was a sign-extended shift...
 always @(*)
@@ -104,11 +106,11 @@ SDRAM_PLL pll(.inclk0(CLOCK_50), .c0(DRAM_CLK), .c1(VGA_CLK), .c2(AUD_XCK));
 
 sdram ram(	.zs_addr(DRAM_ADDR), .zs_ba({DRAM_BA_1,DRAM_BA_0}), .zs_cas_n(DRAM_CAS_N), .zs_cke(DRAM_CKE), .zs_cs_n(DRAM_CS_N), .zs_dq(DRAM_DQ),
 			.zs_dqm({DRAM_UDQM,DRAM_LDQM}), .zs_ras_n(DRAM_RAS_N), .zs_we_n(DRAM_WE_N),
-			.clk(CLOCK_50), .az_addr(ram_addr), .az_be_n(2'b00), .az_cs(1), .az_data(ram_data_in), .az_rd_n(!ram_read), .az_wr_n(!ram_write),
+			.clk(CLOCK_50), .az_addr(ram_addr), .az_be_n(2'b00), .az_cs(1'b1), .az_data(ram_data_in), .az_rd_n(!ram_read), .az_wr_n(!ram_write),
 			.reset_n(!reset), .za_data(ram_data_out), .za_valid(ram_valid), .za_waitrequest(ram_waitrq));
 
 Audio_Controller Audio_Controller (	.clk(CLOCK_50), .reset(reset), .clear_audio_in_memory(), .read_audio_in(read_audio_in), .clear_audio_out_memory(),
-									.left_channel_audio_out({audio_out, 16'b0}), .right_channel_audio_out({audio_out, 16'b0}), .write_audio_out(write_audio_out),
+									.left_channel_audio_out(audio_out), .right_channel_audio_out(audio_out), .write_audio_out(write_audio_out),
 									.AUD_ADCDAT(AUD_ADCDAT), .AUD_BCLK(AUD_BCLK), .AUD_ADCLRCK(AUD_ADCLRCK), .AUD_DACLRCK(AUD_DACLRCK), .I2C_SDAT(I2C_SDAT),
 									.audio_in_available(audio_in_available), .left_channel_audio_in(audio_in), .right_channel_audio_in(),
 									.audio_out_allowed(audio_out_allowed), .AUD_XCK(), .AUD_DACDAT(AUD_DACDAT), .I2C_SCLK(I2C_SCLK));
@@ -119,25 +121,25 @@ defparam
 playrec rc(	CLOCK_50, reset, ram_addr, ram_data_in, ram_read, ram_write, ram_data_out, ram_valid, ram_waitrq,
 			audio_out, audio_in, audio_out_allowed, audio_in_available, write_audio_out, read_audio_in, play, record, pause, speed);
 
-vga_adapter VGA(
-			.resetn(!reset),
-			.clock(CLOCK_50),
-			.colour(vga_color),
-			.x(vga_x),
-			.y(vga_y),
-			.plot(vga_plot),
-			.VGA_R(VGA_R),
-			.VGA_G(VGA_G),
-			.VGA_B(VGA_B),
-			.VGA_HS(VGA_HS),
-			.VGA_VS(VGA_VS),
-			.VGA_BLANK(VGA_BLANK),
-			.VGA_SYNC(VGA_SYNC),
-			.clock_25(VGA_CLK));
-		defparam VGA.RESOLUTION = "320x240";
-		defparam VGA.MONOCHROME = "TRUE";
+//vga_adapter VGA(
+//			.resetn(!reset),
+//			.clock(CLOCK_50),
+//			.colour(vga_color),
+//			.x(vga_x),
+//			.y(vga_y),
+//			.plot(vga_plot),
+//			.VGA_R(VGA_R),
+//			.VGA_G(VGA_G),
+//			.VGA_B(VGA_B),
+//			.VGA_HS(VGA_HS),
+//			.VGA_VS(VGA_VS),
+//			.VGA_BLANK(VGA_BLANK),
+//			.VGA_SYNC(VGA_SYNC),
+//			.clock_25(VGA_CLK));
+//		defparam VGA.RESOLUTION = "320x240";
+//		defparam VGA.MONOCHROME = "TRUE";
 
-display disp(CLOCK_50, reset, pause, display_data_scaled, vga_x, vga_y, vga_color, vga_plot);
+//display disp(CLOCK_50, reset, pause, display_data_scaled, vga_x, vga_y, vga_color, vga_plot);
 
 
 hex2seg h0(ram_addr[17:14], HEX2);

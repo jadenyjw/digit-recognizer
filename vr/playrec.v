@@ -6,8 +6,8 @@ module playrec(
 	input	[15:0]	ram_data_out,
 	input			ram_valid, ram_waitrq,
 
-	output	[15:0]	audio_out,
-	input	[15:0]	audio_in,
+	output	[32:1]	audio_out,
+	input	[32:1]	audio_in,
 	input			audio_out_allowed, audio_in_available,
 	output			write_audio_out, read_audio_in,
 
