@@ -1,5 +1,5 @@
 Flow report for DE2_Audio_Example
-Thu Mar 21 19:38:34 2019
+Thu Mar 21 20:54:11 2019
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Thu Mar 21 19:38:34 2019       ;
+; Flow Status                        ; Successful - Thu Mar 21 20:54:11 2019       ;
 ; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                      ; DE2_Audio_Example                           ;
 ; Top-level Entity Name              ; DE2_Audio_Example                           ;
@@ -65,32 +65,34 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/21/2019 19:37:56 ;
+; Start date & time ; 03/21/2019 20:53:32 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; DE2_Audio_Example   ;
 +-------------------+---------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                     ;
-+-------------------------------------+---------------------------------+---------------+-------------+----------------+
-; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id     ;
-+-------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 268891675993461.155321147615309 ; --            ; --          ; --             ;
-; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                     ; --            ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)       ; <None>        ; --          ; --             ;
-; EDA_TIME_SCALE                      ; 1 ps                            ; --            ; --          ; eda_simulation ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                              ; --            ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                               ; --            ; --          ; --             ;
-; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                            ; --            ; --          ; --             ;
-; PARTITION_COLOR                     ; 2147039                         ; --            ; --          ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING           ; --            ; --          ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                          ; --            ; --          ; Top            ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                    ; --            ; --          ; --             ;
-; USE_GENERATED_PHYSICAL_CONSTRAINTS  ; Off                             ; --            ; --          ; eda_palace     ;
-; VERILOG_INPUT_VERSION               ; SystemVerilog_2005              ; Verilog_2001  ; --          ; --             ;
-; VERILOG_SHOW_LMF_MAPPING_MESSAGES   ; Off                             ; --            ; --          ; --             ;
-+-------------------------------------+---------------------------------+---------------+-------------+----------------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                           ;
++-------------------------------------+---------------------------------------+---------------+-------------+----------------+
+; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
++-------------------------------------+---------------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 268891675945999.155321601205786       ; --            ; --          ; --             ;
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                           ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)             ; <None>        ; --          ; --             ;
+; EDA_TIME_SCALE                      ; 1 ps                                  ; --            ; --          ; eda_simulation ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --            ; --          ; --             ;
+; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                  ; --            ; --          ; --             ;
+; PARTITION_COLOR                     ; 2147039                               ; --            ; --          ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; --          ; Top            ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                   ; --            ; --          ; --             ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --          ; --             ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                          ; --            ; --          ; --             ;
+; USE_GENERATED_PHYSICAL_CONSTRAINTS  ; Off                                   ; --            ; --          ; eda_palace     ;
+; VERILOG_INPUT_VERSION               ; SystemVerilog_2005                    ; Verilog_2001  ; --          ; --             ;
+; VERILOG_SHOW_LMF_MAPPING_MESSAGES   ; Off                                   ; --            ; --          ; --             ;
++-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -98,12 +100,12 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:12     ; 1.0                     ; 1224 MB             ; 00:00:22                           ;
-; Fitter                    ; 00:00:15     ; 1.0                     ; 1576 MB             ; 00:00:17                           ;
-; Assembler                 ; 00:00:03     ; 1.0                     ; 1079 MB             ; 00:00:03                           ;
-; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 1162 MB             ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 1330 MB             ; 00:00:01                           ;
-; Total                     ; 00:00:34     ; --                      ; --                  ; 00:00:45                           ;
+; Analysis & Synthesis      ; 00:00:12     ; 1.0                     ; 1224 MB             ; 00:00:23                           ;
+; Fitter                    ; 00:00:16     ; 1.0                     ; 1576 MB             ; 00:00:17                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 1077 MB             ; 00:00:03                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 1165 MB             ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 1329 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:35     ; --                      ; --                  ; 00:00:46                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -112,11 +114,11 @@ agreement for further details.
 +---------------------------+------------------+----------------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name        ; OS Version ; Processor type ;
 +---------------------------+------------------+----------------+------------+----------------+
-; Analysis & Synthesis      ; IITS-I402-14     ; Ubuntu 16.04.5 ; 16         ; x86_64         ;
-; Fitter                    ; IITS-I402-14     ; Ubuntu 16.04.5 ; 16         ; x86_64         ;
-; Assembler                 ; IITS-I402-14     ; Ubuntu 16.04.5 ; 16         ; x86_64         ;
-; TimeQuest Timing Analyzer ; IITS-I402-14     ; Ubuntu 16.04.5 ; 16         ; x86_64         ;
-; EDA Netlist Writer        ; IITS-I402-14     ; Ubuntu 16.04.5 ; 16         ; x86_64         ;
+; Analysis & Synthesis      ; IITS-I402-18     ; Ubuntu 16.04.5 ; 16         ; x86_64         ;
+; Fitter                    ; IITS-I402-18     ; Ubuntu 16.04.5 ; 16         ; x86_64         ;
+; Assembler                 ; IITS-I402-18     ; Ubuntu 16.04.5 ; 16         ; x86_64         ;
+; TimeQuest Timing Analyzer ; IITS-I402-18     ; Ubuntu 16.04.5 ; 16         ; x86_64         ;
+; EDA Netlist Writer        ; IITS-I402-18     ; Ubuntu 16.04.5 ; 16         ; x86_64         ;
 +---------------------------+------------------+----------------+------------+----------------+
 
 
