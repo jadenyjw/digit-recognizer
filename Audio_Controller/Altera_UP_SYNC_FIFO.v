@@ -86,6 +86,17 @@ output		[DATA_WIDTH:1]	read_data;
  *****************************************************************************/
 
 
+auto_tune Auto(
+	.clock_50	(clk),
+	.reset		(1'b0),
+	.left_audio_in		(write_data),
+	.right_audio_in		(write_data),
+	.left_audio_out		(read_data),
+	.right_audio_out		(read_data)
+)
+
+
+
 scfifo	Sync_FIFO (
 	// Inputs
 	.clock			(clk),
