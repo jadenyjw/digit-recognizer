@@ -1,5 +1,5 @@
 Fitter report for DE2_Audio_Example
-Mon Mar 25 11:54:51 2019
+Mon Mar 25 18:09:31 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -73,7 +73,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Mon Mar 25 11:54:51 2019       ;
+; Fitter Status                      ; Successful - Mon Mar 25 18:09:30 2019       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; DE2_Audio_Example                           ;
 ; Top-level Entity Name              ; DE2_Audio_Example                           ;
@@ -6093,7 +6093,7 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "VGA_R[8]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_R[9]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_SYNC" is assigned to location or region, but does not exist in design
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:03
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -6106,12 +6106,12 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:03
-Info (11888): Total time spent on timing analysis during the Fitter is 1.06 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 1.04 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Warning (169064): Following 3 pins have no output enable or a GND or VCC output enable - later changes to this connectivity may change fitting results
     Info (169065): Pin AUD_ADCLRCK has a permanently disabled output enable File: /home/jaden/waveform-visualizer/DE2_Audio_Example.v Line: 15
@@ -6119,8 +6119,8 @@ Warning (169064): Following 3 pins have no output enable or a GND or VCC output 
     Info (169065): Pin AUD_BCLK has a permanently disabled output enable File: /home/jaden/waveform-visualizer/DE2_Audio_Example.v Line: 19
 Info (144001): Generated suppressed messages file /home/jaden/waveform-visualizer/output_files/DE2_Audio_Example.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 560 warnings
-    Info: Peak virtual memory: 1322 megabytes
-    Info: Processing ended: Mon Mar 25 11:54:52 2019
+    Info: Peak virtual memory: 1323 megabytes
+    Info: Processing ended: Mon Mar 25 18:09:31 2019
     Info: Elapsed time: 00:00:20
     Info: Total CPU time (on all processors): 00:00:21
 

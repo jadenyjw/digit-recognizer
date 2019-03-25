@@ -1,5 +1,5 @@
 Flow report for DE2_Audio_Example
-Mon Mar 25 11:55:01 2019
+Mon Mar 25 18:09:41 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Mon Mar 25 11:55:01 2019       ;
+; Flow Status                        ; Successful - Mon Mar 25 18:09:41 2019       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; DE2_Audio_Example                           ;
 ; Top-level Entity Name              ; DE2_Audio_Example                           ;
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/25/2019 11:54:17 ;
+; Start date & time ; 03/25/2019 18:08:55 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; DE2_Audio_Example   ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 92962971176141.155352925702996         ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 92962971176141.155355173501455         ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
@@ -100,11 +100,11 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:14     ; 1.0                     ; 949 MB              ; 00:00:29                           ;
-; Fitter               ; 00:00:19     ; 1.0                     ; 1322 MB             ; 00:00:21                           ;
-; Assembler            ; 00:00:04     ; 1.0                     ; 808 MB              ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:03     ; 1.0                     ; 857 MB              ; 00:00:03                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 1053 MB             ; 00:00:02                           ;
+; Analysis & Synthesis ; 00:00:15     ; 1.0                     ; 950 MB              ; 00:00:29                           ;
+; Fitter               ; 00:00:19     ; 1.0                     ; 1323 MB             ; 00:00:21                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 807 MB              ; 00:00:03                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 859 MB              ; 00:00:03                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 1056 MB             ; 00:00:02                           ;
 ; Total                ; 00:00:41     ; --                      ; --                  ; 00:00:58                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 

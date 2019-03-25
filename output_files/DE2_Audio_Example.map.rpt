@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE2_Audio_Example
-Mon Mar 25 11:54:31 2019
+Mon Mar 25 18:09:11 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -83,7 +83,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Mar 25 11:54:31 2019       ;
+; Analysis & Synthesis Status        ; Successful - Mon Mar 25 18:09:10 2019       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; DE2_Audio_Example                           ;
 ; Top-level Entity Name              ; DE2_Audio_Example                           ;
@@ -1830,9 +1830,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon Mar 25 11:54:17 2019
+    Info: Processing started: Mon Mar 25 18:08:55 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off waveform-visualizer -c DE2_Audio_Example
-Info (125069): Default assignment values were changed in the current version of the Quartus Prime software -- changes to default assignments values are contained in file /opt/altera/18.1/quartus/linux64/assignment_defaults.qdf
 Warning (12473): User specified to use only one processors but 2 processors were detected which could be used to decrease run time.
 Info (12021): Found 1 design units, including 1 entities, in source file vga_adapter/vga_pll.v
     Info (12023): Found entity 1: vga_pll File: /home/jaden/waveform-visualizer/vga_adapter/vga_pll.v Line: 36
@@ -2177,9 +2176,9 @@ Info (21057): Implemented 1079 device resources after synthesis - the final reso
     Info (21064): Implemented 137 RAM segments
     Info (21065): Implemented 2 PLLs
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 130 warnings
-    Info: Peak virtual memory: 995 megabytes
-    Info: Processing ended: Mon Mar 25 11:54:31 2019
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:29
+    Info: Peak virtual memory: 996 megabytes
+    Info: Processing ended: Mon Mar 25 18:09:11 2019
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:30
 
 
