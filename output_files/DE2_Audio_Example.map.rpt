@@ -1,6 +1,6 @@
 Analysis & Synthesis report for DE2_Audio_Example
-Thu Mar 21 20:53:45 2019
-Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+Mon Mar 25 11:46:57 2019
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
 ---------------------
@@ -55,130 +55,128 @@ Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
-Your use of Altera Corporation's design tools, logic functions 
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
-to the terms and conditions of the Altera Program License 
-Subscription Agreement, the Altera Quartus Prime License Agreement,
-the Altera MegaCore Function License Agreement, or other 
-applicable license agreement, including, without limitation, 
-that your use is for the sole purpose of programming logic 
-devices manufactured by Altera and sold by Altera or its 
-authorized distributors.  Please refer to the applicable 
-agreement for further details.
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
 
 
 
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Mar 21 20:53:44 2019       ;
-; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
+; Analysis & Synthesis Status        ; Successful - Mon Mar 25 11:46:57 2019       ;
+; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; DE2_Audio_Example                           ;
 ; Top-level Entity Name              ; DE2_Audio_Example                           ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 616                                         ;
-;     Total combinational functions  ; 592                                         ;
-;     Dedicated logic registers      ; 317                                         ;
-; Total registers                    ; 317                                         ;
+; Total logic elements               ; 566                                         ;
+;     Total combinational functions  ; 542                                         ;
+;     Dedicated logic registers      ; 300                                         ;
+; Total registers                    ; 300                                         ;
 ; Total pins                         ; 18                                          ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 16,384                                      ;
+; Total memory bits                  ; 11,264                                      ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
 ; Total PLLs                         ; 1                                           ;
 +------------------------------------+---------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                        ;
-+----------------------------------------------------------------------------+--------------------+--------------------+
-; Option                                                                     ; Setting            ; Default Value      ;
-+----------------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                                     ; EP4CE115F29C7      ;                    ;
-; Top-level entity name                                                      ; DE2_Audio_Example  ; DE2_Audio_Example  ;
-; Family name                                                                ; Cyclone IV E       ; Stratix II         ;
-; Verilog Show LMF Mapping Messages                                          ; Off                ;                    ;
-; Verilog Version                                                            ; SystemVerilog_2005 ; Verilog_2001       ;
-; Use smart compilation                                                      ; Off                ; Off                ;
-; Maximum processors allowed for parallel compilation                        ; 1                  ; 1                  ;
-; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
-; Enable compact report table                                                ; Off                ; Off                ;
-; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
-; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
-; Preserve fewer node names                                                  ; On                 ; On                 ;
-; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
-; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
-; State Machine Processing                                                   ; Auto               ; Auto               ;
-; Safe State Machine                                                         ; Off                ; Off                ;
-; Extract Verilog State Machines                                             ; On                 ; On                 ;
-; Extract VHDL State Machines                                                ; On                 ; On                 ;
-; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
-; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
-; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
-; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
-; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
-; Parallel Synthesis                                                         ; On                 ; On                 ;
-; DSP Block Balancing                                                        ; Auto               ; Auto               ;
-; NOT Gate Push-Back                                                         ; On                 ; On                 ;
-; Power-Up Don't Care                                                        ; On                 ; On                 ;
-; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
-; Remove Duplicate Registers                                                 ; On                 ; On                 ;
-; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
-; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
-; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
-; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
-; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
-; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
-; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
-; Optimization Technique                                                     ; Balanced           ; Balanced           ;
-; Carry Chain Length                                                         ; 70                 ; 70                 ;
-; Auto Carry Chains                                                          ; On                 ; On                 ;
-; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
-; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
-; Auto ROM Replacement                                                       ; On                 ; On                 ;
-; Auto RAM Replacement                                                       ; On                 ; On                 ;
-; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
-; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
-; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
-; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
-; Strict RAM Replacement                                                     ; Off                ; Off                ;
-; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
-; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
-; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
-; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
-; Auto Resource Sharing                                                      ; Off                ; Off                ;
-; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
-; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
-; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
-; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
-; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
-; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
-; Report Parameter Settings                                                  ; On                 ; On                 ;
-; Report Source Assignments                                                  ; On                 ; On                 ;
-; Report Connectivity Checks                                                 ; On                 ; On                 ;
-; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
-; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
-; PowerPlay Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
-; HDL message level                                                          ; Level2             ; Level2             ;
-; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
-; Number of Removed Registers Reported in Synthesis Report                   ; 100                ; 100                ;
-; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
-; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
-; Clock MUX Protection                                                       ; On                 ; On                 ;
-; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
-; Block Design Naming                                                        ; Auto               ; Auto               ;
-; SDC constraint protection                                                  ; Off                ; Off                ;
-; Synthesis Effort                                                           ; Auto               ; Auto               ;
-; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
-; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
-; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
-; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
-; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
-; Synthesis Seed                                                             ; 1                  ; 1                  ;
-+----------------------------------------------------------------------------+--------------------+--------------------+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EP4CE115F29C7      ;                    ;
+; Top-level entity name                                            ; DE2_Audio_Example  ; DE2_Audio_Example  ;
+; Family name                                                      ; Cyclone IV E       ; Stratix II         ;
+; Verilog Show LMF Mapping Messages                                ; Off                ;                    ;
+; Verilog Version                                                  ; SystemVerilog_2005 ; Verilog_2001       ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Maximum processors allowed for parallel compilation              ; 1                  ; 1                  ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 100                ; 100                ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
 
 
 Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
@@ -192,41 +190,41 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                           ;
-+----------------------------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path                   ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                     ; Library ;
-+----------------------------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------+---------+
-; auto_tune.v                                        ; yes             ; User Verilog HDL File        ; /cmshome/taneric1/Desktop/waveform-visualizer/auto_tune.v                                        ;         ;
-; avconf/avconf.v                                    ; yes             ; User Verilog HDL File        ; /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v                                    ;         ;
-; avconf/I2C_Controller.v                            ; yes             ; User Verilog HDL File        ; /cmshome/taneric1/Desktop/waveform-visualizer/avconf/I2C_Controller.v                            ;         ;
-; Audio_Controller/Altera_UP_Audio_Bit_Counter.v     ; yes             ; User Verilog HDL File        ; /cmshome/taneric1/Desktop/waveform-visualizer/Audio_Controller/Altera_UP_Audio_Bit_Counter.v     ;         ;
-; Audio_Controller/Altera_UP_Audio_In_Deserializer.v ; yes             ; User Verilog HDL File        ; /cmshome/taneric1/Desktop/waveform-visualizer/Audio_Controller/Altera_UP_Audio_In_Deserializer.v ;         ;
-; Audio_Controller/Altera_UP_Audio_Out_Serializer.v  ; yes             ; User Verilog HDL File        ; /cmshome/taneric1/Desktop/waveform-visualizer/Audio_Controller/Altera_UP_Audio_Out_Serializer.v  ;         ;
-; Audio_Controller/Altera_UP_Clock_Edge.v            ; yes             ; User Verilog HDL File        ; /cmshome/taneric1/Desktop/waveform-visualizer/Audio_Controller/Altera_UP_Clock_Edge.v            ;         ;
-; Audio_Controller/Altera_UP_SYNC_FIFO.v             ; yes             ; User Verilog HDL File        ; /cmshome/taneric1/Desktop/waveform-visualizer/Audio_Controller/Altera_UP_SYNC_FIFO.v             ;         ;
-; Audio_Controller/Audio_Clock.v                     ; yes             ; User Wizard-Generated File   ; /cmshome/taneric1/Desktop/waveform-visualizer/Audio_Controller/Audio_Clock.v                     ;         ;
-; Audio_Controller/Audio_Controller.v                ; yes             ; User Verilog HDL File        ; /cmshome/taneric1/Desktop/waveform-visualizer/Audio_Controller/Audio_Controller.v                ;         ;
-; DE2_Audio_Example.v                                ; yes             ; User Verilog HDL File        ; /cmshome/taneric1/Desktop/waveform-visualizer/DE2_Audio_Example.v                                ;         ;
-; scfifo.tdf                                         ; yes             ; Megafunction                 ; /usr/local/cms/altera_lite/16.0/quartus/libraries/megafunctions/scfifo.tdf                       ;         ;
-; a_regfifo.inc                                      ; yes             ; Megafunction                 ; /usr/local/cms/altera_lite/16.0/quartus/libraries/megafunctions/a_regfifo.inc                    ;         ;
-; a_dpfifo.inc                                       ; yes             ; Megafunction                 ; /usr/local/cms/altera_lite/16.0/quartus/libraries/megafunctions/a_dpfifo.inc                     ;         ;
-; a_i2fifo.inc                                       ; yes             ; Megafunction                 ; /usr/local/cms/altera_lite/16.0/quartus/libraries/megafunctions/a_i2fifo.inc                     ;         ;
-; a_fffifo.inc                                       ; yes             ; Megafunction                 ; /usr/local/cms/altera_lite/16.0/quartus/libraries/megafunctions/a_fffifo.inc                     ;         ;
-; a_f2fifo.inc                                       ; yes             ; Megafunction                 ; /usr/local/cms/altera_lite/16.0/quartus/libraries/megafunctions/a_f2fifo.inc                     ;         ;
-; aglobal160.inc                                     ; yes             ; Megafunction                 ; /usr/local/cms/altera_lite/16.0/quartus/libraries/megafunctions/aglobal160.inc                   ;         ;
-; db/scfifo_n441.tdf                                 ; yes             ; Auto-Generated Megafunction  ; /cmshome/taneric1/Desktop/waveform-visualizer/db/scfifo_n441.tdf                                 ;         ;
-; db/a_dpfifo_as31.tdf                               ; yes             ; Auto-Generated Megafunction  ; /cmshome/taneric1/Desktop/waveform-visualizer/db/a_dpfifo_as31.tdf                               ;         ;
-; db/altsyncram_7tb1.tdf                             ; yes             ; Auto-Generated Megafunction  ; /cmshome/taneric1/Desktop/waveform-visualizer/db/altsyncram_7tb1.tdf                             ;         ;
-; db/cmpr_ks8.tdf                                    ; yes             ; Auto-Generated Megafunction  ; /cmshome/taneric1/Desktop/waveform-visualizer/db/cmpr_ks8.tdf                                    ;         ;
-; db/cntr_v9b.tdf                                    ; yes             ; Auto-Generated Megafunction  ; /cmshome/taneric1/Desktop/waveform-visualizer/db/cntr_v9b.tdf                                    ;         ;
-; db/cntr_ca7.tdf                                    ; yes             ; Auto-Generated Megafunction  ; /cmshome/taneric1/Desktop/waveform-visualizer/db/cntr_ca7.tdf                                    ;         ;
-; db/cntr_0ab.tdf                                    ; yes             ; Auto-Generated Megafunction  ; /cmshome/taneric1/Desktop/waveform-visualizer/db/cntr_0ab.tdf                                    ;         ;
-; altpll.tdf                                         ; yes             ; Megafunction                 ; /usr/local/cms/altera_lite/16.0/quartus/libraries/megafunctions/altpll.tdf                       ;         ;
-; stratix_pll.inc                                    ; yes             ; Megafunction                 ; /usr/local/cms/altera_lite/16.0/quartus/libraries/megafunctions/stratix_pll.inc                  ;         ;
-; stratixii_pll.inc                                  ; yes             ; Megafunction                 ; /usr/local/cms/altera_lite/16.0/quartus/libraries/megafunctions/stratixii_pll.inc                ;         ;
-; cycloneii_pll.inc                                  ; yes             ; Megafunction                 ; /usr/local/cms/altera_lite/16.0/quartus/libraries/megafunctions/cycloneii_pll.inc                ;         ;
-+----------------------------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                           ;
++----------------------------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path                   ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                     ; Library ;
++----------------------------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------+---------+
+; auto_tune.v                                        ; yes             ; User Verilog HDL File        ; /home/zym/waveform-visualizer/auto_tune.v                                        ;         ;
+; avconf/avconf.v                                    ; yes             ; User Verilog HDL File        ; /home/zym/waveform-visualizer/avconf/avconf.v                                    ;         ;
+; avconf/I2C_Controller.v                            ; yes             ; User Verilog HDL File        ; /home/zym/waveform-visualizer/avconf/I2C_Controller.v                            ;         ;
+; Audio_Controller/Altera_UP_Audio_Bit_Counter.v     ; yes             ; User Verilog HDL File        ; /home/zym/waveform-visualizer/Audio_Controller/Altera_UP_Audio_Bit_Counter.v     ;         ;
+; Audio_Controller/Altera_UP_Audio_In_Deserializer.v ; yes             ; User Verilog HDL File        ; /home/zym/waveform-visualizer/Audio_Controller/Altera_UP_Audio_In_Deserializer.v ;         ;
+; Audio_Controller/Altera_UP_Audio_Out_Serializer.v  ; yes             ; User Verilog HDL File        ; /home/zym/waveform-visualizer/Audio_Controller/Altera_UP_Audio_Out_Serializer.v  ;         ;
+; Audio_Controller/Altera_UP_Clock_Edge.v            ; yes             ; User Verilog HDL File        ; /home/zym/waveform-visualizer/Audio_Controller/Altera_UP_Clock_Edge.v            ;         ;
+; Audio_Controller/Altera_UP_SYNC_FIFO.v             ; yes             ; User Verilog HDL File        ; /home/zym/waveform-visualizer/Audio_Controller/Altera_UP_SYNC_FIFO.v             ;         ;
+; Audio_Controller/Audio_Clock.v                     ; yes             ; User Wizard-Generated File   ; /home/zym/waveform-visualizer/Audio_Controller/Audio_Clock.v                     ;         ;
+; Audio_Controller/Audio_Controller.v                ; yes             ; User Verilog HDL File        ; /home/zym/waveform-visualizer/Audio_Controller/Audio_Controller.v                ;         ;
+; DE2_Audio_Example.v                                ; yes             ; User Verilog HDL File        ; /home/zym/waveform-visualizer/DE2_Audio_Example.v                                ;         ;
+; scfifo.tdf                                         ; yes             ; Megafunction                 ; /opt/altera/18.1/quartus/libraries/megafunctions/scfifo.tdf                      ;         ;
+; a_regfifo.inc                                      ; yes             ; Megafunction                 ; /opt/altera/18.1/quartus/libraries/megafunctions/a_regfifo.inc                   ;         ;
+; a_dpfifo.inc                                       ; yes             ; Megafunction                 ; /opt/altera/18.1/quartus/libraries/megafunctions/a_dpfifo.inc                    ;         ;
+; a_i2fifo.inc                                       ; yes             ; Megafunction                 ; /opt/altera/18.1/quartus/libraries/megafunctions/a_i2fifo.inc                    ;         ;
+; a_fffifo.inc                                       ; yes             ; Megafunction                 ; /opt/altera/18.1/quartus/libraries/megafunctions/a_fffifo.inc                    ;         ;
+; a_f2fifo.inc                                       ; yes             ; Megafunction                 ; /opt/altera/18.1/quartus/libraries/megafunctions/a_f2fifo.inc                    ;         ;
+; aglobal181.inc                                     ; yes             ; Megafunction                 ; /opt/altera/18.1/quartus/libraries/megafunctions/aglobal181.inc                  ;         ;
+; db/scfifo_n441.tdf                                 ; yes             ; Auto-Generated Megafunction  ; /home/zym/waveform-visualizer/db/scfifo_n441.tdf                                 ;         ;
+; db/a_dpfifo_as31.tdf                               ; yes             ; Auto-Generated Megafunction  ; /home/zym/waveform-visualizer/db/a_dpfifo_as31.tdf                               ;         ;
+; db/altsyncram_7tb1.tdf                             ; yes             ; Auto-Generated Megafunction  ; /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf                             ;         ;
+; db/cmpr_ks8.tdf                                    ; yes             ; Auto-Generated Megafunction  ; /home/zym/waveform-visualizer/db/cmpr_ks8.tdf                                    ;         ;
+; db/cntr_v9b.tdf                                    ; yes             ; Auto-Generated Megafunction  ; /home/zym/waveform-visualizer/db/cntr_v9b.tdf                                    ;         ;
+; db/cntr_ca7.tdf                                    ; yes             ; Auto-Generated Megafunction  ; /home/zym/waveform-visualizer/db/cntr_ca7.tdf                                    ;         ;
+; db/cntr_0ab.tdf                                    ; yes             ; Auto-Generated Megafunction  ; /home/zym/waveform-visualizer/db/cntr_0ab.tdf                                    ;         ;
+; altpll.tdf                                         ; yes             ; Megafunction                 ; /opt/altera/18.1/quartus/libraries/megafunctions/altpll.tdf                      ;         ;
+; stratix_pll.inc                                    ; yes             ; Megafunction                 ; /opt/altera/18.1/quartus/libraries/megafunctions/stratix_pll.inc                 ;         ;
+; stratixii_pll.inc                                  ; yes             ; Megafunction                 ; /opt/altera/18.1/quartus/libraries/megafunctions/stratixii_pll.inc               ;         ;
+; cycloneii_pll.inc                                  ; yes             ; Megafunction                 ; /opt/altera/18.1/quartus/libraries/megafunctions/cycloneii_pll.inc               ;         ;
++----------------------------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------------+
@@ -234,24 +232,24 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 616            ;
+; Estimated Total logic elements              ; 566            ;
 ;                                             ;                ;
-; Total combinational functions               ; 592            ;
+; Total combinational functions               ; 542            ;
 ; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 210            ;
-;     -- 3 input functions                    ; 204            ;
-;     -- <=2 input functions                  ; 178            ;
+;     -- 4 input functions                    ; 213            ;
+;     -- 3 input functions                    ; 169            ;
+;     -- <=2 input functions                  ; 160            ;
 ;                                             ;                ;
 ; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 418            ;
-;     -- arithmetic mode                      ; 174            ;
+;     -- normal mode                          ; 402            ;
+;     -- arithmetic mode                      ; 140            ;
 ;                                             ;                ;
-; Total registers                             ; 317            ;
-;     -- Dedicated logic registers            ; 317            ;
+; Total registers                             ; 300            ;
+;     -- Dedicated logic registers            ; 300            ;
 ;     -- I/O registers                        ; 0              ;
 ;                                             ;                ;
 ; I/O pins                                    ; 18             ;
-; Total memory bits                           ; 16384          ;
+; Total memory bits                           ; 11264          ;
 ;                                             ;                ;
 ; Embedded Multiplier 9-bit elements          ; 0              ;
 ;                                             ;                ;
@@ -259,62 +257,62 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;     -- PLLs                                 ; 1              ;
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
-; Maximum fan-out                             ; 388            ;
-; Total fan-out                               ; 5188           ;
-; Average fan-out                             ; 4.81           ;
+; Maximum fan-out                             ; 331            ;
+; Total fan-out                               ; 4328           ;
+; Average fan-out                             ; 4.46           ;
 +---------------------------------------------+----------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                                                                                                              ;
-+---------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+--------------+
-; Compilation Hierarchy Node                                    ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                 ; Entity Name                     ; Library Name ;
-+---------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+--------------+
-; |DE2_Audio_Example                                            ; 592 (82)          ; 317 (20)     ; 16384       ; 0            ; 0       ; 0         ; 18   ; 0            ; |DE2_Audio_Example                                                                                                                                                                                                                                  ; DE2_Audio_Example               ; work         ;
-;    |Audio_Controller:Audio_Controller|                        ; 323 (4)           ; 222 (4)      ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller                                                                                                                                                                                                ; Audio_Controller                ; work         ;
-;       |Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer| ; 155 (41)          ; 108 (36)     ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer                                                                                                                                          ; Altera_UP_Audio_In_Deserializer ; work         ;
-;          |Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter|  ; 10 (10)           ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter                                                                                        ; Altera_UP_Audio_Bit_Counter     ; work         ;
-;          |Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|     ; 52 (0)            ; 33 (0)       ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO                                                                                           ; Altera_UP_SYNC_FIFO             ; work         ;
-;             |scfifo:Sync_FIFO|                                ; 52 (0)            ; 33 (0)       ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO                                                                          ; scfifo                          ; work         ;
-;                |scfifo_n441:auto_generated|                   ; 52 (0)            ; 33 (0)       ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated                                               ; scfifo_n441                     ; work         ;
-;                   |a_dpfifo_as31:dpfifo|                      ; 52 (29)           ; 33 (13)      ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo                          ; a_dpfifo_as31                   ; work         ;
-;                      |altsyncram_7tb1:FIFOram|                ; 0 (0)             ; 0 (0)        ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram  ; altsyncram_7tb1                 ; work         ;
-;                      |cntr_0ab:wr_ptr|                        ; 8 (8)             ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_0ab:wr_ptr          ; cntr_0ab                        ; work         ;
-;                      |cntr_ca7:usedw_counter|                 ; 8 (8)             ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_ca7:usedw_counter   ; cntr_ca7                        ; work         ;
-;                      |cntr_v9b:rd_ptr_msb|                    ; 7 (7)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_v9b:rd_ptr_msb      ; cntr_v9b                        ; work         ;
-;          |Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|    ; 52 (0)            ; 33 (0)       ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO                                                                                          ; Altera_UP_SYNC_FIFO             ; work         ;
-;             |scfifo:Sync_FIFO|                                ; 52 (0)            ; 33 (0)       ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO                                                                         ; scfifo                          ; work         ;
-;                |scfifo_n441:auto_generated|                   ; 52 (0)            ; 33 (0)       ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated                                              ; scfifo_n441                     ; work         ;
-;                   |a_dpfifo_as31:dpfifo|                      ; 52 (29)           ; 33 (13)      ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo                         ; a_dpfifo_as31                   ; work         ;
-;                      |altsyncram_7tb1:FIFOram|                ; 0 (0)             ; 0 (0)        ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram ; altsyncram_7tb1                 ; work         ;
-;                      |cntr_0ab:wr_ptr|                        ; 8 (8)             ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_0ab:wr_ptr         ; cntr_0ab                        ; work         ;
-;                      |cntr_ca7:usedw_counter|                 ; 8 (8)             ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_ca7:usedw_counter  ; cntr_ca7                        ; work         ;
-;                      |cntr_v9b:rd_ptr_msb|                    ; 7 (7)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_v9b:rd_ptr_msb     ; cntr_v9b                        ; work         ;
-;       |Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|   ; 163 (57)          ; 104 (38)     ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer                                                                                                                                            ; Altera_UP_Audio_Out_Serializer  ; work         ;
-;          |Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|    ; 53 (0)            ; 33 (0)       ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO                                                                                            ; Altera_UP_SYNC_FIFO             ; work         ;
-;             |scfifo:Sync_FIFO|                                ; 53 (0)            ; 33 (0)       ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO                                                                           ; scfifo                          ; work         ;
-;                |scfifo_n441:auto_generated|                   ; 53 (0)            ; 33 (0)       ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated                                                ; scfifo_n441                     ; work         ;
-;                   |a_dpfifo_as31:dpfifo|                      ; 53 (30)           ; 33 (13)      ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo                           ; a_dpfifo_as31                   ; work         ;
-;                      |altsyncram_7tb1:FIFOram|                ; 0 (0)             ; 0 (0)        ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram   ; altsyncram_7tb1                 ; work         ;
-;                      |cntr_0ab:wr_ptr|                        ; 8 (8)             ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_0ab:wr_ptr           ; cntr_0ab                        ; work         ;
-;                      |cntr_ca7:usedw_counter|                 ; 8 (8)             ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_ca7:usedw_counter    ; cntr_ca7                        ; work         ;
-;                      |cntr_v9b:rd_ptr_msb|                    ; 7 (7)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_v9b:rd_ptr_msb       ; cntr_v9b                        ; work         ;
-;          |Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|   ; 53 (0)            ; 33 (0)       ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO                                                                                           ; Altera_UP_SYNC_FIFO             ; work         ;
-;             |scfifo:Sync_FIFO|                                ; 53 (0)            ; 33 (0)       ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO                                                                          ; scfifo                          ; work         ;
-;                |scfifo_n441:auto_generated|                   ; 53 (0)            ; 33 (0)       ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated                                               ; scfifo_n441                     ; work         ;
-;                   |a_dpfifo_as31:dpfifo|                      ; 53 (30)           ; 33 (13)      ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo                          ; a_dpfifo_as31                   ; work         ;
-;                      |altsyncram_7tb1:FIFOram|                ; 0 (0)             ; 0 (0)        ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram  ; altsyncram_7tb1                 ; work         ;
-;                      |cntr_0ab:wr_ptr|                        ; 8 (8)             ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_0ab:wr_ptr          ; cntr_0ab                        ; work         ;
-;                      |cntr_ca7:usedw_counter|                 ; 8 (8)             ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_ca7:usedw_counter   ; cntr_ca7                        ; work         ;
-;                      |cntr_v9b:rd_ptr_msb|                    ; 7 (7)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_v9b:rd_ptr_msb      ; cntr_v9b                        ; work         ;
-;       |Altera_UP_Clock_Edge:ADC_Left_Right_Clock_Edges|       ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Clock_Edge:ADC_Left_Right_Clock_Edges                                                                                                                                                ; Altera_UP_Clock_Edge            ; work         ;
-;       |Altera_UP_Clock_Edge:Bit_Clock_Edges|                  ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Clock_Edge:Bit_Clock_Edges                                                                                                                                                           ; Altera_UP_Clock_Edge            ; work         ;
-;       |Altera_UP_Clock_Edge:DAC_Left_Right_Clock_Edges|       ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Clock_Edge:DAC_Left_Right_Clock_Edges                                                                                                                                                ; Altera_UP_Clock_Edge            ; work         ;
-;       |Audio_Clock:Audio_Clock|                               ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Audio_Clock:Audio_Clock                                                                                                                                                                        ; Audio_Clock                     ; work         ;
-;          |altpll:altpll_component|                            ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Audio_Clock:Audio_Clock|altpll:altpll_component                                                                                                                                                ; altpll                          ; work         ;
-;    |avconf:avc|                                               ; 187 (138)         ; 75 (45)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|avconf:avc                                                                                                                                                                                                                       ; avconf                          ; work         ;
-;       |I2C_Controller:u0|                                     ; 49 (49)           ; 30 (30)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|avconf:avc|I2C_Controller:u0                                                                                                                                                                                                     ; I2C_Controller                  ; work         ;
-+---------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                                                                                                                             ;
++---------------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+--------------+
+; Compilation Hierarchy Node                                    ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                 ; Entity Name                     ; Library Name ;
++---------------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+--------------+
+; |DE2_Audio_Example                                            ; 542 (48)            ; 300 (20)                  ; 11264       ; 0            ; 0       ; 0         ; 18   ; 0            ; |DE2_Audio_Example                                                                                                                                                                                                                                  ; DE2_Audio_Example               ; work         ;
+;    |Audio_Controller:Audio_Controller|                        ; 306 (4)             ; 205 (4)                   ; 11264       ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller                                                                                                                                                                                                ; Audio_Controller                ; work         ;
+;       |Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer| ; 138 (24)            ; 91 (19)                   ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer                                                                                                                                          ; Altera_UP_Audio_In_Deserializer ; work         ;
+;          |Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter|  ; 10 (10)             ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter                                                                                        ; Altera_UP_Audio_Bit_Counter     ; work         ;
+;          |Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|     ; 52 (0)              ; 33 (0)                    ; 1536        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO                                                                                           ; Altera_UP_SYNC_FIFO             ; work         ;
+;             |scfifo:Sync_FIFO|                                ; 52 (0)              ; 33 (0)                    ; 1536        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO                                                                          ; scfifo                          ; work         ;
+;                |scfifo_n441:auto_generated|                   ; 52 (0)              ; 33 (0)                    ; 1536        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated                                               ; scfifo_n441                     ; work         ;
+;                   |a_dpfifo_as31:dpfifo|                      ; 52 (29)             ; 33 (13)                   ; 1536        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo                          ; a_dpfifo_as31                   ; work         ;
+;                      |altsyncram_7tb1:FIFOram|                ; 0 (0)               ; 0 (0)                     ; 1536        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram  ; altsyncram_7tb1                 ; work         ;
+;                      |cntr_0ab:wr_ptr|                        ; 8 (8)               ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_0ab:wr_ptr          ; cntr_0ab                        ; work         ;
+;                      |cntr_ca7:usedw_counter|                 ; 8 (8)               ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_ca7:usedw_counter   ; cntr_ca7                        ; work         ;
+;                      |cntr_v9b:rd_ptr_msb|                    ; 7 (7)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_v9b:rd_ptr_msb      ; cntr_v9b                        ; work         ;
+;          |Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|    ; 52 (0)              ; 33 (0)                    ; 1536        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO                                                                                          ; Altera_UP_SYNC_FIFO             ; work         ;
+;             |scfifo:Sync_FIFO|                                ; 52 (0)              ; 33 (0)                    ; 1536        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO                                                                         ; scfifo                          ; work         ;
+;                |scfifo_n441:auto_generated|                   ; 52 (0)              ; 33 (0)                    ; 1536        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated                                              ; scfifo_n441                     ; work         ;
+;                   |a_dpfifo_as31:dpfifo|                      ; 52 (29)             ; 33 (13)                   ; 1536        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo                         ; a_dpfifo_as31                   ; work         ;
+;                      |altsyncram_7tb1:FIFOram|                ; 0 (0)               ; 0 (0)                     ; 1536        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram ; altsyncram_7tb1                 ; work         ;
+;                      |cntr_0ab:wr_ptr|                        ; 8 (8)               ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_0ab:wr_ptr         ; cntr_0ab                        ; work         ;
+;                      |cntr_ca7:usedw_counter|                 ; 8 (8)               ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_ca7:usedw_counter  ; cntr_ca7                        ; work         ;
+;                      |cntr_v9b:rd_ptr_msb|                    ; 7 (7)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_v9b:rd_ptr_msb     ; cntr_v9b                        ; work         ;
+;       |Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|   ; 163 (57)            ; 104 (38)                  ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer                                                                                                                                            ; Altera_UP_Audio_Out_Serializer  ; work         ;
+;          |Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|    ; 53 (0)              ; 33 (0)                    ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO                                                                                            ; Altera_UP_SYNC_FIFO             ; work         ;
+;             |scfifo:Sync_FIFO|                                ; 53 (0)              ; 33 (0)                    ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO                                                                           ; scfifo                          ; work         ;
+;                |scfifo_n441:auto_generated|                   ; 53 (0)              ; 33 (0)                    ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated                                                ; scfifo_n441                     ; work         ;
+;                   |a_dpfifo_as31:dpfifo|                      ; 53 (30)             ; 33 (13)                   ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo                           ; a_dpfifo_as31                   ; work         ;
+;                      |altsyncram_7tb1:FIFOram|                ; 0 (0)               ; 0 (0)                     ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram   ; altsyncram_7tb1                 ; work         ;
+;                      |cntr_0ab:wr_ptr|                        ; 8 (8)               ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_0ab:wr_ptr           ; cntr_0ab                        ; work         ;
+;                      |cntr_ca7:usedw_counter|                 ; 8 (8)               ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_ca7:usedw_counter    ; cntr_ca7                        ; work         ;
+;                      |cntr_v9b:rd_ptr_msb|                    ; 7 (7)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_v9b:rd_ptr_msb       ; cntr_v9b                        ; work         ;
+;          |Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|   ; 53 (0)              ; 33 (0)                    ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO                                                                                           ; Altera_UP_SYNC_FIFO             ; work         ;
+;             |scfifo:Sync_FIFO|                                ; 53 (0)              ; 33 (0)                    ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO                                                                          ; scfifo                          ; work         ;
+;                |scfifo_n441:auto_generated|                   ; 53 (0)              ; 33 (0)                    ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated                                               ; scfifo_n441                     ; work         ;
+;                   |a_dpfifo_as31:dpfifo|                      ; 53 (30)             ; 33 (13)                   ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo                          ; a_dpfifo_as31                   ; work         ;
+;                      |altsyncram_7tb1:FIFOram|                ; 0 (0)               ; 0 (0)                     ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram  ; altsyncram_7tb1                 ; work         ;
+;                      |cntr_0ab:wr_ptr|                        ; 8 (8)               ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_0ab:wr_ptr          ; cntr_0ab                        ; work         ;
+;                      |cntr_ca7:usedw_counter|                 ; 8 (8)               ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_ca7:usedw_counter   ; cntr_ca7                        ; work         ;
+;                      |cntr_v9b:rd_ptr_msb|                    ; 7 (7)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_v9b:rd_ptr_msb      ; cntr_v9b                        ; work         ;
+;       |Altera_UP_Clock_Edge:ADC_Left_Right_Clock_Edges|       ; 0 (0)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Clock_Edge:ADC_Left_Right_Clock_Edges                                                                                                                                                ; Altera_UP_Clock_Edge            ; work         ;
+;       |Altera_UP_Clock_Edge:Bit_Clock_Edges|                  ; 1 (1)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Clock_Edge:Bit_Clock_Edges                                                                                                                                                           ; Altera_UP_Clock_Edge            ; work         ;
+;       |Altera_UP_Clock_Edge:DAC_Left_Right_Clock_Edges|       ; 0 (0)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Clock_Edge:DAC_Left_Right_Clock_Edges                                                                                                                                                ; Altera_UP_Clock_Edge            ; work         ;
+;       |Audio_Clock:Audio_Clock|                               ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Audio_Clock:Audio_Clock                                                                                                                                                                        ; Audio_Clock                     ; work         ;
+;          |altpll:altpll_component|                            ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Audio_Clock:Audio_Clock|altpll:altpll_component                                                                                                                                                ; altpll                          ; work         ;
+;    |avconf:avc|                                               ; 188 (139)           ; 75 (45)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|avconf:avc                                                                                                                                                                                                                       ; avconf                          ; work         ;
+;       |I2C_Controller:u0|                                     ; 49 (49)             ; 30 (30)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|avconf:avc|I2C_Controller:u0                                                                                                                                                                                                     ; I2C_Controller                  ; work         ;
++---------------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -404,12 +402,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 317   ;
+; Total registers                              ; 300   ;
 ; Number of registers using Synchronous Clear  ; 84    ;
 ; Number of registers using Synchronous Load   ; 122   ;
 ; Number of registers using Asynchronous Clear ; 39    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 203   ;
+; Number of registers using Clock Enable       ; 186   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -437,9 +435,9 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                                                  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|data_in_shift_reg[8]                                             ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter|bit_counter[4] ;
-; 6:1                ; 31 bits   ; 124 LEs       ; 62 LEs               ; 62 LEs                 ; Yes        ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|data_out_shift_reg[28]                                             ;
+; 3:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|data_in_shift_reg[11]                                            ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter|bit_counter[3] ;
+; 6:1                ; 31 bits   ; 124 LEs       ; 62 LEs               ; 62 LEs                 ; Yes        ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|data_out_shift_reg[19]                                             ;
 ; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |DE2_Audio_Example|avconf:avc|I2C_Controller:u0|SD_COUNTER[5]                                                                                                               ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
@@ -1199,10 +1197,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 18                          ;
-; cycloneiii_ff         ; 317                         ;
+; cycloneiii_ff         ; 300                         ;
 ;     CLR               ; 8                           ;
 ;     CLR SCLR          ; 16                          ;
-;     ENA               ; 72                          ;
+;     ENA               ; 55                          ;
 ;     ENA CLR           ; 9                           ;
 ;     ENA CLR SLD       ; 6                           ;
 ;     ENA SCLR SLD      ; 31                          ;
@@ -1210,22 +1208,22 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     SCLR              ; 37                          ;
 ;     plain             ; 53                          ;
 ; cycloneiii_io_obuf    ; 4                           ;
-; cycloneiii_lcell_comb ; 592                         ;
-;     arith             ; 174                         ;
+; cycloneiii_lcell_comb ; 542                         ;
+;     arith             ; 140                         ;
 ;         1 data inputs ; 1                           ;
 ;         2 data inputs ; 98                          ;
-;         3 data inputs ; 75                          ;
-;     normal            ; 418                         ;
+;         3 data inputs ; 41                          ;
+;     normal            ; 402                         ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 20                          ;
-;         2 data inputs ; 58                          ;
-;         3 data inputs ; 129                         ;
-;         4 data inputs ; 210                         ;
+;         2 data inputs ; 40                          ;
+;         3 data inputs ; 128                         ;
+;         4 data inputs ; 213                         ;
 ; cycloneiii_pll        ; 1                           ;
-; cycloneiii_ram_block  ; 128                         ;
+; cycloneiii_ram_block  ; 88                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 6.00                        ;
-; Average LUT depth     ; 2.37                        ;
+; Average LUT depth     ; 2.22                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1234,7 +1232,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:03     ;
 +----------------+--------------+
 
 
@@ -1243,44 +1241,45 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Thu Mar 21 20:53:32 2019
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Mon Mar 25 11:46:35 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off waveform-visualizer -c DE2_Audio_Example
-Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (125069): Default assignment values were changed in the current version of the Quartus Prime software -- changes to default assignments values are contained in file /opt/altera/18.1/quartus/linux64/assignment_defaults.qdf
+Warning (12473): User specified to use only one processors but 2 processors were detected which could be used to decrease run time.
 Info (12021): Found 1 design units, including 1 entities, in source file auto_tune.v
-    Info (12023): Found entity 1: auto_tune File: /cmshome/taneric1/Desktop/waveform-visualizer/auto_tune.v Line: 1
+    Info (12023): Found entity 1: auto_tune File: /home/zym/waveform-visualizer/auto_tune.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file avconf/avconf.v
-    Info (12023): Found entity 1: avconf File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 1
+    Info (12023): Found entity 1: avconf File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file avconf/I2C_Controller.v
-    Info (12023): Found entity 1: I2C_Controller File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/I2C_Controller.v Line: 42
+    Info (12023): Found entity 1: I2C_Controller File: /home/zym/waveform-visualizer/avconf/I2C_Controller.v Line: 42
 Info (12021): Found 1 design units, including 1 entities, in source file Audio_Controller/Altera_UP_Audio_Bit_Counter.v
-    Info (12023): Found entity 1: Altera_UP_Audio_Bit_Counter File: /cmshome/taneric1/Desktop/waveform-visualizer/Audio_Controller/Altera_UP_Audio_Bit_Counter.v Line: 11
+    Info (12023): Found entity 1: Altera_UP_Audio_Bit_Counter File: /home/zym/waveform-visualizer/Audio_Controller/Altera_UP_Audio_Bit_Counter.v Line: 11
 Info (12021): Found 1 design units, including 1 entities, in source file Audio_Controller/Altera_UP_Audio_In_Deserializer.v
-    Info (12023): Found entity 1: Altera_UP_Audio_In_Deserializer File: /cmshome/taneric1/Desktop/waveform-visualizer/Audio_Controller/Altera_UP_Audio_In_Deserializer.v Line: 9
+    Info (12023): Found entity 1: Altera_UP_Audio_In_Deserializer File: /home/zym/waveform-visualizer/Audio_Controller/Altera_UP_Audio_In_Deserializer.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file Audio_Controller/Altera_UP_Audio_Out_Serializer.v
-    Info (12023): Found entity 1: Altera_UP_Audio_Out_Serializer File: /cmshome/taneric1/Desktop/waveform-visualizer/Audio_Controller/Altera_UP_Audio_Out_Serializer.v Line: 9
+    Info (12023): Found entity 1: Altera_UP_Audio_Out_Serializer File: /home/zym/waveform-visualizer/Audio_Controller/Altera_UP_Audio_Out_Serializer.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file Audio_Controller/Altera_UP_Clock_Edge.v
-    Info (12023): Found entity 1: Altera_UP_Clock_Edge File: /cmshome/taneric1/Desktop/waveform-visualizer/Audio_Controller/Altera_UP_Clock_Edge.v Line: 10
+    Info (12023): Found entity 1: Altera_UP_Clock_Edge File: /home/zym/waveform-visualizer/Audio_Controller/Altera_UP_Clock_Edge.v Line: 10
 Info (12021): Found 1 design units, including 1 entities, in source file Audio_Controller/Altera_UP_SYNC_FIFO.v
-    Info (12023): Found entity 1: Altera_UP_SYNC_FIFO File: /cmshome/taneric1/Desktop/waveform-visualizer/Audio_Controller/Altera_UP_SYNC_FIFO.v Line: 9
+    Info (12023): Found entity 1: Altera_UP_SYNC_FIFO File: /home/zym/waveform-visualizer/Audio_Controller/Altera_UP_SYNC_FIFO.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file Audio_Controller/Audio_Clock.v
-    Info (12023): Found entity 1: Audio_Clock File: /cmshome/taneric1/Desktop/waveform-visualizer/Audio_Controller/Audio_Clock.v Line: 39
+    Info (12023): Found entity 1: Audio_Clock File: /home/zym/waveform-visualizer/Audio_Controller/Audio_Clock.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file Audio_Controller/Audio_Controller.v
-    Info (12023): Found entity 1: Audio_Controller File: /cmshome/taneric1/Desktop/waveform-visualizer/Audio_Controller/Audio_Controller.v Line: 11
-Warning (10275): Verilog HDL Module Instantiation warning at DE2_Audio_Example.v(140): ignored dangling comma in List of Port Connections File: /cmshome/taneric1/Desktop/waveform-visualizer/DE2_Audio_Example.v Line: 140
+    Info (12023): Found entity 1: Audio_Controller File: /home/zym/waveform-visualizer/Audio_Controller/Audio_Controller.v Line: 11
+Warning (10275): Verilog HDL Module Instantiation warning at DE2_Audio_Example.v(140): ignored dangling comma in List of Port Connections File: /home/zym/waveform-visualizer/DE2_Audio_Example.v Line: 140
 Info (12021): Found 1 design units, including 1 entities, in source file DE2_Audio_Example.v
-    Info (12023): Found entity 1: DE2_Audio_Example File: /cmshome/taneric1/Desktop/waveform-visualizer/DE2_Audio_Example.v Line: 2
+    Info (12023): Found entity 1: DE2_Audio_Example File: /home/zym/waveform-visualizer/DE2_Audio_Example.v Line: 2
 Info (12127): Elaborating entity "DE2_Audio_Example" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at DE2_Audio_Example.v(88): truncated value with size 32 to match size of target (19) File: /cmshome/taneric1/Desktop/waveform-visualizer/DE2_Audio_Example.v Line: 88
-Info (12128): Elaborating entity "Audio_Controller" for hierarchy "Audio_Controller:Audio_Controller" File: /cmshome/taneric1/Desktop/waveform-visualizer/DE2_Audio_Example.v Line: 140
-Info (12128): Elaborating entity "Altera_UP_Clock_Edge" for hierarchy "Audio_Controller:Audio_Controller|Altera_UP_Clock_Edge:Bit_Clock_Edges" File: /cmshome/taneric1/Desktop/waveform-visualizer/Audio_Controller/Audio_Controller.v Line: 182
-Info (12128): Elaborating entity "Altera_UP_Audio_In_Deserializer" for hierarchy "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer" File: /cmshome/taneric1/Desktop/waveform-visualizer/Audio_Controller/Audio_Controller.v Line: 237
-Info (12128): Elaborating entity "Altera_UP_Audio_Bit_Counter" for hierarchy "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter" File: /cmshome/taneric1/Desktop/waveform-visualizer/Audio_Controller/Altera_UP_Audio_In_Deserializer.v Line: 159
-Info (12128): Elaborating entity "Altera_UP_SYNC_FIFO" for hierarchy "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO" File: /cmshome/taneric1/Desktop/waveform-visualizer/Audio_Controller/Altera_UP_Audio_In_Deserializer.v Line: 181
-Info (12128): Elaborating entity "auto_tune" for hierarchy "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|auto_tune:Auto" File: /cmshome/taneric1/Desktop/waveform-visualizer/Audio_Controller/Altera_UP_SYNC_FIFO.v Line: 97
-Info (12128): Elaborating entity "scfifo" for hierarchy "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO" File: /cmshome/taneric1/Desktop/waveform-visualizer/Audio_Controller/Altera_UP_SYNC_FIFO.v Line: 127
-Info (12130): Elaborated megafunction instantiation "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO" File: /cmshome/taneric1/Desktop/waveform-visualizer/Audio_Controller/Altera_UP_SYNC_FIFO.v Line: 127
-Info (12133): Instantiated megafunction "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO" with the following parameter: File: /cmshome/taneric1/Desktop/waveform-visualizer/Audio_Controller/Altera_UP_SYNC_FIFO.v Line: 127
+Warning (10230): Verilog HDL assignment warning at DE2_Audio_Example.v(88): truncated value with size 32 to match size of target (19) File: /home/zym/waveform-visualizer/DE2_Audio_Example.v Line: 88
+Info (12128): Elaborating entity "Audio_Controller" for hierarchy "Audio_Controller:Audio_Controller" File: /home/zym/waveform-visualizer/DE2_Audio_Example.v Line: 140
+Info (12128): Elaborating entity "Altera_UP_Clock_Edge" for hierarchy "Audio_Controller:Audio_Controller|Altera_UP_Clock_Edge:Bit_Clock_Edges" File: /home/zym/waveform-visualizer/Audio_Controller/Audio_Controller.v Line: 182
+Info (12128): Elaborating entity "Altera_UP_Audio_In_Deserializer" for hierarchy "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer" File: /home/zym/waveform-visualizer/Audio_Controller/Audio_Controller.v Line: 237
+Info (12128): Elaborating entity "Altera_UP_Audio_Bit_Counter" for hierarchy "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter" File: /home/zym/waveform-visualizer/Audio_Controller/Altera_UP_Audio_In_Deserializer.v Line: 159
+Info (12128): Elaborating entity "Altera_UP_SYNC_FIFO" for hierarchy "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO" File: /home/zym/waveform-visualizer/Audio_Controller/Altera_UP_Audio_In_Deserializer.v Line: 181
+Info (12128): Elaborating entity "auto_tune" for hierarchy "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|auto_tune:Auto" File: /home/zym/waveform-visualizer/Audio_Controller/Altera_UP_SYNC_FIFO.v Line: 97
+Info (12128): Elaborating entity "scfifo" for hierarchy "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO" File: /home/zym/waveform-visualizer/Audio_Controller/Altera_UP_SYNC_FIFO.v Line: 127
+Info (12130): Elaborated megafunction instantiation "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO" File: /home/zym/waveform-visualizer/Audio_Controller/Altera_UP_SYNC_FIFO.v Line: 127
+Info (12133): Instantiated megafunction "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO" with the following parameter: File: /home/zym/waveform-visualizer/Audio_Controller/Altera_UP_SYNC_FIFO.v Line: 127
     Info (12134): Parameter "add_ram_output_register" = "OFF"
     Info (12134): Parameter "intended_device_family" = "Cyclone II"
     Info (12134): Parameter "lpm_numwords" = "128"
@@ -1292,32 +1291,32 @@ Info (12133): Instantiated megafunction "Audio_Controller:Audio_Controller|Alter
     Info (12134): Parameter "underflow_checking" = "OFF"
     Info (12134): Parameter "use_eab" = "ON"
 Info (12021): Found 1 design units, including 1 entities, in source file db/scfifo_n441.tdf
-    Info (12023): Found entity 1: scfifo_n441 File: /cmshome/taneric1/Desktop/waveform-visualizer/db/scfifo_n441.tdf Line: 25
-Info (12128): Elaborating entity "scfifo_n441" for hierarchy "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated" File: /usr/local/cms/altera_lite/16.0/quartus/libraries/megafunctions/scfifo.tdf Line: 300
+    Info (12023): Found entity 1: scfifo_n441 File: /home/zym/waveform-visualizer/db/scfifo_n441.tdf Line: 24
+Info (12128): Elaborating entity "scfifo_n441" for hierarchy "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated" File: /opt/altera/18.1/quartus/libraries/megafunctions/scfifo.tdf Line: 299
 Info (12021): Found 1 design units, including 1 entities, in source file db/a_dpfifo_as31.tdf
-    Info (12023): Found entity 1: a_dpfifo_as31 File: /cmshome/taneric1/Desktop/waveform-visualizer/db/a_dpfifo_as31.tdf Line: 33
-Info (12128): Elaborating entity "a_dpfifo_as31" for hierarchy "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo" File: /cmshome/taneric1/Desktop/waveform-visualizer/db/scfifo_n441.tdf Line: 38
+    Info (12023): Found entity 1: a_dpfifo_as31 File: /home/zym/waveform-visualizer/db/a_dpfifo_as31.tdf Line: 32
+Info (12128): Elaborating entity "a_dpfifo_as31" for hierarchy "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo" File: /home/zym/waveform-visualizer/db/scfifo_n441.tdf Line: 37
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_7tb1.tdf
-    Info (12023): Found entity 1: altsyncram_7tb1 File: /cmshome/taneric1/Desktop/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_7tb1" for hierarchy "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram" File: /cmshome/taneric1/Desktop/waveform-visualizer/db/a_dpfifo_as31.tdf Line: 46
+    Info (12023): Found entity 1: altsyncram_7tb1 File: /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_7tb1" for hierarchy "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram" File: /home/zym/waveform-visualizer/db/a_dpfifo_as31.tdf Line: 45
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_ks8.tdf
-    Info (12023): Found entity 1: cmpr_ks8 File: /cmshome/taneric1/Desktop/waveform-visualizer/db/cmpr_ks8.tdf Line: 23
-Info (12128): Elaborating entity "cmpr_ks8" for hierarchy "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cmpr_ks8:almost_full_comparer" File: /cmshome/taneric1/Desktop/waveform-visualizer/db/a_dpfifo_as31.tdf Line: 55
-Info (12128): Elaborating entity "cmpr_ks8" for hierarchy "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cmpr_ks8:three_comparison" File: /cmshome/taneric1/Desktop/waveform-visualizer/db/a_dpfifo_as31.tdf Line: 56
+    Info (12023): Found entity 1: cmpr_ks8 File: /home/zym/waveform-visualizer/db/cmpr_ks8.tdf Line: 22
+Info (12128): Elaborating entity "cmpr_ks8" for hierarchy "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cmpr_ks8:almost_full_comparer" File: /home/zym/waveform-visualizer/db/a_dpfifo_as31.tdf Line: 54
+Info (12128): Elaborating entity "cmpr_ks8" for hierarchy "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cmpr_ks8:three_comparison" File: /home/zym/waveform-visualizer/db/a_dpfifo_as31.tdf Line: 55
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_v9b.tdf
-    Info (12023): Found entity 1: cntr_v9b File: /cmshome/taneric1/Desktop/waveform-visualizer/db/cntr_v9b.tdf Line: 26
-Info (12128): Elaborating entity "cntr_v9b" for hierarchy "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_v9b:rd_ptr_msb" File: /cmshome/taneric1/Desktop/waveform-visualizer/db/a_dpfifo_as31.tdf Line: 57
+    Info (12023): Found entity 1: cntr_v9b File: /home/zym/waveform-visualizer/db/cntr_v9b.tdf Line: 25
+Info (12128): Elaborating entity "cntr_v9b" for hierarchy "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_v9b:rd_ptr_msb" File: /home/zym/waveform-visualizer/db/a_dpfifo_as31.tdf Line: 56
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_ca7.tdf
-    Info (12023): Found entity 1: cntr_ca7 File: /cmshome/taneric1/Desktop/waveform-visualizer/db/cntr_ca7.tdf Line: 26
-Info (12128): Elaborating entity "cntr_ca7" for hierarchy "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_ca7:usedw_counter" File: /cmshome/taneric1/Desktop/waveform-visualizer/db/a_dpfifo_as31.tdf Line: 58
+    Info (12023): Found entity 1: cntr_ca7 File: /home/zym/waveform-visualizer/db/cntr_ca7.tdf Line: 25
+Info (12128): Elaborating entity "cntr_ca7" for hierarchy "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_ca7:usedw_counter" File: /home/zym/waveform-visualizer/db/a_dpfifo_as31.tdf Line: 57
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_0ab.tdf
-    Info (12023): Found entity 1: cntr_0ab File: /cmshome/taneric1/Desktop/waveform-visualizer/db/cntr_0ab.tdf Line: 26
-Info (12128): Elaborating entity "cntr_0ab" for hierarchy "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_0ab:wr_ptr" File: /cmshome/taneric1/Desktop/waveform-visualizer/db/a_dpfifo_as31.tdf Line: 59
-Info (12128): Elaborating entity "Altera_UP_Audio_Out_Serializer" for hierarchy "Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer" File: /cmshome/taneric1/Desktop/waveform-visualizer/Audio_Controller/Audio_Controller.v Line: 265
-Info (12128): Elaborating entity "Audio_Clock" for hierarchy "Audio_Controller:Audio_Controller|Audio_Clock:Audio_Clock" File: /cmshome/taneric1/Desktop/waveform-visualizer/Audio_Controller/Audio_Controller.v Line: 277
-Info (12128): Elaborating entity "altpll" for hierarchy "Audio_Controller:Audio_Controller|Audio_Clock:Audio_Clock|altpll:altpll_component" File: /cmshome/taneric1/Desktop/waveform-visualizer/Audio_Controller/Audio_Clock.v Line: 94
-Info (12130): Elaborated megafunction instantiation "Audio_Controller:Audio_Controller|Audio_Clock:Audio_Clock|altpll:altpll_component" File: /cmshome/taneric1/Desktop/waveform-visualizer/Audio_Controller/Audio_Clock.v Line: 94
-Info (12133): Instantiated megafunction "Audio_Controller:Audio_Controller|Audio_Clock:Audio_Clock|altpll:altpll_component" with the following parameter: File: /cmshome/taneric1/Desktop/waveform-visualizer/Audio_Controller/Audio_Clock.v Line: 94
+    Info (12023): Found entity 1: cntr_0ab File: /home/zym/waveform-visualizer/db/cntr_0ab.tdf Line: 25
+Info (12128): Elaborating entity "cntr_0ab" for hierarchy "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_0ab:wr_ptr" File: /home/zym/waveform-visualizer/db/a_dpfifo_as31.tdf Line: 58
+Info (12128): Elaborating entity "Altera_UP_Audio_Out_Serializer" for hierarchy "Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer" File: /home/zym/waveform-visualizer/Audio_Controller/Audio_Controller.v Line: 265
+Info (12128): Elaborating entity "Audio_Clock" for hierarchy "Audio_Controller:Audio_Controller|Audio_Clock:Audio_Clock" File: /home/zym/waveform-visualizer/Audio_Controller/Audio_Controller.v Line: 277
+Info (12128): Elaborating entity "altpll" for hierarchy "Audio_Controller:Audio_Controller|Audio_Clock:Audio_Clock|altpll:altpll_component" File: /home/zym/waveform-visualizer/Audio_Controller/Audio_Clock.v Line: 94
+Info (12130): Elaborated megafunction instantiation "Audio_Controller:Audio_Controller|Audio_Clock:Audio_Clock|altpll:altpll_component" File: /home/zym/waveform-visualizer/Audio_Controller/Audio_Clock.v Line: 94
+Info (12133): Instantiated megafunction "Audio_Controller:Audio_Controller|Audio_Clock:Audio_Clock|altpll:altpll_component" with the following parameter: File: /home/zym/waveform-visualizer/Audio_Controller/Audio_Clock.v Line: 94
     Info (12134): Parameter "clk0_divide_by" = "4"
     Info (12134): Parameter "clk0_duty_cycle" = "50"
     Info (12134): Parameter "clk0_multiply_by" = "1"
@@ -1372,87 +1371,147 @@ Info (12133): Instantiated megafunction "Audio_Controller:Audio_Controller|Audio
     Info (12134): Parameter "port_extclk2" = "PORT_UNUSED"
     Info (12134): Parameter "port_extclk3" = "PORT_UNUSED"
     Info (12134): Parameter "valid_lock_multiplier" = "1"
-Info (12128): Elaborating entity "avconf" for hierarchy "avconf:avc" File: /cmshome/taneric1/Desktop/waveform-visualizer/DE2_Audio_Example.v Line: 147
-Warning (10230): Verilog HDL assignment warning at avconf.v(68): truncated value with size 32 to match size of target (16) File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 68
-Warning (10230): Verilog HDL assignment warning at avconf.v(119): truncated value with size 32 to match size of target (6) File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 119
-Warning (10230): Verilog HDL assignment warning at avconf.v(136): truncated value with size 32 to match size of target (16) File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 136
-Warning (10270): Verilog HDL Case Statement warning at avconf.v(130): incomplete case statement has no default case item File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 130
-Warning (10240): Verilog HDL Always Construct warning at avconf.v(130): inferring latch(es) for variable "LUT_DATA", which holds its previous value in one or more paths through the always construct File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 130
-Info (10041): Inferred latch for "LUT_DATA[0]" at avconf.v(130) File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 130
-Info (10041): Inferred latch for "LUT_DATA[1]" at avconf.v(130) File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 130
-Info (10041): Inferred latch for "LUT_DATA[2]" at avconf.v(130) File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 130
-Info (10041): Inferred latch for "LUT_DATA[3]" at avconf.v(130) File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 130
-Info (10041): Inferred latch for "LUT_DATA[4]" at avconf.v(130) File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 130
-Info (10041): Inferred latch for "LUT_DATA[5]" at avconf.v(130) File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 130
-Info (10041): Inferred latch for "LUT_DATA[6]" at avconf.v(130) File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 130
-Info (10041): Inferred latch for "LUT_DATA[7]" at avconf.v(130) File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 130
-Info (10041): Inferred latch for "LUT_DATA[8]" at avconf.v(130) File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 130
-Info (10041): Inferred latch for "LUT_DATA[9]" at avconf.v(130) File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 130
-Info (10041): Inferred latch for "LUT_DATA[10]" at avconf.v(130) File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 130
-Info (10041): Inferred latch for "LUT_DATA[11]" at avconf.v(130) File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 130
-Info (10041): Inferred latch for "LUT_DATA[12]" at avconf.v(130) File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 130
-Info (10041): Inferred latch for "LUT_DATA[13]" at avconf.v(130) File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 130
-Info (10041): Inferred latch for "LUT_DATA[14]" at avconf.v(130) File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 130
-Info (10041): Inferred latch for "LUT_DATA[15]" at avconf.v(130) File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 130
-Info (12128): Elaborating entity "I2C_Controller" for hierarchy "avconf:avc|I2C_Controller:u0" File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 84
-Warning (10230): Verilog HDL assignment warning at I2C_Controller.v(78): truncated value with size 32 to match size of target (1) File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/I2C_Controller.v Line: 78
-Warning (10230): Verilog HDL assignment warning at I2C_Controller.v(77): truncated value with size 32 to match size of target (1) File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/I2C_Controller.v Line: 77
-Warning (10230): Verilog HDL assignment warning at I2C_Controller.v(90): truncated value with size 32 to match size of target (6) File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/I2C_Controller.v Line: 90
+Info (12128): Elaborating entity "avconf" for hierarchy "avconf:avc" File: /home/zym/waveform-visualizer/DE2_Audio_Example.v Line: 147
+Warning (10230): Verilog HDL assignment warning at avconf.v(68): truncated value with size 32 to match size of target (16) File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 68
+Warning (10230): Verilog HDL assignment warning at avconf.v(119): truncated value with size 32 to match size of target (6) File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 119
+Warning (10230): Verilog HDL assignment warning at avconf.v(136): truncated value with size 32 to match size of target (16) File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 136
+Warning (10270): Verilog HDL Case Statement warning at avconf.v(130): incomplete case statement has no default case item File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 130
+Warning (10240): Verilog HDL Always Construct warning at avconf.v(130): inferring latch(es) for variable "LUT_DATA", which holds its previous value in one or more paths through the always construct File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 130
+Info (10041): Inferred latch for "LUT_DATA[0]" at avconf.v(130) File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 130
+Info (10041): Inferred latch for "LUT_DATA[1]" at avconf.v(130) File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 130
+Info (10041): Inferred latch for "LUT_DATA[2]" at avconf.v(130) File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 130
+Info (10041): Inferred latch for "LUT_DATA[3]" at avconf.v(130) File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 130
+Info (10041): Inferred latch for "LUT_DATA[4]" at avconf.v(130) File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 130
+Info (10041): Inferred latch for "LUT_DATA[5]" at avconf.v(130) File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 130
+Info (10041): Inferred latch for "LUT_DATA[6]" at avconf.v(130) File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 130
+Info (10041): Inferred latch for "LUT_DATA[7]" at avconf.v(130) File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 130
+Info (10041): Inferred latch for "LUT_DATA[8]" at avconf.v(130) File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 130
+Info (10041): Inferred latch for "LUT_DATA[9]" at avconf.v(130) File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 130
+Info (10041): Inferred latch for "LUT_DATA[10]" at avconf.v(130) File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 130
+Info (10041): Inferred latch for "LUT_DATA[11]" at avconf.v(130) File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 130
+Info (10041): Inferred latch for "LUT_DATA[12]" at avconf.v(130) File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 130
+Info (10041): Inferred latch for "LUT_DATA[13]" at avconf.v(130) File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 130
+Info (10041): Inferred latch for "LUT_DATA[14]" at avconf.v(130) File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 130
+Info (10041): Inferred latch for "LUT_DATA[15]" at avconf.v(130) File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 130
+Info (12128): Elaborating entity "I2C_Controller" for hierarchy "avconf:avc|I2C_Controller:u0" File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 84
+Warning (10230): Verilog HDL assignment warning at I2C_Controller.v(78): truncated value with size 32 to match size of target (1) File: /home/zym/waveform-visualizer/avconf/I2C_Controller.v Line: 78
+Warning (10230): Verilog HDL assignment warning at I2C_Controller.v(77): truncated value with size 32 to match size of target (1) File: /home/zym/waveform-visualizer/avconf/I2C_Controller.v Line: 77
+Warning (10230): Verilog HDL assignment warning at I2C_Controller.v(90): truncated value with size 32 to match size of target (6) File: /home/zym/waveform-visualizer/avconf/I2C_Controller.v Line: 90
+Warning (14284): Synthesized away the following node(s):
+    Warning (14285): Synthesized away the following RAM node(s):
+        Warning (14320): Synthesized away node "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|q_b[15]" File: /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 487
+        Warning (14320): Synthesized away node "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|q_b[16]" File: /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 517
+        Warning (14320): Synthesized away node "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|q_b[17]" File: /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 547
+        Warning (14320): Synthesized away node "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|q_b[18]" File: /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 577
+        Warning (14320): Synthesized away node "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|q_b[19]" File: /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 607
+        Warning (14320): Synthesized away node "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|q_b[20]" File: /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 637
+        Warning (14320): Synthesized away node "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|q_b[21]" File: /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 667
+        Warning (14320): Synthesized away node "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|q_b[22]" File: /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 697
+        Warning (14320): Synthesized away node "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|q_b[23]" File: /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 727
+        Warning (14320): Synthesized away node "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|q_b[24]" File: /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 757
+        Warning (14320): Synthesized away node "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|q_b[25]" File: /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 787
+        Warning (14320): Synthesized away node "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|q_b[26]" File: /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 817
+        Warning (14320): Synthesized away node "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|q_b[27]" File: /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 847
+        Warning (14320): Synthesized away node "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|q_b[28]" File: /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 877
+        Warning (14320): Synthesized away node "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|q_b[29]" File: /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 907
+        Warning (14320): Synthesized away node "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|q_b[30]" File: /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 937
+        Warning (14320): Synthesized away node "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|q_b[31]" File: /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 967
+        Warning (14320): Synthesized away node "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|q_b[15]" File: /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 487
+        Warning (14320): Synthesized away node "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|q_b[16]" File: /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 517
+        Warning (14320): Synthesized away node "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|q_b[17]" File: /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 547
+        Warning (14320): Synthesized away node "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|q_b[18]" File: /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 577
+        Warning (14320): Synthesized away node "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|q_b[19]" File: /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 607
+        Warning (14320): Synthesized away node "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|q_b[20]" File: /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 637
+        Warning (14320): Synthesized away node "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|q_b[21]" File: /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 667
+        Warning (14320): Synthesized away node "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|q_b[22]" File: /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 697
+        Warning (14320): Synthesized away node "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|q_b[23]" File: /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 727
+        Warning (14320): Synthesized away node "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|q_b[24]" File: /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 757
+        Warning (14320): Synthesized away node "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|q_b[25]" File: /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 787
+        Warning (14320): Synthesized away node "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|q_b[26]" File: /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 817
+        Warning (14320): Synthesized away node "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|q_b[27]" File: /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 847
+        Warning (14320): Synthesized away node "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|q_b[28]" File: /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 877
+        Warning (14320): Synthesized away node "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|q_b[29]" File: /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 907
+        Warning (14320): Synthesized away node "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|q_b[30]" File: /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 937
+        Warning (14320): Synthesized away node "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|q_b[31]" File: /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 967
+Warning (14284): Synthesized away the following node(s):
+    Warning (14285): Synthesized away the following RAM node(s):
+        Warning (14320): Synthesized away node "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|q_b[1]" File: /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 67
+        Warning (14320): Synthesized away node "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|q_b[3]" File: /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 127
+        Warning (14320): Synthesized away node "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|q_b[5]" File: /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 187
+        Warning (14320): Synthesized away node "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|q_b[1]" File: /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 67
+        Warning (14320): Synthesized away node "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|q_b[3]" File: /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 127
+        Warning (14320): Synthesized away node "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|q_b[5]" File: /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 187
+Warning (14284): Synthesized away the following node(s):
+    Warning (14285): Synthesized away the following RAM node(s):
+        Warning (14320): Synthesized away node "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|q_b[1]" File: /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 67
+        Warning (14320): Synthesized away node "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|q_b[3]" File: /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 127
+        Warning (14320): Synthesized away node "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|q_b[5]" File: /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 187
+        Warning (14320): Synthesized away node "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|q_b[1]" File: /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 67
+        Warning (14320): Synthesized away node "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|q_b[3]" File: /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 127
+        Warning (14320): Synthesized away node "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|q_b[5]" File: /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 187
+Warning (14284): Synthesized away the following node(s):
+    Warning (14285): Synthesized away the following RAM node(s):
+        Warning (14320): Synthesized away node "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|q_b[1]" File: /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 67
+        Warning (14320): Synthesized away node "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|q_b[3]" File: /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 127
+        Warning (14320): Synthesized away node "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|q_b[5]" File: /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 187
+        Warning (14320): Synthesized away node "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|q_b[1]" File: /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 67
+        Warning (14320): Synthesized away node "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|q_b[3]" File: /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 127
+        Warning (14320): Synthesized away node "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|q_b[5]" File: /home/zym/waveform-visualizer/db/altsyncram_7tb1.tdf Line: 187
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Warning (13012): Latch avconf:avc|LUT_DATA[8] has unsafe behavior File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 130
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal avconf:avc|LUT_INDEX[4] File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 97
-Warning (13012): Latch avconf:avc|LUT_DATA[2] has unsafe behavior File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 130
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal avconf:avc|LUT_INDEX[5] File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 97
-Warning (13012): Latch avconf:avc|LUT_DATA[9] has unsafe behavior File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 130
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal avconf:avc|LUT_INDEX[5] File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 97
-Warning (13012): Latch avconf:avc|LUT_DATA[1] has unsafe behavior File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 130
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal avconf:avc|LUT_INDEX[5] File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 97
-Warning (13012): Latch avconf:avc|LUT_DATA[7] has unsafe behavior File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 130
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal avconf:avc|LUT_INDEX[5] File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 97
-Warning (13012): Latch avconf:avc|LUT_DATA[0] has unsafe behavior File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 130
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal avconf:avc|LUT_INDEX[4] File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 97
-Warning (13012): Latch avconf:avc|LUT_DATA[10] has unsafe behavior File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 130
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal avconf:avc|LUT_INDEX[5] File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 97
-Warning (13012): Latch avconf:avc|LUT_DATA[4] has unsafe behavior File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 130
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal avconf:avc|LUT_INDEX[5] File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 97
-Warning (13012): Latch avconf:avc|LUT_DATA[11] has unsafe behavior File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 130
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal avconf:avc|LUT_INDEX[4] File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 97
-Warning (13012): Latch avconf:avc|LUT_DATA[3] has unsafe behavior File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 130
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal avconf:avc|LUT_INDEX[5] File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 97
-Warning (13012): Latch avconf:avc|LUT_DATA[6] has unsafe behavior File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 130
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal avconf:avc|LUT_INDEX[4] File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 97
-Warning (13012): Latch avconf:avc|LUT_DATA[5] has unsafe behavior File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 130
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal avconf:avc|LUT_INDEX[5] File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 97
-Warning (13012): Latch avconf:avc|LUT_DATA[15] has unsafe behavior File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 130
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal avconf:avc|LUT_INDEX[2] File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 97
-Warning (13012): Latch avconf:avc|LUT_DATA[13] has unsafe behavior File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 130
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal avconf:avc|LUT_INDEX[3] File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 97
-Warning (13012): Latch avconf:avc|LUT_DATA[14] has unsafe behavior File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 130
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal avconf:avc|LUT_INDEX[4] File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 97
-Warning (13012): Latch avconf:avc|LUT_DATA[12] has unsafe behavior File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 130
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal avconf:avc|LUT_INDEX[5] File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/avconf.v Line: 97
-Info (13000): Registers with preset signals will power-up high File: /cmshome/taneric1/Desktop/waveform-visualizer/avconf/I2C_Controller.v Line: 72
+Warning (13012): Latch avconf:avc|LUT_DATA[8] has unsafe behavior File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 130
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal avconf:avc|LUT_INDEX[4] File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 97
+Warning (13012): Latch avconf:avc|LUT_DATA[2] has unsafe behavior File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 130
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal avconf:avc|LUT_INDEX[5] File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 97
+Warning (13012): Latch avconf:avc|LUT_DATA[9] has unsafe behavior File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 130
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal avconf:avc|LUT_INDEX[5] File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 97
+Warning (13012): Latch avconf:avc|LUT_DATA[1] has unsafe behavior File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 130
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal avconf:avc|LUT_INDEX[5] File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 97
+Warning (13012): Latch avconf:avc|LUT_DATA[7] has unsafe behavior File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 130
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal avconf:avc|LUT_INDEX[5] File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 97
+Warning (13012): Latch avconf:avc|LUT_DATA[0] has unsafe behavior File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 130
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal avconf:avc|LUT_INDEX[4] File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 97
+Warning (13012): Latch avconf:avc|LUT_DATA[10] has unsafe behavior File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 130
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal avconf:avc|LUT_INDEX[5] File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 97
+Warning (13012): Latch avconf:avc|LUT_DATA[4] has unsafe behavior File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 130
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal avconf:avc|LUT_INDEX[5] File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 97
+Warning (13012): Latch avconf:avc|LUT_DATA[11] has unsafe behavior File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 130
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal avconf:avc|LUT_INDEX[4] File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 97
+Warning (13012): Latch avconf:avc|LUT_DATA[3] has unsafe behavior File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 130
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal avconf:avc|LUT_INDEX[5] File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 97
+Warning (13012): Latch avconf:avc|LUT_DATA[6] has unsafe behavior File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 130
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal avconf:avc|LUT_INDEX[4] File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 97
+Warning (13012): Latch avconf:avc|LUT_DATA[5] has unsafe behavior File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 130
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal avconf:avc|LUT_INDEX[5] File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 97
+Warning (13012): Latch avconf:avc|LUT_DATA[15] has unsafe behavior File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 130
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal avconf:avc|LUT_INDEX[2] File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 97
+Warning (13012): Latch avconf:avc|LUT_DATA[13] has unsafe behavior File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 130
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal avconf:avc|LUT_INDEX[3] File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 97
+Warning (13012): Latch avconf:avc|LUT_DATA[14] has unsafe behavior File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 130
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal avconf:avc|LUT_INDEX[4] File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 97
+Warning (13012): Latch avconf:avc|LUT_DATA[12] has unsafe behavior File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 130
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal avconf:avc|LUT_INDEX[5] File: /home/zym/waveform-visualizer/avconf/avconf.v Line: 97
+Info (13000): Registers with preset signals will power-up high File: /home/zym/waveform-visualizer/avconf/I2C_Controller.v Line: 72
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 2 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 4 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "CLOCK_27" File: /cmshome/taneric1/Desktop/waveform-visualizer/DE2_Audio_Example.v Line: 35
-    Warning (15610): No output dependent on input pin "KEY[1]" File: /cmshome/taneric1/Desktop/waveform-visualizer/DE2_Audio_Example.v Line: 36
-    Warning (15610): No output dependent on input pin "KEY[2]" File: /cmshome/taneric1/Desktop/waveform-visualizer/DE2_Audio_Example.v Line: 36
-    Warning (15610): No output dependent on input pin "KEY[3]" File: /cmshome/taneric1/Desktop/waveform-visualizer/DE2_Audio_Example.v Line: 36
-Info (21057): Implemented 788 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "CLOCK_27" File: /home/zym/waveform-visualizer/DE2_Audio_Example.v Line: 35
+    Warning (15610): No output dependent on input pin "KEY[1]" File: /home/zym/waveform-visualizer/DE2_Audio_Example.v Line: 36
+    Warning (15610): No output dependent on input pin "KEY[2]" File: /home/zym/waveform-visualizer/DE2_Audio_Example.v Line: 36
+    Warning (15610): No output dependent on input pin "KEY[3]" File: /home/zym/waveform-visualizer/DE2_Audio_Example.v Line: 36
+Info (21057): Implemented 698 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 11 input pins
     Info (21059): Implemented 3 output pins
     Info (21060): Implemented 4 bidirectional pins
-    Info (21061): Implemented 641 logic cells
-    Info (21064): Implemented 128 RAM segments
+    Info (21061): Implemented 591 logic cells
+    Info (21064): Implemented 88 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 49 warnings
-    Info: Peak virtual memory: 1272 megabytes
-    Info: Processing ended: Thu Mar 21 20:53:45 2019
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:24
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 109 warnings
+    Info: Peak virtual memory: 994 megabytes
+    Info: Processing ended: Mon Mar 25 11:46:57 2019
+    Info: Elapsed time: 00:00:22
+    Info: Total CPU time (on all processors): 00:00:48
 
 
