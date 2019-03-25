@@ -70,17 +70,18 @@ wire vga_plot;
 wire play = SW[0];
 wire [3:0] scale = SW[8:5];
 
-wire [15:0] display_data = play ? left_channel_audio_out : left_channel_audio_in;
-reg [15:0] display_data_scaled;
+wire [31:0] display_data = play ? left_channel_audio_out : left_channel_audio_in;
+reg [31:0] display_data_scaled;
 
 // Internal Registers
 
 reg [18:0] delay_cnt, delay;
 reg snd;
 
-wire reset = !KEY[0];
+wire reset = ~KEY[0];
 
 // And all we needed was a sign-extended shift...
+/*
 always @(*)
 	case(scale)
 		0: display_data_scaled = display_data;
@@ -100,6 +101,7 @@ always @(*)
 		14: display_data_scaled = {{15{display_data[15]}}, display_data[14:14]};
 		15: display_data_scaled = {16{display_data[15]}};
 	endcase
+*/
 
 // State Machine Registers
 
@@ -174,7 +176,7 @@ avconf #(.USE_MIC_INPUT(1)) avc (
 	.I2C_SCLK					(I2C_SCLK),
 	.I2C_SDAT					(I2C_SDAT),
 	.CLOCK_50					(CLOCK_50),
-	.reset						(~KEY[0])
+	.reset						(reset)
 );
 
 vga_adapter VGA(
@@ -213,12 +215,12 @@ vga_adapter VGA(
 			.VGA_HS(VGA_HS),
 			.VGA_VS(VGA_VS),
 			.VGA_BLANK(VGA_BLANK),
-			.VGA_SYNC(VGA_SYNC_N),
+			.VGA_SYNC(VGA_SYNC_N),CLOCK_27
 			.clock_25(VGA_CLK));
 		defparam VGA.RESOLUTION = "320x240";
 		defparam VGA.MONOCHROME = "TRUE";
 */
-display disp(CLOCK_50, reset, pause, display_data_scaled, vga_x, vga_y, vga_color, vga_plot);
+display disp(CLOCK_50, reset, pause, display_data, vga_x, vga_y, vga_color, vga_plot);
 
 hex2seg h4(scale, HEX0);
 
