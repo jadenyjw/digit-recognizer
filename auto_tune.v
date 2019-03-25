@@ -28,10 +28,12 @@ output reg	[AUDIO_DATA_WIDTH:1]	data_audio_out;
 
 always @(*)
 begin
-	if(data_audio_in > 32'b1000_0000_0000_0000)
-		data_audio_out = 32'b0101_0101_0101_0101;
+	if(data_audio_in > 22)
+		data_audio_out = 25;
+	if(data_audio_in < 11)
+		data_audio_out = 8;
 	else
-		assign data_audio_out = data_audio_in;
+		data_audio_out = data_audio_in;
 end
 
 
