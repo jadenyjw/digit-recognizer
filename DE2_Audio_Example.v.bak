@@ -81,15 +81,6 @@ reg snd;
  *                             Sequential Logic                              *
  *****************************************************************************/
 
- /*
-always @(posedge CLOCK_50)
-	if(delay_cnt == delay) begin
-		delay_cnt <= 0;
-		snd <= !snd;
-	end else delay_cnt <= delay_cnt + 1;
-*/
-
-	
 always @(posedge CLOCK_50)
 	if(delay_cnt == delay) begin
 		delay_cnt <= 0;
@@ -102,14 +93,14 @@ always @(posedge CLOCK_50)
 
 assign delay = {SW[3:0], 15'd3000};
 
-//wire [31:0] sound = (SW == 0) ? 0 : 
-wire [31:0] sound = snd ? 32'd10000000 : -32'd10000000; 
+//wire [31:0] sound = (SW == 0) ? 0 : snd ? 32'd10000000 : -32'd10000000;
+wire [31:0] sound = 32'd10000000; 
 
 
-assign read_audio_in	= audio_in_available & audio_out_allowed;
+assign read_audio_in			= audio_in_available & audio_out_allowed;
 
-assign left_channel_audio_out	= (SW == 0) ? left_channel_audio_in : snd ? left_channel_audio_in : 0;
-assign right_channel_audio_out	= (SW == 0) ? right_channel_audio_in : snd ? right_channel_audio_in : 0;
+assign left_channel_audio_out	= left_channel_audio_in+sound;
+assign right_channel_audio_out	= right_channel_audio_in+sound;
 assign write_audio_out			= audio_in_available & audio_out_allowed;
 
 /*****************************************************************************
