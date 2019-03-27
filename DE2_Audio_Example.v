@@ -93,7 +93,8 @@ always @(posedge CLOCK_50)
 
 assign delay = {SW[3:0], 15'd3000};
 
-wire [31:0] sound = (SW == 0) ? 0 : snd ? 32'd10000000 : -32'd10000000;
+//wire [31:0] sound = (SW == 0) ? 0 : snd ? 32'd10000000 : -32'd10000000;
+wire [31:0] sound = 32'd10000000; 
 
 
 assign read_audio_in			= audio_in_available & audio_out_allowed;

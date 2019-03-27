@@ -22,16 +22,16 @@ input				reset;
 
 input			[AUDIO_DATA_WIDTH:1]	data_audio_in;
 
-output reg	[AUDIO_DATA_WIDTH:1]	data_audio_out;
+output [AUDIO_DATA_WIDTH:1]	data_audio_out;
 
 
 
 always @(*)
 begin
 	if(data_audio_in > 22)
-		data_audio_out = 25;
+		data_audio_out = 22;
 	if(data_audio_in < 11)
-		data_audio_out = 8;
+		data_audio_out = 11;
 	else
 		data_audio_out = data_audio_in;
 end
