@@ -1,5 +1,5 @@
 Fitter report for DE2_Audio_Example
-Wed Mar 27 18:29:05 2019
+Thu Mar 28 21:02:56 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -72,15 +72,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Wed Mar 27 18:29:05 2019       ;
+; Fitter Status                      ; Successful - Thu Mar 28 21:02:56 2019       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; DE2_Audio_Example                           ;
 ; Top-level Entity Name              ; DE2_Audio_Example                           ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 666 / 114,480 ( < 1 % )                     ;
-;     Total combinational functions  ; 645 / 114,480 ( < 1 % )                     ;
+; Total logic elements               ; 668 / 114,480 ( < 1 % )                     ;
+;     Total combinational functions  ; 643 / 114,480 ( < 1 % )                     ;
 ;     Dedicated logic registers      ; 317 / 114,480 ( < 1 % )                     ;
 ; Total registers                    ; 317                                         ;
 ; Total pins                         ; 18 / 529 ( 3 % )                            ;
@@ -812,8 +812,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Type                ; Total [A + B]       ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+---------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                     ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 1145 ) ; 0.00 % ( 0 / 1145 )        ; 0.00 % ( 0 / 1145 )      ;
-;     -- Achieved     ; 0.00 % ( 0 / 1145 ) ; 0.00 % ( 0 / 1145 )        ; 0.00 % ( 0 / 1145 )      ;
+;     -- Requested    ; 0.00 % ( 0 / 1143 ) ; 0.00 % ( 0 / 1143 )        ; 0.00 % ( 0 / 1143 )      ;
+;     -- Achieved     ; 0.00 % ( 0 / 1143 ) ; 0.00 % ( 0 / 1143 )        ; 0.00 % ( 0 / 1143 )      ;
 ;                     ;                     ;                            ;                          ;
 ; Routing (by net)    ;                     ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )    ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -836,7 +836,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 1133 )   ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 1131 )   ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 12 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -852,26 +852,26 @@ The pin-out file can be found in /home/jaden/waveform-visualizer/output_files/DE
 +---------------------------------------------+------------------------------+
 ; Resource                                    ; Usage                        ;
 +---------------------------------------------+------------------------------+
-; Total logic elements                        ; 666 / 114,480 ( < 1 % )      ;
-;     -- Combinational with no register       ; 349                          ;
-;     -- Register only                        ; 21                           ;
-;     -- Combinational with a register        ; 296                          ;
+; Total logic elements                        ; 668 / 114,480 ( < 1 % )      ;
+;     -- Combinational with no register       ; 351                          ;
+;     -- Register only                        ; 25                           ;
+;     -- Combinational with a register        ; 292                          ;
 ;                                             ;                              ;
 ; Logic element usage by number of LUT inputs ;                              ;
-;     -- 4 input functions                    ; 254                          ;
+;     -- 4 input functions                    ; 252                          ;
 ;     -- 3 input functions                    ; 163                          ;
 ;     -- <=2 input functions                  ; 228                          ;
-;     -- Register only                        ; 21                           ;
+;     -- Register only                        ; 25                           ;
 ;                                             ;                              ;
 ; Logic elements by mode                      ;                              ;
-;     -- normal mode                          ; 519                          ;
+;     -- normal mode                          ; 517                          ;
 ;     -- arithmetic mode                      ; 126                          ;
 ;                                             ;                              ;
 ; Total registers*                            ; 317 / 117,053 ( < 1 % )      ;
 ;     -- Dedicated logic registers            ; 317 / 114,480 ( < 1 % )      ;
 ;     -- I/O registers                        ; 0 / 2,573 ( 0 % )            ;
 ;                                             ;                              ;
-; Total LABs:  partially or completely used   ; 50 / 7,155 ( < 1 % )         ;
+; Total LABs:  partially or completely used   ; 51 / 7,155 ( < 1 % )         ;
 ; Virtual pins                                ; 0                            ;
 ; I/O pins                                    ; 18 / 529 ( 3 % )             ;
 ;     -- Clock pins                           ; 1 / 7 ( 14 % )               ;
@@ -889,12 +889,12 @@ The pin-out file can be found in /home/jaden/waveform-visualizer/output_files/DE
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )                ;
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )                ;
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )                ;
-; Average interconnect usage (total/H/V)      ; 0.2% / 0.2% / 0.2%           ;
-; Peak interconnect usage (total/H/V)         ; 4.3% / 4.3% / 4.3%           ;
+; Average interconnect usage (total/H/V)      ; 0.2% / 0.3% / 0.2%           ;
+; Peak interconnect usage (total/H/V)         ; 4.5% / 4.7% / 4.4%           ;
 ; Maximum fan-out                             ; 267                          ;
 ; Highest non-global fan-out                  ; 242                          ;
-; Total fan-out                               ; 3337                         ;
-; Average fan-out                             ; 3.21                         ;
+; Total fan-out                               ; 3335                         ;
+; Average fan-out                             ; 3.19                         ;
 +---------------------------------------------+------------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -907,26 +907,26 @@ The pin-out file can be found in /home/jaden/waveform-visualizer/output_files/DE
 +---------------------------------------------+------------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                    ; Low                            ;
 ;                                             ;                        ;                                ;
-; Total logic elements                        ; 666 / 114480 ( < 1 % ) ; 0 / 114480 ( 0 % )             ;
-;     -- Combinational with no register       ; 349                    ; 0                              ;
-;     -- Register only                        ; 21                     ; 0                              ;
-;     -- Combinational with a register        ; 296                    ; 0                              ;
+; Total logic elements                        ; 668 / 114480 ( < 1 % ) ; 0 / 114480 ( 0 % )             ;
+;     -- Combinational with no register       ; 351                    ; 0                              ;
+;     -- Register only                        ; 25                     ; 0                              ;
+;     -- Combinational with a register        ; 292                    ; 0                              ;
 ;                                             ;                        ;                                ;
 ; Logic element usage by number of LUT inputs ;                        ;                                ;
-;     -- 4 input functions                    ; 254                    ; 0                              ;
+;     -- 4 input functions                    ; 252                    ; 0                              ;
 ;     -- 3 input functions                    ; 163                    ; 0                              ;
 ;     -- <=2 input functions                  ; 228                    ; 0                              ;
-;     -- Register only                        ; 21                     ; 0                              ;
+;     -- Register only                        ; 25                     ; 0                              ;
 ;                                             ;                        ;                                ;
 ; Logic elements by mode                      ;                        ;                                ;
-;     -- normal mode                          ; 519                    ; 0                              ;
+;     -- normal mode                          ; 517                    ; 0                              ;
 ;     -- arithmetic mode                      ; 126                    ; 0                              ;
 ;                                             ;                        ;                                ;
 ; Total registers                             ; 317                    ; 0                              ;
 ;     -- Dedicated logic registers            ; 317 / 114480 ( < 1 % ) ; 0 / 114480 ( 0 % )             ;
 ;     -- I/O registers                        ; 0                      ; 0                              ;
 ;                                             ;                        ;                                ;
-; Total LABs:  partially or completely used   ; 50 / 7155 ( < 1 % )    ; 0 / 7155 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 51 / 7155 ( < 1 % )    ; 0 / 7155 ( 0 % )               ;
 ;                                             ;                        ;                                ;
 ; Virtual pins                                ; 0                      ; 0                              ;
 ; I/O pins                                    ; 18                     ; 0                              ;
@@ -944,8 +944,8 @@ The pin-out file can be found in /home/jaden/waveform-visualizer/output_files/DE
 ;     -- Registered Output Connections        ; 0                      ; 0                              ;
 ;                                             ;                        ;                                ;
 ; Internal Connections                        ;                        ;                                ;
-;     -- Total Connections                    ; 3386                   ; 9                              ;
-;     -- Registered Connections               ; 1118                   ; 0                              ;
+;     -- Total Connections                    ; 3384                   ; 9                              ;
+;     -- Registered Connections               ; 1116                   ; 0                              ;
 ;                                             ;                        ;                                ;
 ; External Connections                        ;                        ;                                ;
 ;     -- Top                                  ; 8                      ; 2                              ;
@@ -1923,8 +1923,8 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +---------------------------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+--------------+
 ; Compilation Hierarchy Node                                    ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                                                                                                                                                                                                 ; Entity Name                     ; Library Name ;
 +---------------------------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+--------------+
-; |DE2_Audio_Example                                            ; 666 (30)    ; 317 (20)                  ; 0 (0)         ; 16384       ; 4    ; 0            ; 0       ; 0         ; 18   ; 0            ; 349 (10)     ; 21 (0)            ; 296 (20)         ; |DE2_Audio_Example                                                                                                                                                                                                                                  ; DE2_Audio_Example               ; work         ;
-;    |Audio_Controller:Audio_Controller|                        ; 432 (4)     ; 222 (4)                   ; 0 (0)         ; 16384       ; 4    ; 0            ; 0       ; 0         ; 0    ; 0            ; 210 (0)      ; 6 (0)             ; 216 (4)          ; |DE2_Audio_Example|Audio_Controller:Audio_Controller                                                                                                                                                                                                ; Audio_Controller                ; work         ;
+; |DE2_Audio_Example                                            ; 668 (30)    ; 317 (20)                  ; 0 (0)         ; 16384       ; 4    ; 0            ; 0       ; 0         ; 18   ; 0            ; 351 (10)     ; 25 (0)            ; 292 (20)         ; |DE2_Audio_Example                                                                                                                                                                                                                                  ; DE2_Audio_Example               ; work         ;
+;    |Audio_Controller:Audio_Controller|                        ; 430 (4)     ; 222 (4)                   ; 0 (0)         ; 16384       ; 4    ; 0            ; 0       ; 0         ; 0    ; 0            ; 208 (0)      ; 6 (0)             ; 216 (4)          ; |DE2_Audio_Example|Audio_Controller:Audio_Controller                                                                                                                                                                                                ; Audio_Controller                ; work         ;
 ;       |Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer| ; 170 (41)    ; 108 (36)                  ; 0 (0)         ; 8192        ; 2    ; 0            ; 0       ; 0         ; 0    ; 0            ; 62 (5)       ; 0 (0)             ; 108 (36)         ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer                                                                                                                                          ; Altera_UP_Audio_In_Deserializer ; work         ;
 ;          |Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter|  ; 10 (10)     ; 6 (6)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 6 (6)            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter                                                                                        ; Altera_UP_Audio_Bit_Counter     ; work         ;
 ;          |Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|     ; 52 (0)      ; 33 (0)                    ; 0 (0)         ; 4096        ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 19 (0)       ; 0 (0)             ; 33 (0)           ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO                                                                                           ; Altera_UP_SYNC_FIFO             ; work         ;
@@ -1944,9 +1944,9 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ;                      |cntr_0ab:wr_ptr|                        ; 8 (8)       ; 7 (7)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 7 (7)            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_0ab:wr_ptr         ; cntr_0ab                        ; work         ;
 ;                      |cntr_ca7:usedw_counter|                 ; 8 (8)       ; 7 (7)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 7 (7)            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_ca7:usedw_counter  ; cntr_ca7                        ; work         ;
 ;                      |cntr_v9b:rd_ptr_msb|                    ; 7 (7)       ; 6 (6)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 6 (6)            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_v9b:rd_ptr_msb     ; cntr_v9b                        ; work         ;
-;       |Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|   ; 251 (57)    ; 104 (38)                  ; 0 (0)         ; 8192        ; 2    ; 0            ; 0       ; 0         ; 0    ; 0            ; 147 (19)     ; 0 (0)             ; 104 (38)         ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer                                                                                                                                            ; Altera_UP_Audio_Out_Serializer  ; work         ;
-;          |Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|    ; 97 (0)      ; 33 (0)                    ; 0 (0)         ; 4096        ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 64 (0)       ; 0 (0)             ; 33 (0)           ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO                                                                                            ; Altera_UP_SYNC_FIFO             ; work         ;
-;             |auto_tune:Auto|                                  ; 44 (44)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 44 (44)      ; 0 (0)             ; 0 (0)            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|auto_tune:Auto                                                                             ; auto_tune                       ; work         ;
+;       |Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|   ; 249 (57)    ; 104 (38)                  ; 0 (0)         ; 8192        ; 2    ; 0            ; 0       ; 0         ; 0    ; 0            ; 145 (19)     ; 0 (0)             ; 104 (38)         ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer                                                                                                                                            ; Altera_UP_Audio_Out_Serializer  ; work         ;
+;          |Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|    ; 96 (0)      ; 33 (0)                    ; 0 (0)         ; 4096        ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 63 (0)       ; 0 (0)             ; 33 (0)           ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO                                                                                            ; Altera_UP_SYNC_FIFO             ; work         ;
+;             |auto_tune:Auto|                                  ; 43 (43)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 43 (43)      ; 0 (0)             ; 0 (0)            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|auto_tune:Auto                                                                             ; auto_tune                       ; work         ;
 ;             |scfifo:Sync_FIFO|                                ; 53 (0)      ; 33 (0)                    ; 0 (0)         ; 4096        ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 20 (0)       ; 0 (0)             ; 33 (0)           ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO                                                                           ; scfifo                          ; work         ;
 ;                |scfifo_n441:auto_generated|                   ; 53 (0)      ; 33 (0)                    ; 0 (0)         ; 4096        ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 20 (0)       ; 0 (0)             ; 33 (0)           ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated                                                ; scfifo_n441                     ; work         ;
 ;                   |a_dpfifo_as31:dpfifo|                      ; 53 (30)     ; 33 (13)                   ; 0 (0)         ; 4096        ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 20 (17)      ; 0 (0)             ; 33 (13)          ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo                           ; a_dpfifo_as31                   ; work         ;
@@ -1954,8 +1954,8 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ;                      |cntr_0ab:wr_ptr|                        ; 8 (8)       ; 7 (7)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 7 (7)            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_0ab:wr_ptr           ; cntr_0ab                        ; work         ;
 ;                      |cntr_ca7:usedw_counter|                 ; 8 (8)       ; 7 (7)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 7 (7)            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_ca7:usedw_counter    ; cntr_ca7                        ; work         ;
 ;                      |cntr_v9b:rd_ptr_msb|                    ; 7 (7)       ; 6 (6)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 6 (6)            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_v9b:rd_ptr_msb       ; cntr_v9b                        ; work         ;
-;          |Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|   ; 97 (0)      ; 33 (0)                    ; 0 (0)         ; 4096        ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 64 (0)       ; 0 (0)             ; 33 (0)           ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO                                                                                           ; Altera_UP_SYNC_FIFO             ; work         ;
-;             |auto_tune:Auto|                                  ; 44 (44)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 44 (44)      ; 0 (0)             ; 0 (0)            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|auto_tune:Auto                                                                            ; auto_tune                       ; work         ;
+;          |Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|   ; 96 (0)      ; 33 (0)                    ; 0 (0)         ; 4096        ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 63 (0)       ; 0 (0)             ; 33 (0)           ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO                                                                                           ; Altera_UP_SYNC_FIFO             ; work         ;
+;             |auto_tune:Auto|                                  ; 43 (43)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 43 (43)      ; 0 (0)             ; 0 (0)            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|auto_tune:Auto                                                                            ; auto_tune                       ; work         ;
 ;             |scfifo:Sync_FIFO|                                ; 53 (0)      ; 33 (0)                    ; 0 (0)         ; 4096        ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 20 (0)       ; 0 (0)             ; 33 (0)           ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO                                                                          ; scfifo                          ; work         ;
 ;                |scfifo_n441:auto_generated|                   ; 53 (0)      ; 33 (0)                    ; 0 (0)         ; 4096        ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 20 (0)       ; 0 (0)             ; 33 (0)           ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated                                               ; scfifo_n441                     ; work         ;
 ;                   |a_dpfifo_as31:dpfifo|                      ; 53 (30)     ; 33 (13)                   ; 0 (0)         ; 4096        ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 20 (17)      ; 0 (0)             ; 33 (13)          ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo                          ; a_dpfifo_as31                   ; work         ;
@@ -1968,8 +1968,8 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ;       |Altera_UP_Clock_Edge:DAC_Left_Right_Clock_Edges|       ; 2 (2)       ; 2 (2)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 2 (2)             ; 0 (0)            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Clock_Edge:DAC_Left_Right_Clock_Edges                                                                                                                                                ; Altera_UP_Clock_Edge            ; work         ;
 ;       |Audio_Clock:Audio_Clock|                               ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Audio_Clock:Audio_Clock                                                                                                                                                                        ; Audio_Clock                     ; work         ;
 ;          |altpll:altpll_component|                            ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Audio_Clock:Audio_Clock|altpll:altpll_component                                                                                                                                                ; altpll                          ; work         ;
-;    |avconf:avc|                                               ; 204 (150)   ; 75 (45)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 129 (105)    ; 15 (9)            ; 60 (36)          ; |DE2_Audio_Example|avconf:avc                                                                                                                                                                                                                       ; avconf                          ; work         ;
-;       |I2C_Controller:u0|                                     ; 54 (54)     ; 30 (30)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 24 (24)      ; 6 (6)             ; 24 (24)          ; |DE2_Audio_Example|avconf:avc|I2C_Controller:u0                                                                                                                                                                                                     ; I2C_Controller                  ; work         ;
+;    |avconf:avc|                                               ; 208 (153)   ; 75 (45)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 133 (108)    ; 19 (12)           ; 56 (33)          ; |DE2_Audio_Example|avconf:avc                                                                                                                                                                                                                       ; avconf                          ; work         ;
+;       |I2C_Controller:u0|                                     ; 55 (55)     ; 30 (30)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 25 (25)      ; 7 (7)             ; 23 (23)          ; |DE2_Audio_Example|avconf:avc|I2C_Controller:u0                                                                                                                                                                                                     ; I2C_Controller                  ; work         ;
 +---------------------------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1987,15 +1987,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; AUD_DACDAT  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; I2C_SCLK    ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; AUD_BCLK    ; Bidir    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; AUD_ADCLRCK ; Bidir    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; AUD_ADCLRCK ; Bidir    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; AUD_DACLRCK ; Bidir    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; I2C_SDAT    ; Bidir    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; I2C_SDAT    ; Bidir    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; CLOCK_50    ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
-; KEY[0]      ; Input    ; (6) 1314 ps   ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; KEY[0]      ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; SW[0]       ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; SW[1]       ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; SW[1]       ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; SW[2]       ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
-; SW[3]       ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; SW[3]       ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; AUD_ADCDAT  ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 +-------------+----------+---------------+---------------+-----------------------+-----+------+
 
@@ -2012,13 +2012,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; AUD_BCLK                                                                                                                                                                                                                                                  ;                   ;         ;
 ;      - Audio_Controller:Audio_Controller|Altera_UP_Clock_Edge:Bit_Clock_Edges|cur_test_clk~feeder                                                                                                                                                         ; 0                 ; 6       ;
 ; AUD_ADCLRCK                                                                                                                                                                                                                                               ;                   ;         ;
-;      - Audio_Controller:Audio_Controller|Altera_UP_Clock_Edge:ADC_Left_Right_Clock_Edges|cur_test_clk~feeder                                                                                                                                              ; 0                 ; 6       ;
+;      - Audio_Controller:Audio_Controller|Altera_UP_Clock_Edge:ADC_Left_Right_Clock_Edges|cur_test_clk~feeder                                                                                                                                              ; 1                 ; 6       ;
 ; AUD_DACLRCK                                                                                                                                                                                                                                               ;                   ;         ;
 ;      - Audio_Controller:Audio_Controller|Altera_UP_Clock_Edge:DAC_Left_Right_Clock_Edges|cur_test_clk~feeder                                                                                                                                              ; 0                 ; 6       ;
 ; I2C_SDAT                                                                                                                                                                                                                                                  ;                   ;         ;
-;      - avconf:avc|I2C_Controller:u0|Selector4~0                                                                                                                                                                                                           ; 1                 ; 6       ;
-;      - avconf:avc|I2C_Controller:u0|ACK2~2                                                                                                                                                                                                                ; 1                 ; 6       ;
-;      - avconf:avc|I2C_Controller:u0|ACK3~2                                                                                                                                                                                                                ; 1                 ; 6       ;
+;      - avconf:avc|I2C_Controller:u0|Selector4~0                                                                                                                                                                                                           ; 0                 ; 6       ;
+;      - avconf:avc|I2C_Controller:u0|ACK2~2                                                                                                                                                                                                                ; 0                 ; 6       ;
+;      - avconf:avc|I2C_Controller:u0|ACK3~2                                                                                                                                                                                                                ; 0                 ; 6       ;
 ; CLOCK_50                                                                                                                                                                                                                                                  ;                   ;         ;
 ; KEY[0]                                                                                                                                                                                                                                                    ;                   ;         ;
 ;      - avconf:avc|mI2C_CTRL_CLK                                                                                                                                                                                                                           ; 0                 ; 6       ;
@@ -2168,7 +2168,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - avconf:avc|I2C_Controller:u0|ACK2                                                                                                                                                                                                                  ; 0                 ; 6       ;
 ;      - avconf:avc|I2C_Controller:u0|ACK3                                                                                                                                                                                                                  ; 0                 ; 6       ;
 ;      - avconf:avc|mSetup_ST.0000                                                                                                                                                                                                                          ; 0                 ; 6       ;
-;      - avconf:avc|LUT_INDEX[0]                                                                                                                                                                                                                            ; 1                 ; 6       ;
+;      - avconf:avc|LUT_INDEX[0]                                                                                                                                                                                                                            ; 0                 ; 6       ;
 ;      - Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_0ab:wr_ptr|_~0                        ; 0                 ; 6       ;
 ;      - Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|low_addressa[0]~0                          ; 0                 ; 6       ;
 ;      - Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|rd_ptr_lsb~0                               ; 0                 ; 6       ;
@@ -2264,17 +2264,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|data_out_shift_reg~36                                                                                                                                        ; 0                 ; 6       ;
 ;      - Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|data_out_shift_reg[16]~37                                                                                                                                    ; 0                 ; 6       ;
 ; SW[0]                                                                                                                                                                                                                                                     ;                   ;         ;
-;      - Equal2~0                                                                                                                                                                                                                                           ; 0                 ; 6       ;
+;      - right_channel_audio_out[31]~0                                                                                                                                                                                                                      ; 0                 ; 6       ;
 ;      - Equal0~0                                                                                                                                                                                                                                           ; 0                 ; 6       ;
 ; SW[1]                                                                                                                                                                                                                                                     ;                   ;         ;
-;      - Equal2~0                                                                                                                                                                                                                                           ; 0                 ; 6       ;
-;      - Equal0~0                                                                                                                                                                                                                                           ; 0                 ; 6       ;
+;      - right_channel_audio_out[31]~0                                                                                                                                                                                                                      ; 1                 ; 6       ;
+;      - Equal0~0                                                                                                                                                                                                                                           ; 1                 ; 6       ;
 ; SW[2]                                                                                                                                                                                                                                                     ;                   ;         ;
-;      - Equal2~0                                                                                                                                                                                                                                           ; 1                 ; 6       ;
+;      - right_channel_audio_out[31]~0                                                                                                                                                                                                                      ; 1                 ; 6       ;
 ;      - Equal0~1                                                                                                                                                                                                                                           ; 1                 ; 6       ;
 ; SW[3]                                                                                                                                                                                                                                                     ;                   ;         ;
-;      - Equal2~0                                                                                                                                                                                                                                           ; 0                 ; 6       ;
-;      - Equal0~1                                                                                                                                                                                                                                           ; 0                 ; 6       ;
+;      - right_channel_audio_out[31]~0                                                                                                                                                                                                                      ; 1                 ; 6       ;
+;      - Equal0~1                                                                                                                                                                                                                                           ; 1                 ; 6       ;
 ; AUD_ADCDAT                                                                                                                                                                                                                                                ;                   ;         ;
 ;      - Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|data_in_shift_reg~6                                                                                                                                        ; 0                 ; 6       ;
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------+
@@ -2285,59 +2285,59 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------+---------------------------------------+--------+----------------------+------------------+---------------------------+
 ; Name                                                                                                                                                                                                                                ; Location            ; Fan-Out ; Usage                                 ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------+---------------------------------------+--------+----------------------+------------------+---------------------------+
-; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter|bit_counter[1]~16                                                                         ; LCCOMB_X84_Y41_N26  ; 6       ; Sync. load                            ; no     ; --                   ; --               ; --                        ;
-; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter|bit_counter[1]~17                                                                         ; LCCOMB_X87_Y41_N30  ; 5       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_0ab:wr_ptr|_~0         ; LCCOMB_X84_Y41_N30  ; 7       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_ca7:usedw_counter|_~0  ; LCCOMB_X81_Y41_N20  ; 7       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_v9b:rd_ptr_msb|_~0     ; LCCOMB_X81_Y41_N22  ; 6       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|rd_ptr_lsb~1                ; LCCOMB_X83_Y41_N4   ; 1       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_0ab:wr_ptr|_~0        ; LCCOMB_X81_Y40_N28  ; 7       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_ca7:usedw_counter|_~0 ; LCCOMB_X84_Y42_N6   ; 7       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_v9b:rd_ptr_msb|_~0    ; LCCOMB_X83_Y42_N28  ; 6       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|rd_ptr_lsb~1               ; LCCOMB_X84_Y42_N16  ; 1       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|comb~0                                                                                                                                      ; LCCOMB_X83_Y42_N24  ; 17      ; Clock enable, Write enable            ; no     ; --                   ; --               ; --                        ;
-; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|comb~2                                                                                                                                      ; LCCOMB_X84_Y41_N18  ; 17      ; Clock enable, Write enable            ; no     ; --                   ; --               ; --                        ;
-; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|data_in_shift_reg[30]~1                                                                                                                     ; LCCOMB_X83_Y41_N22  ; 32      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_0ab:wr_ptr|_~0          ; LCCOMB_X84_Y41_N0   ; 7       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_ca7:usedw_counter|_~0   ; LCCOMB_X84_Y39_N30  ; 7       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_v9b:rd_ptr_msb|_~0      ; LCCOMB_X82_Y38_N30  ; 6       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|rd_ptr_lsb~1                 ; LCCOMB_X83_Y42_N2   ; 1       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_0ab:wr_ptr|_~0         ; LCCOMB_X83_Y39_N14  ; 7       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_ca7:usedw_counter|_~0  ; LCCOMB_X82_Y40_N6   ; 7       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_v9b:rd_ptr_msb|_~0     ; LCCOMB_X83_Y41_N30  ; 6       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|rd_ptr_lsb~1                ; LCCOMB_X83_Y41_N16  ; 1       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|comb~0                                                                                                                                        ; LCCOMB_X83_Y40_N4   ; 15      ; Clock enable, Write enable            ; no     ; --                   ; --               ; --                        ;
-; Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|comb~1                                                                                                                                        ; LCCOMB_X84_Y41_N2   ; 15      ; Clock enable, Write enable            ; no     ; --                   ; --               ; --                        ;
-; Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|data_out_shift_reg[16]~33                                                                                                                     ; LCCOMB_X79_Y39_N4   ; 31      ; Sync. clear                           ; no     ; --                   ; --               ; --                        ;
-; Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|data_out_shift_reg[16]~37                                                                                                                     ; LCCOMB_X83_Y41_N14  ; 31      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|read_left_channel                                                                                                                             ; LCCOMB_X83_Y39_N24  ; 58      ; Sync. load                            ; no     ; --                   ; --               ; --                        ;
+; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter|bit_counter[1]~16                                                                         ; LCCOMB_X84_Y43_N4   ; 6       ; Sync. load                            ; no     ; --                   ; --               ; --                        ;
+; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter|bit_counter[1]~17                                                                         ; LCCOMB_X84_Y43_N6   ; 5       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_0ab:wr_ptr|_~0         ; LCCOMB_X80_Y41_N28  ; 7       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_ca7:usedw_counter|_~0  ; LCCOMB_X86_Y43_N8   ; 7       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_v9b:rd_ptr_msb|_~0     ; LCCOMB_X85_Y41_N2   ; 6       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|rd_ptr_lsb~1                ; LCCOMB_X86_Y41_N18  ; 1       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_0ab:wr_ptr|_~0        ; LCCOMB_X80_Y40_N28  ; 7       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_ca7:usedw_counter|_~0 ; LCCOMB_X84_Y41_N4   ; 7       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_v9b:rd_ptr_msb|_~0    ; LCCOMB_X85_Y41_N4   ; 6       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|rd_ptr_lsb~1               ; LCCOMB_X85_Y41_N14  ; 1       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|comb~0                                                                                                                                      ; LCCOMB_X84_Y43_N22  ; 17      ; Clock enable, Write enable            ; no     ; --                   ; --               ; --                        ;
+; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|comb~2                                                                                                                                      ; LCCOMB_X82_Y43_N26  ; 17      ; Clock enable, Write enable            ; no     ; --                   ; --               ; --                        ;
+; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|data_in_shift_reg[30]~1                                                                                                                     ; LCCOMB_X84_Y43_N16  ; 32      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_0ab:wr_ptr|_~0          ; LCCOMB_X84_Y42_N26  ; 7       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_ca7:usedw_counter|_~0   ; LCCOMB_X84_Y42_N30  ; 7       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_v9b:rd_ptr_msb|_~0      ; LCCOMB_X82_Y43_N30  ; 6       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|rd_ptr_lsb~1                 ; LCCOMB_X82_Y43_N8   ; 1       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_0ab:wr_ptr|_~0         ; LCCOMB_X86_Y42_N6   ; 7       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_ca7:usedw_counter|_~0  ; LCCOMB_X86_Y42_N22  ; 7       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_v9b:rd_ptr_msb|_~0     ; LCCOMB_X83_Y39_N24  ; 6       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|rd_ptr_lsb~1                ; LCCOMB_X83_Y43_N0   ; 1       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|comb~0                                                                                                                                        ; LCCOMB_X86_Y42_N4   ; 15      ; Clock enable, Write enable            ; no     ; --                   ; --               ; --                        ;
+; Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|comb~1                                                                                                                                        ; LCCOMB_X84_Y42_N24  ; 15      ; Clock enable, Write enable            ; no     ; --                   ; --               ; --                        ;
+; Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|data_out_shift_reg[16]~33                                                                                                                     ; LCCOMB_X82_Y42_N26  ; 31      ; Sync. clear                           ; no     ; --                   ; --               ; --                        ;
+; Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|data_out_shift_reg[16]~37                                                                                                                     ; LCCOMB_X83_Y43_N22  ; 31      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|read_left_channel                                                                                                                             ; LCCOMB_X83_Y42_N10  ; 58      ; Sync. load                            ; no     ; --                   ; --               ; --                        ;
 ; CLOCK_50                                                                                                                                                                                                                            ; PIN_Y2              ; 263     ; Clock                                 ; yes    ; Global Clock         ; GCLK4            ; --                        ;
 ; CLOCK_50                                                                                                                                                                                                                            ; PIN_Y2              ; 2       ; Clock                                 ; no     ; --                   ; --               ; --                        ;
-; Equal0~7                                                                                                                                                                                                                            ; LCCOMB_X114_Y15_N4  ; 19      ; Sync. clear                           ; no     ; --                   ; --               ; --                        ;
+; Equal0~7                                                                                                                                                                                                                            ; LCCOMB_X111_Y22_N8  ; 19      ; Sync. clear                           ; no     ; --                   ; --               ; --                        ;
 ; KEY[0]                                                                                                                                                                                                                              ; PIN_M23             ; 242     ; Async. clear, Sync. clear, Sync. load ; no     ; --                   ; --               ; --                        ;
-; avconf:avc|I2C_Controller:u0|SD[22]~1                                                                                                                                                                                               ; LCCOMB_X110_Y39_N30 ; 18      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; avconf:avc|I2C_Controller:u0|SD_COUNTER[0]~9                                                                                                                                                                                        ; LCCOMB_X109_Y39_N8  ; 6       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; avconf:avc|LUT_INDEX[5]~15                                                                                                                                                                                                          ; LCCOMB_X111_Y38_N0  ; 6       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; avconf:avc|LessThan0~4                                                                                                                                                                                                              ; LCCOMB_X111_Y40_N8  ; 16      ; Sync. clear                           ; no     ; --                   ; --               ; --                        ;
-; avconf:avc|LessThan1~1                                                                                                                                                                                                              ; LCCOMB_X110_Y38_N8  ; 4       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; avconf:avc|Mux2~1                                                                                                                                                                                                                   ; LCCOMB_X112_Y37_N8  ; 16      ; Latch enable                          ; yes    ; Global Clock         ; GCLK6            ; --                        ;
-; avconf:avc|mI2C_CTRL_CLK                                                                                                                                                                                                            ; FF_X111_Y37_N9      ; 7       ; Clock                                 ; no     ; --                   ; --               ; --                        ;
-; avconf:avc|mI2C_CTRL_CLK                                                                                                                                                                                                            ; FF_X111_Y37_N9      ; 54      ; Clock                                 ; yes    ; Global Clock         ; GCLK8            ; --                        ;
-; avconf:avc|mI2C_DATA[22]~1                                                                                                                                                                                                          ; LCCOMB_X110_Y38_N16 ; 18      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; avconf:avc|mI2C_GO                                                                                                                                                                                                                  ; FF_X110_Y38_N1      ; 8       ; Sync. load                            ; no     ; --                   ; --               ; --                        ;
+; avconf:avc|I2C_Controller:u0|SD[22]~1                                                                                                                                                                                               ; LCCOMB_X110_Y41_N30 ; 18      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; avconf:avc|I2C_Controller:u0|SD_COUNTER[0]~9                                                                                                                                                                                        ; LCCOMB_X110_Y41_N10 ; 6       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; avconf:avc|LUT_INDEX[5]~15                                                                                                                                                                                                          ; LCCOMB_X110_Y39_N6  ; 6       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; avconf:avc|LessThan0~4                                                                                                                                                                                                              ; LCCOMB_X111_Y41_N18 ; 16      ; Sync. clear                           ; no     ; --                   ; --               ; --                        ;
+; avconf:avc|LessThan1~1                                                                                                                                                                                                              ; LCCOMB_X112_Y39_N12 ; 4       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; avconf:avc|Mux2~1                                                                                                                                                                                                                   ; LCCOMB_X111_Y39_N12 ; 16      ; Latch enable                          ; yes    ; Global Clock         ; GCLK5            ; --                        ;
+; avconf:avc|mI2C_CTRL_CLK                                                                                                                                                                                                            ; FF_X114_Y39_N25     ; 7       ; Clock                                 ; no     ; --                   ; --               ; --                        ;
+; avconf:avc|mI2C_CTRL_CLK                                                                                                                                                                                                            ; FF_X114_Y39_N25     ; 54      ; Clock                                 ; yes    ; Global Clock         ; GCLK9            ; --                        ;
+; avconf:avc|mI2C_DATA[22]~1                                                                                                                                                                                                          ; LCCOMB_X111_Y39_N22 ; 18      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; avconf:avc|mI2C_GO                                                                                                                                                                                                                  ; FF_X111_Y39_N3      ; 8       ; Sync. load                            ; no     ; --                   ; --               ; --                        ;
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------+---------------------------------------+--------+----------------------+------------------+---------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Global & Other Fast Signals                                                                                                                                                                                                         ;
-+-----------------------------------------------------------------------------------------+--------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; Name                                                                                    ; Location           ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+-----------------------------------------------------------------------------------------+--------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; Audio_Controller:Audio_Controller|Audio_Clock:Audio_Clock|altpll:altpll_component|_clk0 ; PLL_1              ; 1       ; 0                                    ; Global Clock         ; GCLK3            ; --                        ;
-; CLOCK_50                                                                                ; PIN_Y2             ; 263     ; 0                                    ; Global Clock         ; GCLK4            ; --                        ;
-; avconf:avc|Mux2~1                                                                       ; LCCOMB_X112_Y37_N8 ; 16      ; 0                                    ; Global Clock         ; GCLK6            ; --                        ;
-; avconf:avc|mI2C_CTRL_CLK                                                                ; FF_X111_Y37_N9     ; 54      ; 1                                    ; Global Clock         ; GCLK8            ; --                        ;
-+-----------------------------------------------------------------------------------------+--------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Global & Other Fast Signals                                                                                                                                                                                                          ;
++-----------------------------------------------------------------------------------------+---------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
+; Name                                                                                    ; Location            ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++-----------------------------------------------------------------------------------------+---------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
+; Audio_Controller:Audio_Controller|Audio_Clock:Audio_Clock|altpll:altpll_component|_clk0 ; PLL_1               ; 1       ; 0                                    ; Global Clock         ; GCLK3            ; --                        ;
+; CLOCK_50                                                                                ; PIN_Y2              ; 263     ; 0                                    ; Global Clock         ; GCLK4            ; --                        ;
+; avconf:avc|Mux2~1                                                                       ; LCCOMB_X111_Y39_N12 ; 16      ; 0                                    ; Global Clock         ; GCLK5            ; --                        ;
+; avconf:avc|mI2C_CTRL_CLK                                                                ; FF_X114_Y39_N25     ; 54      ; 6                                    ; Global Clock         ; GCLK9            ; --                        ;
++-----------------------------------------------------------------------------------------+---------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -2347,7 +2347,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+------+----------------+----------------------+------------------------+------------------------+----------+------------------------+---------------+
 ; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|ALTSYNCRAM  ; AUTO ; Simple Dual Port ; Single Clock ; 128          ; 32           ; 128          ; 32           ; yes                    ; no                      ; yes                    ; no                      ; 4096 ; 128                         ; 32                          ; 128                         ; 32                          ; 4096                ; 1    ; None ; M9K_X78_Y41_N0 ; Don't care           ; New data with NBE Read ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
 ; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|ALTSYNCRAM ; AUTO ; Simple Dual Port ; Single Clock ; 128          ; 32           ; 128          ; 32           ; yes                    ; no                      ; yes                    ; no                      ; 4096 ; 128                         ; 32                          ; 128                         ; 32                          ; 4096                ; 1    ; None ; M9K_X78_Y40_N0 ; Don't care           ; New data with NBE Read ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
-; Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|ALTSYNCRAM   ; AUTO ; Simple Dual Port ; Single Clock ; 128          ; 32           ; 128          ; 32           ; yes                    ; no                      ; yes                    ; no                      ; 4096 ; 128                         ; 32                          ; 128                         ; 32                          ; 4096                ; 1    ; None ; M9K_X78_Y38_N0 ; Don't care           ; New data with NBE Read ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
+; Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|ALTSYNCRAM   ; AUTO ; Simple Dual Port ; Single Clock ; 128          ; 32           ; 128          ; 32           ; yes                    ; no                      ; yes                    ; no                      ; 4096 ; 128                         ; 32                          ; 128                         ; 32                          ; 4096                ; 1    ; None ; M9K_X78_Y42_N0 ; Don't care           ; New data with NBE Read ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
 ; Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|ALTSYNCRAM  ; AUTO ; Simple Dual Port ; Single Clock ; 128          ; 32           ; 128          ; 32           ; yes                    ; no                      ; yes                    ; no                      ; 4096 ; 128                         ; 32                          ; 128                         ; 32                          ; 4096                ; 1    ; None ; M9K_X78_Y39_N0 ; Don't care           ; New data with NBE Read ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+------+----------------+----------------------+------------------------+------------------------+----------+------------------------+---------------+
 Note: Fitter may spread logical memories into multiple blocks to improve timing. The actual required RAM blocks can be found in the Fitter Resource Usage section.
@@ -2358,52 +2358,51 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 +-----------------------+-------------------------+
 ; Routing Resource Type ; Usage                   ;
 +-----------------------+-------------------------+
-; Block interconnects   ; 907 / 342,891 ( < 1 % ) ;
-; C16 interconnects     ; 19 / 10,120 ( < 1 % )   ;
-; C4 interconnects      ; 468 / 209,544 ( < 1 % ) ;
-; Direct links          ; 122 / 342,891 ( < 1 % ) ;
+; Block interconnects   ; 889 / 342,891 ( < 1 % ) ;
+; C16 interconnects     ; 13 / 10,120 ( < 1 % )   ;
+; C4 interconnects      ; 453 / 209,544 ( < 1 % ) ;
+; Direct links          ; 156 / 342,891 ( < 1 % ) ;
 ; Global clocks         ; 4 / 20 ( 20 % )         ;
-; Local interconnects   ; 391 / 119,088 ( < 1 % ) ;
-; R24 interconnects     ; 36 / 9,963 ( < 1 % )    ;
-; R4 interconnects      ; 623 / 289,782 ( < 1 % ) ;
+; Local interconnects   ; 386 / 119,088 ( < 1 % ) ;
+; R24 interconnects     ; 38 / 9,963 ( < 1 % )    ;
+; R4 interconnects      ; 641 / 289,782 ( < 1 % ) ;
 +-----------------------+-------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Logic Elements                                                         ;
 +---------------------------------------------+------------------------------+
-; Number of Logic Elements  (Average = 13.32) ; Number of LABs  (Total = 50) ;
+; Number of Logic Elements  (Average = 13.10) ; Number of LABs  (Total = 51) ;
 +---------------------------------------------+------------------------------+
-; 1                                           ; 0                            ;
-; 2                                           ; 4                            ;
-; 3                                           ; 0                            ;
-; 4                                           ; 0                            ;
+; 1                                           ; 1                            ;
+; 2                                           ; 1                            ;
+; 3                                           ; 1                            ;
+; 4                                           ; 1                            ;
 ; 5                                           ; 0                            ;
 ; 6                                           ; 0                            ;
-; 7                                           ; 2                            ;
-; 8                                           ; 2                            ;
-; 9                                           ; 1                            ;
+; 7                                           ; 4                            ;
+; 8                                           ; 3                            ;
+; 9                                           ; 0                            ;
 ; 10                                          ; 0                            ;
-; 11                                          ; 2                            ;
-; 12                                          ; 3                            ;
-; 13                                          ; 2                            ;
-; 14                                          ; 3                            ;
-; 15                                          ; 3                            ;
-; 16                                          ; 28                           ;
+; 11                                          ; 1                            ;
+; 12                                          ; 2                            ;
+; 13                                          ; 1                            ;
+; 14                                          ; 6                            ;
+; 15                                          ; 6                            ;
+; 16                                          ; 24                           ;
 +---------------------------------------------+------------------------------+
 
 
 +-------------------------------------------------------------------+
 ; LAB-wide Signals                                                  ;
 +------------------------------------+------------------------------+
-; LAB-wide Signals  (Average = 1.74) ; Number of LABs  (Total = 50) ;
+; LAB-wide Signals  (Average = 1.76) ; Number of LABs  (Total = 51) ;
 +------------------------------------+------------------------------+
-; 1 Async. clear                     ; 7                            ;
-; 1 Clock                            ; 41                           ;
-; 1 Clock enable                     ; 21                           ;
-; 1 Sync. clear                      ; 7                            ;
-; 1 Sync. load                       ; 9                            ;
-; 2 Clock enables                    ; 1                            ;
+; 1 Async. clear                     ; 8                            ;
+; 1 Clock                            ; 43                           ;
+; 1 Clock enable                     ; 22                           ;
+; 1 Sync. clear                      ; 8                            ;
+; 1 Sync. load                       ; 8                            ;
 ; 2 Clocks                           ; 1                            ;
 +------------------------------------+------------------------------+
 
@@ -2411,38 +2410,38 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 +-----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Signals Sourced  (Average = 19.42) ; Number of LABs  (Total = 50) ;
+; Number of Signals Sourced  (Average = 19.12) ; Number of LABs  (Total = 51) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
 ; 1                                            ; 0                            ;
-; 2                                            ; 3                            ;
+; 2                                            ; 1                            ;
 ; 3                                            ; 1                            ;
-; 4                                            ; 0                            ;
+; 4                                            ; 2                            ;
 ; 5                                            ; 0                            ;
 ; 6                                            ; 0                            ;
-; 7                                            ; 0                            ;
-; 8                                            ; 0                            ;
+; 7                                            ; 1                            ;
+; 8                                            ; 1                            ;
 ; 9                                            ; 0                            ;
 ; 10                                           ; 0                            ;
-; 11                                           ; 0                            ;
-; 12                                           ; 3                            ;
-; 13                                           ; 0                            ;
-; 14                                           ; 2                            ;
-; 15                                           ; 3                            ;
-; 16                                           ; 7                            ;
-; 17                                           ; 0                            ;
-; 18                                           ; 2                            ;
-; 19                                           ; 3                            ;
-; 20                                           ; 3                            ;
-; 21                                           ; 2                            ;
-; 22                                           ; 0                            ;
-; 23                                           ; 0                            ;
-; 24                                           ; 8                            ;
+; 11                                           ; 1                            ;
+; 12                                           ; 1                            ;
+; 13                                           ; 1                            ;
+; 14                                           ; 1                            ;
+; 15                                           ; 2                            ;
+; 16                                           ; 6                            ;
+; 17                                           ; 2                            ;
+; 18                                           ; 4                            ;
+; 19                                           ; 1                            ;
+; 20                                           ; 1                            ;
+; 21                                           ; 3                            ;
+; 22                                           ; 1                            ;
+; 23                                           ; 4                            ;
+; 24                                           ; 5                            ;
 ; 25                                           ; 3                            ;
-; 26                                           ; 3                            ;
-; 27                                           ; 3                            ;
-; 28                                           ; 0                            ;
-; 29                                           ; 2                            ;
+; 26                                           ; 0                            ;
+; 27                                           ; 5                            ;
+; 28                                           ; 1                            ;
+; 29                                           ; 1                            ;
 ; 30                                           ; 1                            ;
 ; 31                                           ; 0                            ;
 ; 32                                           ; 1                            ;
@@ -2452,59 +2451,57 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 +--------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                        ;
 +-------------------------------------------------+------------------------------+
-; Number of Signals Sourced Out  (Average = 6.96) ; Number of LABs  (Total = 50) ;
+; Number of Signals Sourced Out  (Average = 6.65) ; Number of LABs  (Total = 51) ;
 +-------------------------------------------------+------------------------------+
 ; 0                                               ; 0                            ;
-; 1                                               ; 4                            ;
+; 1                                               ; 3                            ;
 ; 2                                               ; 6                            ;
 ; 3                                               ; 6                            ;
-; 4                                               ; 1                            ;
-; 5                                               ; 1                            ;
-; 6                                               ; 4                            ;
-; 7                                               ; 7                            ;
-; 8                                               ; 5                            ;
-; 9                                               ; 1                            ;
-; 10                                              ; 2                            ;
-; 11                                              ; 4                            ;
-; 12                                              ; 2                            ;
-; 13                                              ; 5                            ;
-; 14                                              ; 1                            ;
-; 15                                              ; 0                            ;
-; 16                                              ; 1                            ;
+; 4                                               ; 4                            ;
+; 5                                               ; 4                            ;
+; 6                                               ; 3                            ;
+; 7                                               ; 5                            ;
+; 8                                               ; 4                            ;
+; 9                                               ; 3                            ;
+; 10                                              ; 1                            ;
+; 11                                              ; 3                            ;
+; 12                                              ; 4                            ;
+; 13                                              ; 3                            ;
+; 14                                              ; 2                            ;
 +-------------------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Distinct Inputs  (Average = 10.78) ; Number of LABs  (Total = 50) ;
+; Number of Distinct Inputs  (Average = 10.27) ; Number of LABs  (Total = 51) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
 ; 1                                            ; 0                            ;
 ; 2                                            ; 0                            ;
-; 3                                            ; 3                            ;
-; 4                                            ; 5                            ;
-; 5                                            ; 6                            ;
-; 6                                            ; 4                            ;
-; 7                                            ; 3                            ;
-; 8                                            ; 1                            ;
+; 3                                            ; 1                            ;
+; 4                                            ; 6                            ;
+; 5                                            ; 8                            ;
+; 6                                            ; 5                            ;
+; 7                                            ; 4                            ;
+; 8                                            ; 4                            ;
 ; 9                                            ; 5                            ;
-; 10                                           ; 4                            ;
-; 11                                           ; 1                            ;
-; 12                                           ; 3                            ;
+; 10                                           ; 2                            ;
+; 11                                           ; 2                            ;
+; 12                                           ; 1                            ;
 ; 13                                           ; 0                            ;
-; 14                                           ; 5                            ;
-; 15                                           ; 1                            ;
-; 16                                           ; 2                            ;
-; 17                                           ; 0                            ;
-; 18                                           ; 0                            ;
-; 19                                           ; 1                            ;
-; 20                                           ; 1                            ;
+; 14                                           ; 3                            ;
+; 15                                           ; 0                            ;
+; 16                                           ; 0                            ;
+; 17                                           ; 2                            ;
+; 18                                           ; 2                            ;
+; 19                                           ; 0                            ;
+; 20                                           ; 3                            ;
 ; 21                                           ; 0                            ;
-; 22                                           ; 1                            ;
+; 22                                           ; 0                            ;
 ; 23                                           ; 0                            ;
-; 24                                           ; 2                            ;
-; 25                                           ; 0                            ;
+; 24                                           ; 0                            ;
+; 25                                           ; 1                            ;
 ; 26                                           ; 0                            ;
 ; 27                                           ; 0                            ;
 ; 28                                           ; 0                            ;
@@ -2512,9 +2509,9 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 ; 30                                           ; 0                            ;
 ; 31                                           ; 0                            ;
 ; 32                                           ; 0                            ;
-; 33                                           ; 1                            ;
+; 33                                           ; 0                            ;
 ; 34                                           ; 0                            ;
-; 35                                           ; 0                            ;
+; 35                                           ; 1                            ;
 ; 36                                           ; 1                            ;
 +----------------------------------------------+------------------------------+
 
@@ -2642,8 +2639,9 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 +--------------------------+--------------------------+-------------------+
 ; Source Clock(s)          ; Destination Clock(s)     ; Delay Added in ns ;
 +--------------------------+--------------------------+-------------------+
-; avconf:avc|mI2C_CTRL_CLK ; avconf:avc|LUT_INDEX[1]  ; 204.4             ;
-; avconf:avc|mI2C_CTRL_CLK ; avconf:avc|mI2C_CTRL_CLK ; 10.5              ;
+; avconf:avc|mI2C_CTRL_CLK ; avconf:avc|LUT_INDEX[1]  ; 220.6             ;
+; avconf:avc|mI2C_CTRL_CLK ; avconf:avc|mI2C_CTRL_CLK ; 12.6              ;
+; CLOCK_50                 ; CLOCK_50                 ; 7.2               ;
 +--------------------------+--------------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
@@ -2654,13 +2652,13 @@ This will disable optimization of problematic paths and expose them for further 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
 ; Source Register                                                                                                                                                                                                                             ; Destination Register                                                                                                                                                                                                                                              ; Delay Added in ns ;
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
-; avconf:avc|LUT_INDEX[1]                                                                                                                                                                                                                     ; avconf:avc|LUT_DATA[14]                                                                                                                                                                                                                                           ; 4.649             ;
+; avconf:avc|LUT_INDEX[1]                                                                                                                                                                                                                     ; avconf:avc|LUT_DATA[13]                                                                                                                                                                                                                                           ; 5.099             ;
 ; avconf:avc|mI2C_CTRL_CLK                                                                                                                                                                                                                    ; avconf:avc|mI2C_CTRL_CLK                                                                                                                                                                                                                                          ; 4.174             ;
-; avconf:avc|LUT_INDEX[3]                                                                                                                                                                                                                     ; avconf:avc|LUT_DATA[9]                                                                                                                                                                                                                                            ; 2.749             ;
-; avconf:avc|LUT_INDEX[4]                                                                                                                                                                                                                     ; avconf:avc|LUT_DATA[9]                                                                                                                                                                                                                                            ; 2.749             ;
-; avconf:avc|LUT_INDEX[2]                                                                                                                                                                                                                     ; avconf:avc|LUT_DATA[9]                                                                                                                                                                                                                                            ; 2.749             ;
-; avconf:avc|LUT_INDEX[5]                                                                                                                                                                                                                     ; avconf:avc|LUT_DATA[14]                                                                                                                                                                                                                                           ; 2.725             ;
-; avconf:avc|LUT_INDEX[0]                                                                                                                                                                                                                     ; avconf:avc|LUT_DATA[11]                                                                                                                                                                                                                                           ; 2.594             ;
+; avconf:avc|LUT_INDEX[3]                                                                                                                                                                                                                     ; avconf:avc|LUT_DATA[0]                                                                                                                                                                                                                                            ; 3.039             ;
+; avconf:avc|LUT_INDEX[4]                                                                                                                                                                                                                     ; avconf:avc|LUT_DATA[0]                                                                                                                                                                                                                                            ; 3.039             ;
+; avconf:avc|LUT_INDEX[2]                                                                                                                                                                                                                     ; avconf:avc|LUT_DATA[0]                                                                                                                                                                                                                                            ; 3.039             ;
+; avconf:avc|LUT_INDEX[5]                                                                                                                                                                                                                     ; avconf:avc|LUT_DATA[6]                                                                                                                                                                                                                                            ; 2.997             ;
+; avconf:avc|LUT_INDEX[0]                                                                                                                                                                                                                     ; avconf:avc|LUT_DATA[11]                                                                                                                                                                                                                                           ; 2.713             ;
 ; avconf:avc|mI2C_CLK_DIV[14]                                                                                                                                                                                                                 ; avconf:avc|mI2C_CTRL_CLK                                                                                                                                                                                                                                          ; 2.087             ;
 ; avconf:avc|mI2C_CLK_DIV[13]                                                                                                                                                                                                                 ; avconf:avc|mI2C_CTRL_CLK                                                                                                                                                                                                                                          ; 2.087             ;
 ; avconf:avc|mI2C_CLK_DIV[12]                                                                                                                                                                                                                 ; avconf:avc|mI2C_CTRL_CLK                                                                                                                                                                                                                                          ; 2.087             ;
@@ -2675,12 +2673,25 @@ This will disable optimization of problematic paths and expose them for further 
 ; avconf:avc|mI2C_CLK_DIV[2]                                                                                                                                                                                                                  ; avconf:avc|mI2C_CTRL_CLK                                                                                                                                                                                                                                          ; 2.087             ;
 ; avconf:avc|mI2C_CLK_DIV[11]                                                                                                                                                                                                                 ; avconf:avc|mI2C_CTRL_CLK                                                                                                                                                                                                                                          ; 2.087             ;
 ; avconf:avc|mI2C_CLK_DIV[15]                                                                                                                                                                                                                 ; avconf:avc|mI2C_CTRL_CLK                                                                                                                                                                                                                                          ; 2.087             ;
-; avconf:avc|mSetup_ST.0010                                                                                                                                                                                                                   ; avconf:avc|LUT_INDEX[0]                                                                                                                                                                                                                                           ; 1.266             ;
-; avconf:avc|mSetup_ST.0000                                                                                                                                                                                                                   ; avconf:avc|mI2C_DATA[14]                                                                                                                                                                                                                                          ; 0.742             ;
-; KEY[0]                                                                                                                                                                                                                                      ; avconf:avc|mI2C_DATA[14]                                                                                                                                                                                                                                          ; 0.742             ;
-; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_0ab:wr_ptr|counter_reg_bit[0] ; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|ram_block1a31~porta_address_reg0 ; 0.032             ;
+; avconf:avc|mSetup_ST.0010                                                                                                                                                                                                                   ; avconf:avc|LUT_INDEX[0]                                                                                                                                                                                                                                           ; 1.317             ;
+; avconf:avc|mSetup_ST.0000                                                                                                                                                                                                                   ; avconf:avc|mI2C_DATA[18]                                                                                                                                                                                                                                          ; 0.776             ;
+; KEY[0]                                                                                                                                                                                                                                      ; avconf:avc|mI2C_DATA[18]                                                                                                                                                                                                                                          ; 0.776             ;
+; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|data_in_shift_reg[13]                                                                                                                               ; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|ram_block1a12~porta_datain_reg0  ; 0.244             ;
+; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|data_in_shift_reg[14]                                                                                                                               ; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|ram_block1a13~porta_datain_reg0  ; 0.244             ;
+; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|data_in_shift_reg[15]                                                                                                                               ; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|ram_block1a14~porta_datain_reg0  ; 0.244             ;
+; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|data_in_shift_reg[16]                                                                                                                               ; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|ram_block1a15~porta_datain_reg0  ; 0.244             ;
+; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|data_in_shift_reg[17]                                                                                                                               ; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|ram_block1a16~porta_datain_reg0  ; 0.244             ;
+; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|data_in_shift_reg[18]                                                                                                                               ; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|ram_block1a17~porta_datain_reg0  ; 0.244             ;
+; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|data_in_shift_reg[19]                                                                                                                               ; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|ram_block1a18~porta_datain_reg0  ; 0.244             ;
+; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|data_in_shift_reg[20]                                                                                                                               ; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|ram_block1a19~porta_datain_reg0  ; 0.244             ;
+; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|data_in_shift_reg[21]                                                                                                                               ; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|ram_block1a20~porta_datain_reg0  ; 0.244             ;
+; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|data_in_shift_reg[22]                                                                                                                               ; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|ram_block1a21~porta_datain_reg0  ; 0.244             ;
+; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|data_in_shift_reg[23]                                                                                                                               ; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|ram_block1a22~porta_datain_reg0  ; 0.244             ;
+; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|data_in_shift_reg[24]                                                                                                                               ; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|ram_block1a23~porta_datain_reg0  ; 0.244             ;
+; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_0ab:wr_ptr|counter_reg_bit[0] ; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|ram_block1a31~porta_address_reg0 ; 0.033             ;
+; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|cntr_0ab:wr_ptr|counter_reg_bit[0]  ; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_n441:auto_generated|a_dpfifo_as31:dpfifo|altsyncram_7tb1:FIFOram|ram_block1a31~porta_address_reg0  ; 0.024             ;
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
-Note: This table only shows the top 25 path(s) that have the largest delay added for hold.
+Note: This table only shows the top 38 path(s) that have the largest delay added for hold.
 
 
 +-----------------+
@@ -3381,14 +3392,14 @@ Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:03
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:04
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 3% of the available device resources in the region that extends from location X69_Y37 to location X80_Y48
+    Info (170196): Router estimated peak interconnect usage is 4% of the available device resources in the region that extends from location X69_Y37 to location X80_Y48
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:03
-Info (11888): Total time spent on timing analysis during the Fitter is 0.88 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.97 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -3402,9 +3413,9 @@ Warning (169064): Following 3 pins have no output enable or a GND or VCC output 
 Info (144001): Generated suppressed messages file /home/jaden/waveform-visualizer/output_files/DE2_Audio_Example.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 645 warnings
     Info: Peak virtual memory: 1315 megabytes
-    Info: Processing ended: Wed Mar 27 18:29:05 2019
-    Info: Elapsed time: 00:00:19
-    Info: Total CPU time (on all processors): 00:00:21
+    Info: Processing ended: Thu Mar 28 21:02:56 2019
+    Info: Elapsed time: 00:00:20
+    Info: Total CPU time (on all processors): 00:00:22
 
 
 +----------------------------+

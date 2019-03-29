@@ -108,8 +108,8 @@ wire [31:0] sound = snd ? 32'd10000000 : -32'd10000000;
 
 assign read_audio_in	= audio_in_available & audio_out_allowed;
 
-assign left_channel_audio_out	= (SW == 0) ? left_channel_audio_in : snd ? left_channel_audio_in : 0;
-assign right_channel_audio_out	= (SW == 0) ? right_channel_audio_in : snd ? right_channel_audio_in : 0;
+assign left_channel_audio_out	= (SW == 0) ? left_channel_audio_in : snd ? 0 : left_channel_audio_in;
+assign right_channel_audio_out	= (SW == 0) ? right_channel_audio_in : snd ? 0 : right_channel_audio_in;
 assign write_audio_out			= audio_in_available & audio_out_allowed;
 
 /*****************************************************************************

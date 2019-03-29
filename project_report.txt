@@ -1,0 +1,109 @@
+CSCB58 Project Report: Winter 2019
+
+Team Member A
+-------------
+First Name: Yi Jie
+Last Name: Wang
+Student Number: 1004177044
+UofT E-mail Address: jaden.wang@mail.utoronto.ca
+
+
+Team Member B
+-------------
+First Name: Yiming
+Last Name: Zhong
+Student Number: 1004500694
+UofT E-mail Address: ym.zhong@mail.utoronto.ca
+
+Team Member C (Optional)
+-------------
+First Name: Julian
+Last Name: He
+Student Number: 1004244070
+UofT E-mail Address: julian.he@mail.utoronto.ca
+
+Team Member D (Optional)
+-------------
+First Name: Eric
+Last Name: Tan
+Student Number: 1004277007
+UofT E-mail Address: Eric.Tan@mail.utoronto.ca
+
+
+Project Plan
+--------
+
+Project Title: Audio Visualizer
+
+Provide a one paragraph description of your project:
+
+The waveform visualizer will capture audio input from a microphone and display the waveform on the monitor.
+
+Tasks to implement:
+
+- Design a system to record audio from the microphone.
+- Based on the audio recorded, output it to VGA.
+- When stored in RAM, apply transformations to the audio.
+
+What is your plan for the first week?
+
+Implement a system to capture the audio input, and perhaps save it in temporary memory.
+
+What is your plan for the second week?
+
+If we couldn't complete the previous week's plan, continue that.
+Otherwise, implement a system to output audio from memory to the VGA.
+
+What is your plan for the third week?
+
+Complete any unfinished tasks, then perform testing.
+If time allows, add a feature where we could load memory and apply transformations on it,
+later to be outputted on the speaker.
+
+What is your backup plan if things don’t work out as planned?
+
+If VGA does not work, we could output it to the LEDs instead.
+
+Weekly Reports
+--------------
+<In this space, provide a report each week of what worked and what didn't, and what (if any) changes were made to your proposal)>
+
+Week 1:
+	We got audio detection from the microphone using the Audio Controller to work. VGA output also works.
+	What didn't work was playing back the audio. The problem could potentially be at one or more of these 3 points:
+	- Storing the audio into memory.
+	- Reading the audio from memory.
+	- Processing the output audio into the speaker.
+
+	No changes are applied to the proposal.
+
+Week 2:
+	We refactored a bunch of code so now audio detection and playback both work in real time.
+	VGA is no longer working but it should be a simple fix.
+
+	Our change to the proposal is that we are no longer storing the audio into the memory.
+	We will be modifying the audio in real time.
+
+Week 3:
+	We took advantage of extra time and finally got transformations on voice audio to work.
+	We were able to deepen and "robotify" voice.
+
+	We managed to get LEDs to represent the output of the voice but it isn't very sensitive.
+
+	Next step is to get VGA working and continue to improve the voice transformations.
+
+References
+----------
+<In this space clearly indicate all external sources used in this project. If you used anyone else's code (from previous B58 projects or other sources) clearly indicate what you used and where you found it. Usage of any material not credited in this space will be considered plagiarism. It is absolutely OK and expected to update this section as you progress in the projected.
+
+Make sure to document what you added on top of the existing work, especially if you work with a previous project. What is it that YOU added?>
+
+ftp://ftp.intel.com/Pub/fpgaup/pub/Intel_Material/Laboratory_Exercises/Digital_Logic/Verilog/lab12.pdf
+http://www.eecg.toronto.edu/~jayar/ece241_08F/AudioVideoCores/vr/vr.html#id454932
+http://www.eecg.toronto.edu/~jayar/ece241_08F/AudioVideoCores/audio/audio.html
+
+Repo & Video
+------------
+Repository: https://github.com/jadenyjw/waveform-visualizer
+Video:
+<At the end of the project, provide links to your code repository and presentation video (and passwords if not public>

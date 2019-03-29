@@ -1,5 +1,5 @@
 Flow report for DE2_Audio_Example
-Wed Mar 27 18:29:15 2019
+Thu Mar 28 21:03:06 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,15 +40,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Wed Mar 27 18:29:15 2019       ;
+; Flow Status                        ; Successful - Thu Mar 28 21:03:06 2019       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; DE2_Audio_Example                           ;
 ; Top-level Entity Name              ; DE2_Audio_Example                           ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 666 / 114,480 ( < 1 % )                     ;
-;     Total combinational functions  ; 645 / 114,480 ( < 1 % )                     ;
+; Total logic elements               ; 668 / 114,480 ( < 1 % )                     ;
+;     Total combinational functions  ; 643 / 114,480 ( < 1 % )                     ;
 ;     Dedicated logic registers      ; 317 / 114,480 ( < 1 % )                     ;
 ; Total registers                    ; 317                                         ;
 ; Total pins                         ; 18 / 529 ( 3 % )                            ;
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/27/2019 18:28:31 ;
+; Start date & time ; 03/28/2019 21:02:20 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; DE2_Audio_Example   ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 92962971176141.155372571102832         ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 92962971176141.155382134007894         ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
@@ -99,12 +99,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:14     ; 1.0                     ; 943 MB              ; 00:00:30                           ;
-; Fitter               ; 00:00:19     ; 1.0                     ; 1315 MB             ; 00:00:20                           ;
-; Assembler            ; 00:00:04     ; 1.0                     ; 805 MB              ; 00:00:04                           ;
-; Timing Analyzer      ; 00:00:03     ; 1.0                     ; 856 MB              ; 00:00:02                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 1047 MB             ; 00:00:01                           ;
-; Total                ; 00:00:42     ; --                      ; --                  ; 00:00:57                           ;
+; Analysis & Synthesis ; 00:00:15     ; 1.0                     ; 944 MB              ; 00:00:31                           ;
+; Fitter               ; 00:00:20     ; 1.0                     ; 1315 MB             ; 00:00:21                           ;
+; Assembler            ; 00:00:04     ; 1.0                     ; 806 MB              ; 00:00:03                           ;
+; Timing Analyzer      ; 00:00:03     ; 1.0                     ; 851 MB              ; 00:00:03                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 1046 MB             ; 00:00:01                           ;
+; Total                ; 00:00:43     ; --                      ; --                  ; 00:00:59                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
