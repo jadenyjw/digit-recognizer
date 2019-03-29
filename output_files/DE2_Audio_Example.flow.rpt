@@ -1,5 +1,5 @@
 Flow report for DE2_Audio_Example
-Mon Mar 25 18:09:41 2019
+Thu Mar 28 20:56:02 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,20 +40,20 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Mon Mar 25 18:09:41 2019       ;
+; Flow Status                        ; Successful - Thu Mar 28 20:56:02 2019       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; DE2_Audio_Example                           ;
 ; Top-level Entity Name              ; DE2_Audio_Example                           ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 806 / 114,480 ( < 1 % )                     ;
-;     Total combinational functions  ; 777 / 114,480 ( < 1 % )                     ;
-;     Dedicated logic registers      ; 397 / 114,480 ( < 1 % )                     ;
-; Total registers                    ; 397                                         ;
-; Total pins                         ; 107 / 529 ( 20 % )                          ;
+; Total logic elements               ; 855 / 114,480 ( < 1 % )                     ;
+;     Total combinational functions  ; 795 / 114,480 ( < 1 % )                     ;
+;     Dedicated logic registers      ; 417 / 114,480 ( < 1 % )                     ;
+; Total registers                    ; 417                                         ;
+; Total pins                         ; 64 / 529 ( 12 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 73,984 / 3,981,312 ( 2 % )                  ;
+; Total memory bits                  ; 93,184 / 3,981,312 ( 2 % )                  ;
 ; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                             ;
 ; Total PLLs                         ; 2 / 4 ( 50 % )                              ;
 +------------------------------------+---------------------------------------------+
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/25/2019 18:08:55 ;
+; Start date & time ; 03/28/2019 20:55:09 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; DE2_Audio_Example   ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 92962971176141.155355173501455         ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 92962971176141.155382090907626         ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
@@ -100,12 +100,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:15     ; 1.0                     ; 950 MB              ; 00:00:29                           ;
-; Fitter               ; 00:00:19     ; 1.0                     ; 1323 MB             ; 00:00:21                           ;
-; Assembler            ; 00:00:03     ; 1.0                     ; 807 MB              ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 859 MB              ; 00:00:03                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 1056 MB             ; 00:00:02                           ;
-; Total                ; 00:00:41     ; --                      ; --                  ; 00:00:58                           ;
+; Analysis & Synthesis ; 00:00:16     ; 1.0                     ; 950 MB              ; 00:00:32                           ;
+; Fitter               ; 00:00:24     ; 1.0                     ; 1321 MB             ; 00:00:26                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 808 MB              ; 00:00:03                           ;
+; Timing Analyzer      ; 00:00:03     ; 1.0                     ; 855 MB              ; 00:00:03                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 1053 MB             ; 00:00:02                           ;
+; Total                ; 00:00:48     ; --                      ; --                  ; 00:01:06                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

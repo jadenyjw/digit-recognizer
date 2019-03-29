@@ -1,12 +1,12 @@
 module display(	input clock, reset, freeze,
-				input [31:0] data,
+				input [15:0] data,
 
 				output reg [8:0] x,
 				output reg [7:0] y,
-				output [2:0] color,
+				output color,
 				output plot);
 
-localparam sweep_delay = 10000, xmax = 159, ymax = 119;
+localparam sweep_delay = 10000, xmax = 319, ymax = 239;
 
 reg [31:0] delay_counter;
 
@@ -47,6 +47,6 @@ always @(posedge clock)
 
 
 assign plot = (streg == st_ploty);
-assign color = (y == 8'd120+{data[31], data[6:0]});
+assign color = (y == 8'd120+{data[15], data[6:0]});
 
 endmodule
