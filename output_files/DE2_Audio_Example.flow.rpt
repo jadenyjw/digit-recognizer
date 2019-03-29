@@ -1,6 +1,6 @@
 Flow report for DE2_Audio_Example
-Thu Mar 28 20:56:02 2019
-Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Fri Mar 29 16:42:11 2019
+Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
 ---------------------
@@ -21,37 +21,38 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2018  Intel Corporation. All rights reserved.
-Your use of Intel Corporation's design tools, logic functions 
+Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
-to the terms and conditions of the Intel Program License 
-Subscription Agreement, the Intel Quartus Prime License Agreement,
-the Intel FPGA IP License Agreement, or other applicable license
-agreement, including, without limitation, that your use is for
-the sole purpose of programming logic devices manufactured by
-Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details.
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
 
 
 
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Thu Mar 28 20:56:02 2019       ;
-; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Flow Status                        ; Successful - Fri Mar 29 16:42:11 2019       ;
+; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                      ; DE2_Audio_Example                           ;
 ; Top-level Entity Name              ; DE2_Audio_Example                           ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 855 / 114,480 ( < 1 % )                     ;
-;     Total combinational functions  ; 795 / 114,480 ( < 1 % )                     ;
+; Total logic elements               ; 891 / 114,480 ( < 1 % )                     ;
+;     Total combinational functions  ; 814 / 114,480 ( < 1 % )                     ;
 ;     Dedicated logic registers      ; 417 / 114,480 ( < 1 % )                     ;
 ; Total registers                    ; 417                                         ;
-; Total pins                         ; 64 / 529 ( 12 % )                           ;
+; Total pins                         ; 78 / 529 ( 15 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 93,184 / 3,981,312 ( 2 % )                  ;
 ; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                             ;
@@ -64,62 +65,62 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/28/2019 20:55:09 ;
+; Start date & time ; 03/29/2019 16:41:29 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; DE2_Audio_Example   ;
 +-------------------+---------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                            ;
-+-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
-+-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 92962971176141.155382090907626         ; --            ; --          ; --             ;
-; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --             ;
-; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --             ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; vr          ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; vr          ; Top            ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --             ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --             ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --             ;
-; USE_GENERATED_PHYSICAL_CONSTRAINTS  ; Off                                    ; --            ; --          ; eda_palace     ;
-; VERILOG_INPUT_VERSION               ; SystemVerilog_2005                     ; Verilog_2001  ; --          ; --             ;
-; VERILOG_SHOW_LMF_MAPPING_MESSAGES   ; Off                                    ; --            ; --          ; --             ;
-+-------------------------------------+----------------------------------------+---------------+-------------+----------------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                           ;
++-------------------------------------+---------------------------------------+---------------+-------------+----------------+
+; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
++-------------------------------------+---------------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 268891675993751.155389208903638       ; --            ; --          ; --             ;
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                           ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)             ; <None>        ; --          ; --             ;
+; EDA_TIME_SCALE                      ; 1 ps                                  ; --            ; --          ; eda_simulation ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --            ; --          ; --             ;
+; PARTITION_COLOR                     ; 2147039                               ; --            ; --          ; Top            ;
+; PARTITION_COLOR                     ; 2147039                               ; --            ; vr          ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; vr          ; Top            ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                   ; --            ; --          ; --             ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --          ; --             ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                          ; --            ; --          ; --             ;
+; USE_GENERATED_PHYSICAL_CONSTRAINTS  ; Off                                   ; --            ; --          ; eda_palace     ;
+; VERILOG_INPUT_VERSION               ; SystemVerilog_2005                    ; Verilog_2001  ; --          ; --             ;
+; VERILOG_SHOW_LMF_MAPPING_MESSAGES   ; Off                                   ; --            ; --          ; --             ;
++-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                        ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:16     ; 1.0                     ; 950 MB              ; 00:00:32                           ;
-; Fitter               ; 00:00:24     ; 1.0                     ; 1321 MB             ; 00:00:26                           ;
-; Assembler            ; 00:00:03     ; 1.0                     ; 808 MB              ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:03     ; 1.0                     ; 855 MB              ; 00:00:03                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 1053 MB             ; 00:00:02                           ;
-; Total                ; 00:00:48     ; --                      ; --                  ; 00:01:06                           ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:13     ; 1.0                     ; 1233 MB             ; 00:00:22                           ;
+; Fitter                    ; 00:00:18     ; 1.0                     ; 1581 MB             ; 00:00:19                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 1077 MB             ; 00:00:03                           ;
+; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 1165 MB             ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 1335 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:39     ; --                      ; --                  ; 00:00:47                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                    ;
-+----------------------+------------------+------------+------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
-+----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; arch-xps13       ; Arch Linux ; Arch Linux ; x86_64         ;
-; Fitter               ; arch-xps13       ; Arch Linux ; Arch Linux ; x86_64         ;
-; Assembler            ; arch-xps13       ; Arch Linux ; Arch Linux ; x86_64         ;
-; Timing Analyzer      ; arch-xps13       ; Arch Linux ; Arch Linux ; x86_64         ;
-; EDA Netlist Writer   ; arch-xps13       ; Arch Linux ; Arch Linux ; x86_64         ;
-+----------------------+------------------+------------+------------+----------------+
++---------------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                             ;
++---------------------------+------------------+----------------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name        ; OS Version ; Processor type ;
++---------------------------+------------------+----------------+------------+----------------+
+; Analysis & Synthesis      ; IITS-I402-02     ; Ubuntu 16.04.5 ; 16         ; x86_64         ;
+; Fitter                    ; IITS-I402-02     ; Ubuntu 16.04.5 ; 16         ; x86_64         ;
+; Assembler                 ; IITS-I402-02     ; Ubuntu 16.04.5 ; 16         ; x86_64         ;
+; TimeQuest Timing Analyzer ; IITS-I402-02     ; Ubuntu 16.04.5 ; 16         ; x86_64         ;
+; EDA Netlist Writer        ; IITS-I402-02     ; Ubuntu 16.04.5 ; 16         ; x86_64         ;
++---------------------------+------------------+----------------+------------+----------------+
 
 
 ------------

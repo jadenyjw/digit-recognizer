@@ -43,7 +43,7 @@ module DE2_Audio_Example (
 // Inputs
 input				CLOCK_50;
 input		[3:0]	KEY;
-input		[3:0]	SW;
+input		[17:0]	SW;
 
 input				AUD_ADCDAT;
 
@@ -122,8 +122,7 @@ always @(posedge CLOCK_50)
 	end else delay_cnt <= delay_cnt + 1;
 	
 always @(negedge write_audio_out)
-		if(audio_out_allowed)
-			LEDR[15:0] = left_channel_audio_out[31:16];
+		LEDR[15:0] = left_channel_audio_out[31:16];
 
 
 
@@ -131,16 +130,14 @@ always @(negedge write_audio_out)
  *                            Combinational Logic                            *
  *****************************************************************************/
 
-assign delay = {SW[3:0], 15'd3000};
-
-wire [31:0] sound = (SW == 0) ? 0 : snd ? 32'd10000000 : -32'd10000000;
+assign delay = SW[17:0];
 
 
 assign read_audio_in	= audio_in_available & audio_out_allowed;
 
-assign left_channel_audio_out	= left_channel_audio_in+sound;
-assign right_channel_audio_out	= right_channel_audio_in+sound;
-assign write_audio_out	= audio_in_available & audio_out_allowed;
+assign left_channel_audio_out	= (SW == 0) ? left_channel_audio_in : snd ? 0 : left_channel_audio_in;
+assign right_channel_audio_out	= (SW == 0) ? right_channel_audio_in: snd ? 0 : right_channel_audio_in;
+assign write_audio_out = audio_in_available & audio_out_allowed;
 
 /*****************************************************************************
  *                              Internal Modules                             *
