@@ -19,22 +19,8 @@ module DE2_Audio_Example (
 	AUD_DACDAT,
 
 	I2C_SCLK,
-	SW,
-	
-		// The ports below are for the VGA output.  Do not change.
-	VGA_CLK,   						//	VGA Clock
-	VGA_HS,							//	VGA H_SYNC
-	VGA_VS,							//	VGA V_SYNC
-	VGA_BLANK_N,						//	VGA BLANK
-	VGA_SYNC_N,						//	VGA SYNC
-	VGA_R,   						//	VGA Red[9:0]
-	VGA_G,	 						//	VGA Green[9:0]
-	VGA_B   						//	VGA Blue[9:0]
+	SW
 );
-
-/*****************************************************************************
- *                           Parameter Declarations                          *
- *****************************************************************************/
 
 
 /*****************************************************************************
@@ -42,34 +28,20 @@ module DE2_Audio_Example (
  *****************************************************************************/
 // Inputs
 input				CLOCK_50;
-input		[3:0]	KEY;
 input		[17:0]	SW;
-
 input				AUD_ADCDAT;
 
 // Bidirectionals
 inout				AUD_BCLK;
 inout				AUD_ADCLRCK;
 inout				AUD_DACLRCK;
-
 inout				I2C_SDAT;
 
 // Outputs
 output				AUD_XCK;
 output				AUD_DACDAT;
-
 output				I2C_SCLK;
 
-// Declare your inputs and outputs here
-// Do not change the following outputs
-output			VGA_CLK;   				//	VGA Clock
-output			VGA_HS;					//	VGA H_SYNC
-output			VGA_VS;					//	VGA V_SYNC
-output			VGA_BLANK_N;				//	VGA BLANK
-output			VGA_SYNC_N;				//	VGA SYNC
-output	[7:0]	VGA_R;   				//	VGA Red[9:0]
-output	[7:0]	VGA_G;	 				//	VGA Green[9:0]
-output	[7:0]	VGA_B;   				//	VGA Blue[9:0]
 
 /*****************************************************************************
  *                 Internal Wires and Registers Declarations                 *
@@ -89,52 +61,37 @@ wire				write_audio_out;
 wire [15:0] display_data = right_channel_audio_out[31:15];
 wire [15:0] display_data_scaled;
 
-
-output	reg [17:0]	LEDR;					//	LED Red[17:0]
-
-wire vga_colour;
-wire [8:0] vga_x;
-wire [7:0] vga_y;
-wire vga_plot;
+output	reg [15:0]	LEDR;
 
 // Internal Registers
 
 reg [18:0] delay_cnt, delay;
 reg snd;
 
-//assign LEDR[15] = left_channel_audio_out[31] & right_channel_audio_out[31];
-
-// State Machine Registers
-
-/*****************************************************************************
- *                         Finite State Machine(s)                           *
- *****************************************************************************/
-
-
 /*****************************************************************************
  *                             Sequential Logic                              *
  *****************************************************************************/
 
+// Counter for audio transformations.
 always @(posedge CLOCK_50)
 	if(delay_cnt == delay) begin
 		delay_cnt <= 0;
 		snd <= !snd;
 	end else delay_cnt <= delay_cnt + 1;
-	
+
+// Set LEDR to reflect audio changes.
 always @(negedge write_audio_out)
 		LEDR[15:0] = left_channel_audio_out[31:16];
-
-
 
 /*****************************************************************************
  *                            Combinational Logic                            *
  *****************************************************************************/
 
+// Control the delay of the sampler.
 assign delay = SW[17:0];
 
-
+// Tell audio controller when to sample.
 assign read_audio_in	= audio_in_available & audio_out_allowed;
-
 assign left_channel_audio_out	= (SW == 0) ? left_channel_audio_in : snd ? 0 : left_channel_audio_in;
 assign right_channel_audio_out	= (SW == 0) ? right_channel_audio_in: snd ? 0 : right_channel_audio_in;
 assign write_audio_out = audio_in_available & audio_out_allowed;
@@ -150,7 +107,7 @@ Audio_Controller Audio_Controller (
 
 	.clear_audio_in_memory		(),
 	.read_audio_in				(read_audio_in),
-	
+
 	.clear_audio_out_memory		(),
 	.left_channel_audio_out		(left_channel_audio_out),
 	.right_channel_audio_out	(right_channel_audio_out),
@@ -183,25 +140,4 @@ avconf #(.USE_MIC_INPUT(1)) avc (
 	.reset						(~KEY[0])
 );
 
-vga_adapter VGA(
-			.resetn(KEY[0]),
-			.clock(CLOCK_50),
-			.colour(vga_colour),
-			.x(vga_x),
-			.y(vga_y),
-			.plot(vga_plot),
-			.VGA_R(VGA_R),
-			.VGA_G(VGA_G),
-			.VGA_B(VGA_B),
-			.VGA_HS(VGA_HS),
-			.VGA_VS(VGA_VS),
-			.VGA_BLANK(VGA_BLANK_N),
-			.VGA_SYNC(VGA_SYNC_N),
-			.VGA_CLK(VGA_CLK));
-		defparam VGA.RESOLUTION = "320x240";
-		defparam VGA.MONOCHROME = "TRUE";
-
-display disp(CLOCK_50, reset, pause, display_data_scaled, vga_x, vga_y, vga_color, vga_plot);
-
 endmodule
-
