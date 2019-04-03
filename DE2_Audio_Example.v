@@ -29,6 +29,7 @@ module DE2_Audio_Example (
 // Inputs
 input				CLOCK_50;
 input		[17:0]	SW;
+input [3:0] KEY;
 input				AUD_ADCDAT;
 
 // Bidirectionals
