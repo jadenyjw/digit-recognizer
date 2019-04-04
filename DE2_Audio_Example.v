@@ -83,9 +83,9 @@ always @(posedge CLOCK_50)
 		snd <= !snd;
 	end else delay_cnt <= delay_cnt + 1;
 
-// Counter for slide transformation
+// Counters for slide transformation
 always @(posedge tick)
-	if(slow_counter_out == 16'b1111111111111111) begin
+	if(slow_counter_out == 17'b11111111111111111) begin
 		slow_counter_out <= 0;
 	end else slow_counter_out <= slow_counter_out + 1;
 	

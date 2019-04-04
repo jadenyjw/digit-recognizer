@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE2_Audio_Example
-Thu Apr  4 16:02:00 2019
+Thu Apr  4 18:15:22 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -73,7 +73,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Apr  4 16:02:00 2019       ;
+; Analysis & Synthesis Status        ; Successful - Thu Apr  4 18:15:22 2019       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; DE2_Audio_Example                           ;
 ; Top-level Entity Name              ; DE2_Audio_Example                           ;
@@ -1231,7 +1231,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Apr  4 16:01:44 2019
+    Info: Processing started: Thu Apr  4 18:15:07 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off waveform-visualizer -c DE2_Audio_Example
 Warning (12473): User specified to use only one processors but 2 processors were detected which could be used to decrease run time.
 Warning (12019): Can't analyze file -- file vga_adapter/vga_pll.v is missing
@@ -1266,6 +1266,7 @@ Warning (10236): Verilog HDL Implicit Net warning at DE2_Audio_Example.v(108): c
 Info (12127): Elaborating entity "DE2_Audio_Example" for the top level hierarchy
 Warning (10036): Verilog HDL or VHDL warning at DE2_Audio_Example.v(62): object "display_data" assigned a value but never read File: /home/jaden/waveform-visualizer/DE2_Audio_Example.v Line: 62
 Warning (10230): Verilog HDL assignment warning at DE2_Audio_Example.v(62): truncated value with size 17 to match size of target (16) File: /home/jaden/waveform-visualizer/DE2_Audio_Example.v Line: 62
+Warning (10230): Verilog HDL assignment warning at DE2_Audio_Example.v(74): truncated value with size 32 to match size of target (1) File: /home/jaden/waveform-visualizer/DE2_Audio_Example.v Line: 74
 Warning (10230): Verilog HDL assignment warning at DE2_Audio_Example.v(84): truncated value with size 32 to match size of target (17) File: /home/jaden/waveform-visualizer/DE2_Audio_Example.v Line: 84
 Warning (10230): Verilog HDL assignment warning at DE2_Audio_Example.v(90): truncated value with size 32 to match size of target (1) File: /home/jaden/waveform-visualizer/DE2_Audio_Example.v Line: 90
 Warning (10230): Verilog HDL assignment warning at DE2_Audio_Example.v(95): truncated value with size 32 to match size of target (1) File: /home/jaden/waveform-visualizer/DE2_Audio_Example.v Line: 95
@@ -1471,10 +1472,10 @@ Info (21057): Implemented 861 device resources after synthesis - the final resou
     Info (21061): Implemented 685 logic cells
     Info (21064): Implemented 128 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 87 warnings
-    Info: Peak virtual memory: 987 megabytes
-    Info: Processing ended: Thu Apr  4 16:02:00 2019
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:32
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 88 warnings
+    Info: Peak virtual memory: 989 megabytes
+    Info: Processing ended: Thu Apr  4 18:15:22 2019
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:31
 
 
