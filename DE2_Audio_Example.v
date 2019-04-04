@@ -66,9 +66,12 @@ output	reg [15:0]	LEDR;
 
 // Internal Registers
 
-reg [18:0] delay_cnt, delay;
+reg [16:0] delay_cnt, delay;
 reg snd;
+reg slow_counter_out; 
+reg fast_counter_out;
 
+assign tick = (fast_counter_out == 0) ? 1 : 0;
 /*****************************************************************************
  *                             Sequential Logic                              *
  *****************************************************************************/
@@ -80,6 +83,18 @@ always @(posedge CLOCK_50)
 		snd <= !snd;
 	end else delay_cnt <= delay_cnt + 1;
 
+// Counter for slide transformation
+always @(posedge tick)
+	if(slow_counter_out == 16'b1111111111111111) begin
+		slow_counter_out <= 0;
+	end else slow_counter_out <= slow_counter_out + 1;
+	
+always @(posedge CLOCK_50)
+	if(fast_counter_out == 4'b1111) begin
+		fast_counter_out <= 0;
+	end else fast_counter_out <= fast_counter_out + 1;
+	
+
 // Set LEDR to reflect audio changes.
 always @(negedge write_audio_out)
 		LEDR[15:0] = left_channel_audio_out[31:16];
@@ -89,7 +104,8 @@ always @(negedge write_audio_out)
  *****************************************************************************/
 
 // Control the delay of the sampler.
-assign delay = SW[17:0];
+assign delay = (slide == 0) ? SW[16:0] : fast_counter_out;
+assign slide = SW[17];
 
 // Tell audio controller when to sample.
 assign read_audio_in	= audio_in_available & audio_out_allowed;

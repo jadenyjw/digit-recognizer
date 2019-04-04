@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE2_Audio_Example
-Wed Apr  3 09:16:49 2019
+Thu Apr  4 16:02:00 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -73,15 +73,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Apr  3 09:16:49 2019       ;
+; Analysis & Synthesis Status        ; Successful - Thu Apr  4 16:02:00 2019       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; DE2_Audio_Example                           ;
 ; Top-level Entity Name              ; DE2_Audio_Example                           ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 641                                         ;
-;     Total combinational functions  ; 617                                         ;
-;     Dedicated logic registers      ; 333                                         ;
-; Total registers                    ; 333                                         ;
+; Total logic elements               ; 644                                         ;
+;     Total combinational functions  ; 620                                         ;
+;     Dedicated logic registers      ; 332                                         ;
+; Total registers                    ; 332                                         ;
 ; Total pins                         ; 47                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 16,384                                      ;
@@ -230,20 +230,20 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 641            ;
+; Estimated Total logic elements              ; 644            ;
 ;                                             ;                ;
-; Total combinational functions               ; 617            ;
+; Total combinational functions               ; 620            ;
 ; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 309            ;
-;     -- 3 input functions                    ; 131            ;
-;     -- <=2 input functions                  ; 177            ;
+;     -- 4 input functions                    ; 305            ;
+;     -- 3 input functions                    ; 142            ;
+;     -- <=2 input functions                  ; 173            ;
 ;                                             ;                ;
 ; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 491            ;
-;     -- arithmetic mode                      ; 126            ;
+;     -- normal mode                          ; 496            ;
+;     -- arithmetic mode                      ; 124            ;
 ;                                             ;                ;
-; Total registers                             ; 333            ;
-;     -- Dedicated logic registers            ; 333            ;
+; Total registers                             ; 332            ;
+;     -- Dedicated logic registers            ; 332            ;
 ;     -- I/O registers                        ; 0              ;
 ;                                             ;                ;
 ; I/O pins                                    ; 47             ;
@@ -255,8 +255,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;     -- PLLs                                 ; 1              ;
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
-; Maximum fan-out                             ; 388            ;
-; Total fan-out                               ; 5440           ;
+; Maximum fan-out                             ; 387            ;
+; Total fan-out                               ; 5444           ;
 ; Average fan-out                             ; 4.62           ;
 +---------------------------------------------+----------------+
 
@@ -266,7 +266,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+--------------+
 ; Compilation Hierarchy Node                                    ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                 ; Entity Name                     ; Library Name ;
 +---------------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+--------------+
-; |DE2_Audio_Example                                            ; 617 (104)           ; 333 (36)                  ; 16384       ; 0            ; 0       ; 0         ; 47   ; 0            ; |DE2_Audio_Example                                                                                                                                                                                                                                  ; DE2_Audio_Example               ; work         ;
+; |DE2_Audio_Example                                            ; 620 (111)           ; 332 (35)                  ; 16384       ; 0            ; 0       ; 0         ; 47   ; 0            ; |DE2_Audio_Example                                                                                                                                                                                                                                  ; DE2_Audio_Example               ; work         ;
 ;    |Audio_Controller:Audio_Controller|                        ; 324 (4)             ; 222 (4)                   ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller                                                                                                                                                                                                ; Audio_Controller                ; work         ;
 ;       |Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer| ; 157 (41)            ; 108 (36)                  ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer                                                                                                                                          ; Altera_UP_Audio_In_Deserializer ; work         ;
 ;          |Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter|  ; 10 (10)             ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter                                                                                        ; Altera_UP_Audio_Bit_Counter     ; work         ;
@@ -308,8 +308,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;       |Altera_UP_Clock_Edge:DAC_Left_Right_Clock_Edges|       ; 0 (0)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Clock_Edge:DAC_Left_Right_Clock_Edges                                                                                                                                                ; Altera_UP_Clock_Edge            ; work         ;
 ;       |Audio_Clock:Audio_Clock|                               ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Audio_Clock:Audio_Clock                                                                                                                                                                        ; Audio_Clock                     ; work         ;
 ;          |altpll:altpll_component|                            ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Audio_Clock:Audio_Clock|altpll:altpll_component                                                                                                                                                ; altpll                          ; work         ;
-;    |avconf:avc|                                               ; 189 (140)           ; 75 (45)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|avconf:avc                                                                                                                                                                                                                       ; avconf                          ; work         ;
-;       |I2C_Controller:u0|                                     ; 49 (49)             ; 30 (30)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|avconf:avc|I2C_Controller:u0                                                                                                                                                                                                     ; I2C_Controller                  ; work         ;
+;    |avconf:avc|                                               ; 185 (137)           ; 75 (45)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|avconf:avc                                                                                                                                                                                                                       ; avconf                          ; work         ;
+;       |I2C_Controller:u0|                                     ; 48 (48)             ; 30 (30)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_Audio_Example|avconf:avc|I2C_Controller:u0                                                                                                                                                                                                     ; I2C_Controller                  ; work         ;
 +---------------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -400,8 +400,8 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 333   ;
-; Number of registers using Synchronous Clear  ; 84    ;
+; Total registers                              ; 332   ;
+; Number of registers using Synchronous Clear  ; 82    ;
 ; Number of registers using Synchronous Load   ; 122   ;
 ; Number of registers using Asynchronous Clear ; 39    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
@@ -415,13 +415,13 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------------------------------+---------+
 ; Inverted Register                          ; Fan out ;
 +--------------------------------------------+---------+
-; avconf:avc|I2C_Controller:u0|SD_COUNTER[0] ; 18      ;
-; avconf:avc|I2C_Controller:u0|SD_COUNTER[2] ; 17      ;
-; avconf:avc|I2C_Controller:u0|SD_COUNTER[3] ; 20      ;
+; avconf:avc|I2C_Controller:u0|SD_COUNTER[0] ; 19      ;
+; avconf:avc|I2C_Controller:u0|SD_COUNTER[2] ; 16      ;
+; avconf:avc|I2C_Controller:u0|SD_COUNTER[3] ; 21      ;
 ; avconf:avc|I2C_Controller:u0|SD_COUNTER[1] ; 17      ;
 ; avconf:avc|I2C_Controller:u0|SD_COUNTER[4] ; 13      ;
 ; avconf:avc|I2C_Controller:u0|SD_COUNTER[5] ; 11      ;
-; avconf:avc|I2C_Controller:u0|SCLK          ; 3       ;
+; avconf:avc|I2C_Controller:u0|SCLK          ; 2       ;
 ; avconf:avc|I2C_Controller:u0|END           ; 5       ;
 ; avconf:avc|I2C_Controller:u0|SDO           ; 4       ;
 ; Total number of inverted registers = 9     ;         ;
@@ -433,9 +433,9 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                                                  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|data_in_shift_reg[29]                                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|data_in_shift_reg[15]                                            ;
 ; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter|bit_counter[0] ;
-; 6:1                ; 31 bits   ; 124 LEs       ; 62 LEs               ; 62 LEs                 ; Yes        ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|data_out_shift_reg[5]                                              ;
+; 6:1                ; 31 bits   ; 124 LEs       ; 62 LEs               ; 62 LEs                 ; Yes        ; |DE2_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|data_out_shift_reg[13]                                             ;
 ; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |DE2_Audio_Example|avconf:avc|I2C_Controller:u0|SD_COUNTER[0]                                                                                                               ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
@@ -1186,7 +1186,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 47                          ;
-; cycloneiii_ff         ; 333                         ;
+; cycloneiii_ff         ; 332                         ;
 ;     CLR               ; 8                           ;
 ;     CLR SCLR          ; 16                          ;
 ;     ENA               ; 72                          ;
@@ -1194,25 +1194,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA CLR SLD       ; 6                           ;
 ;     ENA SCLR SLD      ; 31                          ;
 ;     ENA SLD           ; 85                          ;
-;     SCLR              ; 37                          ;
-;     plain             ; 69                          ;
+;     SCLR              ; 35                          ;
+;     plain             ; 70                          ;
 ; cycloneiii_io_obuf    ; 4                           ;
-; cycloneiii_lcell_comb ; 617                         ;
-;     arith             ; 126                         ;
+; cycloneiii_lcell_comb ; 620                         ;
+;     arith             ; 124                         ;
 ;         1 data inputs ; 1                           ;
-;         2 data inputs ; 98                          ;
+;         2 data inputs ; 96                          ;
 ;         3 data inputs ; 27                          ;
-;     normal            ; 491                         ;
+;     normal            ; 496                         ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 20                          ;
-;         2 data inputs ; 57                          ;
-;         3 data inputs ; 104                         ;
-;         4 data inputs ; 309                         ;
+;         1 data inputs ; 21                          ;
+;         2 data inputs ; 54                          ;
+;         3 data inputs ; 115                         ;
+;         4 data inputs ; 305                         ;
 ; cycloneiii_pll        ; 1                           ;
 ; cycloneiii_ram_block  ; 128                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 6.00                        ;
-; Average LUT depth     ; 2.22                        ;
+; Average LUT depth     ; 2.21                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1231,7 +1231,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Wed Apr  3 09:16:33 2019
+    Info: Processing started: Thu Apr  4 16:01:44 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off waveform-visualizer -c DE2_Audio_Example
 Warning (12473): User specified to use only one processors but 2 processors were detected which could be used to decrease run time.
 Warning (12019): Can't analyze file -- file vga_adapter/vga_pll.v is missing
@@ -1258,14 +1258,18 @@ Info (12021): Found 1 design units, including 1 entities, in source file Audio_C
     Info (12023): Found entity 1: Audio_Clock File: /home/jaden/waveform-visualizer/Audio_Controller/Audio_Clock.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file Audio_Controller/Audio_Controller.v
     Info (12023): Found entity 1: Audio_Controller File: /home/jaden/waveform-visualizer/Audio_Controller/Audio_Controller.v Line: 11
-Warning (10275): Verilog HDL Module Instantiation warning at DE2_Audio_Example.v(135): ignored dangling comma in List of Port Connections File: /home/jaden/waveform-visualizer/DE2_Audio_Example.v Line: 135
+Warning (10275): Verilog HDL Module Instantiation warning at DE2_Audio_Example.v(151): ignored dangling comma in List of Port Connections File: /home/jaden/waveform-visualizer/DE2_Audio_Example.v Line: 151
 Info (12021): Found 1 design units, including 1 entities, in source file DE2_Audio_Example.v
     Info (12023): Found entity 1: DE2_Audio_Example File: /home/jaden/waveform-visualizer/DE2_Audio_Example.v Line: 2
+Warning (10236): Verilog HDL Implicit Net warning at DE2_Audio_Example.v(74): created implicit net for "tick" File: /home/jaden/waveform-visualizer/DE2_Audio_Example.v Line: 74
+Warning (10236): Verilog HDL Implicit Net warning at DE2_Audio_Example.v(108): created implicit net for "slide" File: /home/jaden/waveform-visualizer/DE2_Audio_Example.v Line: 108
 Info (12127): Elaborating entity "DE2_Audio_Example" for the top level hierarchy
 Warning (10036): Verilog HDL or VHDL warning at DE2_Audio_Example.v(62): object "display_data" assigned a value but never read File: /home/jaden/waveform-visualizer/DE2_Audio_Example.v Line: 62
 Warning (10230): Verilog HDL assignment warning at DE2_Audio_Example.v(62): truncated value with size 17 to match size of target (16) File: /home/jaden/waveform-visualizer/DE2_Audio_Example.v Line: 62
-Warning (10230): Verilog HDL assignment warning at DE2_Audio_Example.v(81): truncated value with size 32 to match size of target (19) File: /home/jaden/waveform-visualizer/DE2_Audio_Example.v Line: 81
-Info (12128): Elaborating entity "Audio_Controller" for hierarchy "Audio_Controller:Audio_Controller" File: /home/jaden/waveform-visualizer/DE2_Audio_Example.v Line: 135
+Warning (10230): Verilog HDL assignment warning at DE2_Audio_Example.v(84): truncated value with size 32 to match size of target (17) File: /home/jaden/waveform-visualizer/DE2_Audio_Example.v Line: 84
+Warning (10230): Verilog HDL assignment warning at DE2_Audio_Example.v(90): truncated value with size 32 to match size of target (1) File: /home/jaden/waveform-visualizer/DE2_Audio_Example.v Line: 90
+Warning (10230): Verilog HDL assignment warning at DE2_Audio_Example.v(95): truncated value with size 32 to match size of target (1) File: /home/jaden/waveform-visualizer/DE2_Audio_Example.v Line: 95
+Info (12128): Elaborating entity "Audio_Controller" for hierarchy "Audio_Controller:Audio_Controller" File: /home/jaden/waveform-visualizer/DE2_Audio_Example.v Line: 151
 Info (12128): Elaborating entity "Altera_UP_Clock_Edge" for hierarchy "Audio_Controller:Audio_Controller|Altera_UP_Clock_Edge:Bit_Clock_Edges" File: /home/jaden/waveform-visualizer/Audio_Controller/Audio_Controller.v Line: 182
 Info (12128): Elaborating entity "Altera_UP_Audio_In_Deserializer" for hierarchy "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer" File: /home/jaden/waveform-visualizer/Audio_Controller/Audio_Controller.v Line: 237
 Info (12128): Elaborating entity "Altera_UP_Audio_Bit_Counter" for hierarchy "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter" File: /home/jaden/waveform-visualizer/Audio_Controller/Altera_UP_Audio_In_Deserializer.v Line: 159
@@ -1364,7 +1368,7 @@ Info (12133): Instantiated megafunction "Audio_Controller:Audio_Controller|Audio
     Info (12134): Parameter "port_extclk2" = "PORT_UNUSED"
     Info (12134): Parameter "port_extclk3" = "PORT_UNUSED"
     Info (12134): Parameter "valid_lock_multiplier" = "1"
-Info (12128): Elaborating entity "avconf" for hierarchy "avconf:avc" File: /home/jaden/waveform-visualizer/DE2_Audio_Example.v Line: 142
+Info (12128): Elaborating entity "avconf" for hierarchy "avconf:avc" File: /home/jaden/waveform-visualizer/DE2_Audio_Example.v Line: 158
 Warning (10230): Verilog HDL assignment warning at avconf.v(68): truncated value with size 32 to match size of target (16) File: /home/jaden/waveform-visualizer/avconf/avconf.v Line: 68
 Warning (10230): Verilog HDL assignment warning at avconf.v(119): truncated value with size 32 to match size of target (6) File: /home/jaden/waveform-visualizer/avconf/avconf.v Line: 119
 Warning (10230): Verilog HDL assignment warning at avconf.v(136): truncated value with size 32 to match size of target (16) File: /home/jaden/waveform-visualizer/avconf/avconf.v Line: 136
@@ -1460,17 +1464,17 @@ Warning (21074): Design contains 3 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY[1]" File: /home/jaden/waveform-visualizer/DE2_Audio_Example.v Line: 32
     Warning (15610): No output dependent on input pin "KEY[2]" File: /home/jaden/waveform-visualizer/DE2_Audio_Example.v Line: 32
     Warning (15610): No output dependent on input pin "KEY[3]" File: /home/jaden/waveform-visualizer/DE2_Audio_Example.v Line: 32
-Info (21057): Implemented 858 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 861 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 24 input pins
     Info (21059): Implemented 19 output pins
     Info (21060): Implemented 4 bidirectional pins
-    Info (21061): Implemented 682 logic cells
+    Info (21061): Implemented 685 logic cells
     Info (21064): Implemented 128 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 83 warnings
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 87 warnings
     Info: Peak virtual memory: 987 megabytes
-    Info: Processing ended: Wed Apr  3 09:16:49 2019
+    Info: Processing ended: Thu Apr  4 16:02:00 2019
     Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:33
+    Info: Total CPU time (on all processors): 00:00:32
 
 
