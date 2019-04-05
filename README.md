@@ -17,3 +17,5 @@ Some configurations might give some surprising results!
 ## Credits
 
 The audio controller (and most of our troubles) came from: http://www.eecg.toronto.edu/~jayar/ece241_08F/AudioVideoCores/audio/audio.html
+
+Video available here: https://www.youtube.com/watch?v=GX7nqHeMLKU
